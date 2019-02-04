@@ -1,7 +1,14 @@
 {
   "name": "amat-react",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": ["dist", "README.md"],
+  "repository": {
+    "type": "git",
+    "url":  "git@github.com/APMG/amat-react.git"
+  },
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
