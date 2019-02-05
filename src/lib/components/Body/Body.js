@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import Default from "../../atoms/Default/Default";
 
 class Body extends React.Component {
