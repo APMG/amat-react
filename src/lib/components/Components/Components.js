@@ -15,6 +15,7 @@ import UnorderedList from "../../atoms/UnorderedList/UnorderedList";
 import OrderedList from "../../atoms/OrderedList/OrderedList";
 import ListItem from "../../atoms/ListItem/ListItem";
 import ApmAttachment from "../../atoms/ApmAttachment/ApmAttachment";
+import ApmOembed from "../../atoms/ApmOembed/ApmOembed";
 
 const Components = {
   doc: Doc,
@@ -30,7 +31,8 @@ const Components = {
   blockquote: Blockquote,
   unordered_list: UnorderedList,
   ordered_list: OrderedList,
-  list_item: ListItem
+  list_item: ListItem,
+  apm_oembed: ApmOembed
 };
 
 const Dispatch = type => {
