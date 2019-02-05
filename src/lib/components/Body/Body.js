@@ -1,5 +1,5 @@
-import React from 'React';
-import Default from '../../atoms/Default/Default';
+import React from "React";
+import Default from "../../atoms/Default/Default";
 
 class Body extends React.Component {
   constructor(props) {
@@ -9,7 +9,10 @@ class Body extends React.Component {
   render() {
     return (
       <>
-        <Default nodeData={this.props.nodeData} />
+        <Default
+          nodeData={this.props.nodeData}
+          embedded={this.props.embedded}
+        />
       </>
     );
   }
