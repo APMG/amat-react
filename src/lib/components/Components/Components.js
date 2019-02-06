@@ -16,6 +16,7 @@ import OrderedList from "../../atoms/OrderedList/OrderedList";
 import ListItem from "../../atoms/ListItem/ListItem";
 import ApmAttachment from "../../atoms/ApmAttachment/ApmAttachment";
 import ApmOembed from "../../atoms/ApmOembed/ApmOembed";
+import ApmVideo from "../../atoms/ApmVideo/ApmVideo";
 
 const Components = {
   doc: Doc,
@@ -32,7 +33,8 @@ const Components = {
   unordered_list: UnorderedList,
   ordered_list: OrderedList,
   list_item: ListItem,
-  apm_oembed: ApmOembed
+  apm_oembed: ApmOembed,
+  apm_video: ApmVideo
 };
 
 const Dispatch = type => {
