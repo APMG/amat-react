@@ -2,13 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { cleanup } from "react-testing-library";
 import Body from "../Body";
+import { singleLineString } from "../../../utils/Utils";
 
 afterEach(cleanup);
-
-function singleLineString(str) {
-  var newstr = str.replace(/\s{2,}/g, "").replace(/>\s</, "><");
-  return newstr;
-}
 
 const Doc = {
   type: "doc",

@@ -17,6 +17,7 @@ import ListItem from "../../atoms/ListItem/ListItem";
 import ApmAttachment from "../../atoms/ApmAttachment/ApmAttachment";
 import ApmOembed from "../../atoms/ApmOembed/ApmOembed";
 import ApmVideo from "../../atoms/ApmVideo/ApmVideo";
+import ApmTableOfContents from "../../atoms/ApmTableOfContents/ApmTableOfContents";
 
 const Components = {
   doc: Doc,
@@ -34,11 +35,13 @@ const Components = {
   ordered_list: OrderedList,
   list_item: ListItem,
   apm_oembed: ApmOembed,
-  apm_video: ApmVideo
+  apm_video: ApmVideo,
+  apm_table_of_contents: ApmTableOfContents
 };
 
-const Dispatch = type => {
-  return Components[type] || Default;
+const Dispatch = (type, overrides = {}) => {
+  const mergedComponents = { ...Components, ...overrides };
+  return mergedComponents[type] || Default;
 };
 
 export default Dispatch;
