@@ -18,6 +18,8 @@ import ApmAttachment from "../../atoms/ApmAttachment/ApmAttachment";
 import ApmOembed from "../../atoms/ApmOembed/ApmOembed";
 import ApmVideo from "../../atoms/ApmVideo/ApmVideo";
 import ApmTableOfContents from "../../atoms/ApmTableOfContents/ApmTableOfContents";
+import ApmRelatedList from "../../atoms/ApmRelatedList/ApmRelatedList";
+import ApmRelatedLink from "../../atoms/ApmRelatedLink/ApmRelatedLink";
 
 const Components = {
   doc: Doc,
@@ -36,7 +38,9 @@ const Components = {
   list_item: ListItem,
   apm_oembed: ApmOembed,
   apm_video: ApmVideo,
-  apm_table_of_contents: ApmTableOfContents
+  apm_table_of_contents: ApmTableOfContents,
+  apm_related_list: ApmRelatedList,
+  apm_related_link: ApmRelatedLink
 };
 
 const Dispatch = (type, overrides = {}) => {
