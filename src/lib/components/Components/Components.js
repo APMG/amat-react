@@ -43,8 +43,9 @@ const Components = {
   apm_related_link: ApmRelatedLink
 };
 
-const Dispatch = type => {
-  return Components[type] || Default;
+const Dispatch = (type, overrides = {}) => {
+  const mergedComponents = { ...Components, ...overrides };
+  return mergedComponents[type] || Default;
 };
 
 export default Dispatch;
