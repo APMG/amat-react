@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Traverse from '../utils/Content';
+import React, { Component } from "react";
+import Traverse from "../utils/Content";
 
 class Doc extends Component {
   constructor(props) {
@@ -7,7 +7,7 @@ class Doc extends Component {
   }
 
   render() {
-    <>{Traverse(this.props)}</>;
+    return <>{Traverse(this.props)}</>;
   }
 }
 
