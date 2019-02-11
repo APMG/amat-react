@@ -5,10 +5,13 @@
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
-    "url":  "git@github.com/APMG/amat-react.git"
+    "url": "git@github.com/APMG/amat-react.git"
   },
   "dependencies": {
     "react": "^16.7.0",
