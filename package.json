@@ -1,14 +1,17 @@
 {
   "name": "amat-react",
   "author": "Geoff Hankerson ghankerson@mpr.org",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
-    "url":  "git@github.com/APMG/amat-react.git"
+    "url": "git@github.com/APMG/amat-react.git"
   },
   "dependencies": {
     "react": "^16.7.0",
@@ -38,6 +41,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0"
+    "@babel/register": "^7.0.0",
+    "chalk": "^2.4.2"
   }
 }

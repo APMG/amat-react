@@ -11,7 +11,12 @@ function Traverse(props) {
   const Inner = child => {
     const Dispatcher = Dispatch(child.type);
     return (
-      <Dispatcher key={uuid()} nodeData={child} embedded={props.embedded} />
+      <Dispatcher
+        key={uuid()}
+        nodeData={child}
+        embedded={props.embedded}
+        overrides={props.overrides}
+      />
     );
   };
 
