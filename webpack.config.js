@@ -1,24 +1,25 @@
-const path = require('path');
-const globImporter = require('node-sass-glob-importer');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require("path");
+const globImporter = require("node-sass-glob-importer");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env, argv) => {
   // use devMode unless mode is set to production
-  const devMode = argv.mode !== 'production' ? true : false;
+  const devMode = argv.mode !== "production" ? true : false;
 
   return {
     entry: [
-      'core-js/modules/es6.promise',
-      'core-js/modules/es6.array.iterator',
-      path.resolve(__dirname, './src/index.js')
+      "core-js/modules/es6.promise",
+      "core-js/modules/es6.array.iterator",
+      path.resolve(__dirname, "./src/index.js")
     ],
     output: {
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'main.js',
-      publicPath: '/'
+      path: path.resolve(__dirname, "dist"),
+      filename: "main.js",
+      library: ["AmatReact"],
+      libraryTarget: "umd",
+      publicPath: "/dist/"
     },
-    devtool: 'source-map',
     devServer: {
       historyApiFallback: true
     },
@@ -28,14 +29,14 @@ module.exports = (env, argv) => {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           use: {
-            loader: 'babel-loader'
+            loader: "babel-loader"
           }
         },
         {
           test: /\.html$/,
           use: [
             {
-              loader: 'html-loader',
+              loader: "html-loader",
               options: { minimize: true }
             }
           ]
@@ -44,18 +45,18 @@ module.exports = (env, argv) => {
           test: /\.scss$/,
           use: [
             {
-              loader: devMode ? 'style-loader' : MiniCssExtractPlugin.loader
+              loader: devMode ? "style-loader" : MiniCssExtractPlugin.loader
             },
             {
-              loader: 'css-loader',
+              loader: "css-loader",
               options: {
                 sourceMap: true
               }
             },
             {
-              loader: 'sass-loader',
+              loader: "sass-loader",
               options: {
-                implementation: require('sass'),
+                implementation: require("sass"),
                 importer: globImporter(),
                 sourceMap: true
               }
@@ -66,12 +67,12 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new HtmlWebPackPlugin({
-        template: './src/index.html',
-        filename: './index.html'
+        template: "./src/index.html",
+        filename: "./index.html"
       }),
       new MiniCssExtractPlugin({
-        filename: devMode ? '[name].css' : '[name].[hash].css',
-        chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
+        filename: devMode ? "[name].css" : "[name].[hash].css",
+        chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
       })
     ]
     // output: {
