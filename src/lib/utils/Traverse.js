@@ -1,7 +1,4 @@
 import React from "react";
-import Dispatch from "./Dispatch";
-import Inner from "./Inner";
-import Mark from "./Mark";
 import WrapInMarks from "./WrapInMarks";
 import uuid from "uuid";
 import ApmAttachment from "../atoms/ApmAttachment/ApmAttachment";

@@ -5,7 +5,7 @@ const WrapInMarks = (child, props) => {
   let inner = Inner(child, props);
   if (child.marks) {
     child.marks.reverse().forEach(mark => {
-      inner = Mark(mark, inner, props);
+      inner = Mark(mark, inner);
     });
   }
   return inner;

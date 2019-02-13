@@ -7,7 +7,7 @@ class Link extends React.Component {
   }
 
   render() {
-    const { href, title } = this.props.nodeData.attrs;
+    const { href, title } = this.props;
     const attrs = title ? { href: href, title: title } : { href: href };
     return (
       <>

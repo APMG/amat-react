@@ -2,17 +2,10 @@ import React from "react";
 import Dispatch from "./Dispatch";
 import uuid from "uuid";
 
-const Mark = (mark, inner, props) => {
+const Mark = (mark, inner) => {
   const Dispatcher = Dispatch(mark.type);
-  return (
-    <Dispatcher
-      key={uuid()}
-      nodeData={mark}
-      embedded={props.embedded}
-      overrides={props.overrides}
-      inner={inner}
-    />
-  );
+  const attrs = mark.attrs ? mark.attrs : {};
+  return <Dispatcher key={uuid()} inner={inner} {...attrs} />;
 };
 
 export default Mark;
