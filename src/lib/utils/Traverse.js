@@ -10,15 +10,18 @@ import ApmTableOfContents from "../atoms/ApmTableOfContents/ApmTableOfContents";
 // Not really happy with the structure of this but spent some time trying to refactor with no luck.
 // Will settle for wrking code for now. Happy to hear your suggestions - GH
 function Traverse(props) {
-  //main function body for Traverse
+  let arr = [];
   if (props.nodeData.type === "apm_attachment") {
-    return (
-      <ApmAttachment nodeData={props.nodeData} embedded={props.embedded} />
+    arr.push(
+      <ApmAttachment
+        nodeData={props.nodeData}
+        embedded={props.embedded}
+        key={uuid()}
+      />
     );
   }
 
   if (props.nodeData.content) {
-    let arr = [];
     for (let i = 0; i < props.nodeData.content.length; ++i) {
       if (props.nodeData.content[i].type === "apm_table_of_contents") {
         arr.push(
@@ -28,8 +31,9 @@ function Traverse(props) {
       }
       arr.push(WrapInMarks(props.nodeData.content[i], props));
     }
-    return arr;
   }
+
+  return arr;
 }
 
 export default Traverse;
