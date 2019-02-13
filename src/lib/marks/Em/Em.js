@@ -1,5 +1,5 @@
 import React from "react";
-import Traverse from "../utils/Content";
+import Traverse from "../../atoms/utils/Content";
 
 class Em extends React.Component {
   constructor(props) {
