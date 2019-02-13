@@ -15,7 +15,7 @@ module.exports = (env, argv) => {
     ],
     output: {
       path: path.resolve(__dirname, "dist"),
-      filename: "main.js",
+      filename: "index.js",
       library: ["AmatReact"],
       libraryTarget: "umd",
       publicPath: "/dist/"
