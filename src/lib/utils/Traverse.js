@@ -1,8 +1,8 @@
 import React from "react";
-import Dispatch from "../../utils/Dispatch";
+import Dispatch from "./Dispatch";
 import uuid from "uuid";
-import ApmAttachment from "../ApmAttachment/ApmAttachment";
-import ApmTableOfContents from "../ApmTableOfContents/ApmTableOfContents";
+import ApmAttachment from "../atoms/ApmAttachment/ApmAttachment";
+import ApmTableOfContents from "../atoms/ApmTableOfContents/ApmTableOfContents";
 
 // Not really happy with the structure of this but spent some time trying to refactor with no luck.
 // Will settle for wrking code for now. Happy to hear your suggestions - GH
