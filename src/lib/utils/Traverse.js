@@ -1,5 +1,7 @@
 import React from "react";
 import Dispatch from "./Dispatch";
+import Inner from "./Inner";
+import Mark from "./Mark";
 import uuid from "uuid";
 import ApmAttachment from "../atoms/ApmAttachment/ApmAttachment";
 import ApmTableOfContents from "../atoms/ApmTableOfContents/ApmTableOfContents";
@@ -7,38 +9,12 @@ import ApmTableOfContents from "../atoms/ApmTableOfContents/ApmTableOfContents";
 // Not really happy with the structure of this but spent some time trying to refactor with no luck.
 // Will settle for wrking code for now. Happy to hear your suggestions - GH
 function Traverse(props) {
-  // Method Inner
-  const Inner = child => {
-    const Dispatcher = Dispatch(child.type);
-    return (
-      <Dispatcher
-        key={uuid()}
-        nodeData={child}
-        embedded={props.embedded}
-        overrides={props.overrides}
-      />
-    );
-  };
-
-  const Mark = (mark, inner) => {
-    const Dispatcher = Dispatch(mark.type);
-    return (
-      <Dispatcher
-        key={uuid()}
-        nodeData={mark}
-        embedded={props.embedded}
-        overrides={props.overrides}
-        inner={inner}
-      />
-    );
-  };
-
   // Method WrapInMarks
   const WrapInMarks = child => {
-    let inner = Inner(child);
+    let inner = Inner(child, props);
     if (child.marks) {
       child.marks.reverse().forEach(mark => {
-        inner = Mark(mark, inner);
+        inner = Mark(mark, inner, props);
       });
     }
     return inner;
