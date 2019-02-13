@@ -1,6 +1,6 @@
 import React from "react";
 import uuid from "uuid";
-import Dispatch from "../../components/Components/Components";
+import Dispatch from "../../utils/Dispatch";
 
 class ApmTableOfContents extends React.Component {
   constructor(props) {

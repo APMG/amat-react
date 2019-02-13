@@ -1,5 +1,5 @@
 import React from "react";
-import Dispatch from "../../components/Components/Components";
+import Dispatch from "../../utils/Dispatch";
 import uuid from "uuid";
 import ApmAttachment from "../ApmAttachment/ApmAttachment";
 import ApmTableOfContents from "../ApmTableOfContents/ApmTableOfContents";
