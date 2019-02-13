@@ -35,15 +35,13 @@ function Traverse(props) {
 
   // Method WrapInMarks
   const WrapInMarks = child => {
+    let inner = Inner(child);
     if (child.marks) {
-      let inner = Inner(child);
       child.marks.reverse().forEach(mark => {
         inner = Mark(mark, inner);
       });
-      return inner;
-    } else {
-      return Inner(child);
     }
+    return inner;
   };
 
   //main function body for Traverse
