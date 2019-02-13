@@ -1,5 +1,5 @@
-import React from 'react';
-import Traverse from '../utils/Content';
+import React from "react";
+import Traverse from "../../utils/Traverse";
 
 class Blockquote extends React.Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from "react";
 import uuid from "uuid";
-import Traverse from "../utils/Content";
+import Traverse from "../../utils/Traverse";
 
 class ApmRelatedList extends React.Component {
   constructor(props) {

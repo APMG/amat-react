@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Traverse from "../utils/Content";
+import Traverse from "../../utils/Traverse";
 
 class Default extends Component {
   constructor(props) {

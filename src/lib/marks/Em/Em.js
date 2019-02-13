@@ -1,5 +1,5 @@
-import React from 'react';
-import Traverse from '../utils/Content';
+import React from "react";
+import Traverse from "../../utils/Traverse";
 
 class Em extends React.Component {
   constructor(props) {
@@ -7,7 +7,7 @@ class Em extends React.Component {
   }
 
   render() {
-    return <em>{this.props.children}</em>;
+    return <em>{this.props.inner}</em>;
   }
 }
 

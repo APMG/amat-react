@@ -1,5 +1,5 @@
 import React from "react";
-import Traverse from "../utils/Content";
+import Traverse from "../../utils/Traverse";
 
 class ApmAttachment extends React.Component {
   constructor(props) {
