@@ -7,7 +7,7 @@ class Strong extends React.Component {
   }
 
   render() {
-    return <strong>{Traverse(this.props)}</strong>;
+    return <strong>{this.props.inner}</strong>;
   }
 }
 

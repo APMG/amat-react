@@ -16,42 +16,6 @@ test("It renders a marks correctly", () => {
   );
 });
 
-const inputTwo = {
-  marks: [
-    {
-      attrs: {
-        href: "https://www.facebook.com/ChrisThile",
-        title: null
-      },
-      type: "link"
-    },
-    {
-      type: "strong"
-    }
-  ],
-  text: "Chris Thile",
-  type: "text"
-};
-
-const outputTwo = {
-  attrs: {
-    href: "https://www.facebook.com/ChrisThile",
-    title: null
-  },
-  content: [
-    {
-      content: [
-        {
-          text: "Chris Thile",
-          type: "text"
-        }
-      ],
-      type: "strong"
-    }
-  ],
-  type: "link"
-};
-
 const inputThree = {
   marks: [
     {
@@ -95,11 +59,6 @@ const outputThree = {
   ],
   type: "link"
 };
-
-test("It converts two marks to content", () => {
-  const result = convertMarks(inputTwo);
-  expect(result).toEqual(outputTwo);
-});
 
 test("It converts three marks to content", () => {
   const result = convertMarks(inputThree);

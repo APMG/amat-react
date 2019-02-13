@@ -11,7 +11,7 @@ class Link extends React.Component {
     const attrs = title ? { href: href, title: title } : { href: href };
     return (
       <>
-        <a {...attrs}>{Traverse(this.props)}</a>
+        <a {...attrs}>{this.props.inner}</a>
       </>
     );
   }

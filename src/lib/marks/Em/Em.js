@@ -7,7 +7,7 @@ class Em extends React.Component {
   }
 
   render() {
-    return <em>{Traverse(this.props)}</em>;
+    return <em>{this.props.inner}</em>;
   }
 }
 

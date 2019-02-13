@@ -20,41 +20,32 @@ function Traverse(props) {
     );
   };
 
+  const Mark = (mark, inner) => {
+    const Dispatcher = Dispatch(mark.type);
+    return (
+      <Dispatcher
+        key={uuid()}
+        nodeData={mark}
+        embedded={props.embedded}
+        overrides={props.overrides}
+        inner={inner}
+      />
+    );
+  };
+
   // Method WrapInMarks
   const WrapInMarks = child => {
     if (child.marks) {
-      const obj = convertMarks(child);
-      return Inner(obj);
+      let inner = Inner(child);
+      child.marks.reverse().forEach(mark => {
+        inner = Mark(mark, inner);
+      });
+      return inner;
     } else {
       return Inner(child);
     }
   };
 
-  function convertMarks(input) {
-    //make a copy of the marks by value not reference
-    let marks = JSON.parse(JSON.stringify(input.marks));
-
-    // set and new object literal to the value of the first mark
-    let objNew = marks.shift();
-
-    marks.forEach(mark => {
-      // set innermost content of the object literal to the next item in the array
-      objNew = walkObject(objNew, mark);
-    });
-    // remove marks from the original input
-    delete input.marks;
-    //add the original input to the innermost object literal's content
-    return walkObject(objNew, input);
-  }
-
-  function walkObject(obj, input) {
-    if (obj.hasOwnProperty("content")) {
-      walkObject(obj.content[0], input);
-    } else {
-      obj.content = [input];
-    }
-    return obj;
-  }
   //main function body for Traverse
   if (props.nodeData.type === "apm_attachment") {
     return (
