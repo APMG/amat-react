@@ -1,5 +1,5 @@
-import React from 'react';
-import Traverse from '../utils/Content';
+import React from "react";
+import Traverse from "../utils/Content";
 
 class Link extends React.Component {
   constructor(props) {
@@ -7,11 +7,11 @@ class Link extends React.Component {
   }
 
   render() {
-    const { href, title } = this.props.attrs;
+    const { href, title } = this.props.nodeData.attrs;
     const attrs = title ? { href: href, title: title } : { href: href };
     return (
       <>
-        <a {...attrs}>{this.props.children}</a>
+        <a {...attrs}>{Traverse(this.props)}</a>
       </>
     );
   }
