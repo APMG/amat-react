@@ -1,0 +1,2561 @@
+{
+    "content": [
+        {
+            "attrs": {
+                "title": "Photos"
+            },
+            "content": [
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/normal/2bc1b9-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/normal/bc9ff5-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/normal/09bf42-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/normal/a71aa9-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/normal/05d988-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/portrait/0b9152-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/portrait/f1e226-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/portrait/7c1fd5-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/portrait/137749-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/portrait/116638-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/square/4de24b-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/square/b99fc5-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/square/815dba-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/square/575182-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/square/e04db7-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/thumbnail/db2fe8-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/thumbnail/16d958-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 348,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/uncropped/7113bd-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 522,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/uncropped/db2630-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 871,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/uncropped/1debe5-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1219,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/uncropped/13c5c0-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1742,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/uncropped/102fd2-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/widescreen/8b1e64-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/widescreen/fba82a-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/widescreen/13aef2-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 786,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/widescreen/8f0752-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1123,
+                                        "url": "https://img.apmcdn.org/843e151737eea962616d19e05a15d1dfce0ac674/widescreen/0ebcf4-20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "843e151737eea962616d19e05a15d1dfce0ac674",
+                        "long_caption": "Jenny Lewis performs \"Red Bull & Hennessy\"",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Jenny Lewis performs \"Red Bull & Hennessy\"",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/normal/b347a8-20190202-lfh-andrew-bird.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/normal/fae584-20190202-lfh-andrew-bird.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/normal/228a29-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/normal/80e11a-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/normal/50f1b8-20190202-lfh-andrew-bird.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/portrait/da1ef7-20190202-lfh-andrew-bird.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/portrait/e7bac4-20190202-lfh-andrew-bird.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/portrait/94bdc7-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/portrait/e04428-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/portrait/7a5c5f-20190202-lfh-andrew-bird.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/square/da892b-20190202-lfh-andrew-bird.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/square/df0759-20190202-lfh-andrew-bird.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/square/04dcae-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/square/b44ddf-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/square/f92b35-20190202-lfh-andrew-bird.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/thumbnail/55cba5-20190202-lfh-andrew-bird.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/thumbnail/878bb4-20190202-lfh-andrew-bird.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 307,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/uncropped/504fdc-20190202-lfh-andrew-bird.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 461,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/uncropped/cce926-20190202-lfh-andrew-bird.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 768,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/uncropped/152779-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1075,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/uncropped/c5f32a-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1535,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/uncropped/e35ffc-20190202-lfh-andrew-bird.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/widescreen/9e97a6-20190202-lfh-andrew-bird.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/widescreen/f66ec0-20190202-lfh-andrew-bird.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/widescreen/a432bf-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 786,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/widescreen/284867-20190202-lfh-andrew-bird.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1123,
+                                        "url": "https://img.apmcdn.org/b1a8f618310917cff85a6c18363ff2de9834c556/widescreen/ca1a0a-20190202-lfh-andrew-bird.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "b1a8f618310917cff85a6c18363ff2de9834c556",
+                        "long_caption": "Andrew Bird",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Andrew Bird",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190202-lfh-andrew-bird.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/normal/9b90c6-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/normal/79474a-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/normal/e1e977-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1052,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/normal/58c651-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/normal/94e7e9-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/portrait/83b099-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/portrait/6275da-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/portrait/3eabf6-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/portrait/650e2a-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2032,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/portrait/2b4f2f-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1626
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/square/94d468-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/square/8348a8-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/square/2bec2b-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/square/be4678-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/square/3f41aa-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/thumbnail/4b33ca-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/thumbnail/084cbf-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 386,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/uncropped/6d2ecf-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 579,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/uncropped/14a2ad-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 964,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/uncropped/db48b8-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1350,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/uncropped/b3b5c4-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1929,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/uncropped/1f25cc-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/widescreen/5020ee-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/widescreen/467505-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/widescreen/1f8684-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 787,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/widescreen/c551b1-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/f88a012bf830535a33479b02f29a4aeb4976dd1f/widescreen/94d877-20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "f88a012bf830535a33479b02f29a4aeb4976dd1f",
+                        "long_caption": "Tom Papa goes out in L.A. for Out. IN. America",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Tom Papa goes out in L.A. for Out. IN. America",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/normal/d13ed2-20190211-sara-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/normal/187dad-20190211-sara-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/normal/c51a03-20190211-sara-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/normal/4bac4e-20190211-sara-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/normal/f98ba0-20190211-sara-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/portrait/267cf6-20190211-sara-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/portrait/504253-20190211-sara-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/portrait/e92925-20190211-sara-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/portrait/05f607-20190211-sara-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/portrait/548abd-20190211-sara-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/square/a504c2-20190211-sara-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/square/1d7688-20190211-sara-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/square/5eedcf-20190211-sara-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/square/9c09de-20190211-sara-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/square/2b6004-20190211-sara-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/thumbnail/12d042-20190211-sara-watkins.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/thumbnail/2a97c5-20190211-sara-watkins.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 403,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/uncropped/5231d3-20190211-sara-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 605,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/uncropped/f2ed78-20190211-sara-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1009,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/uncropped/9dbe71-20190211-sara-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1412,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/uncropped/560252-20190211-sara-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2017,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/uncropped/267302-20190211-sara-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/widescreen/9519d7-20190211-sara-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/widescreen/c70a80-20190211-sara-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/widescreen/c1a3f5-20190211-sara-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 787,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/widescreen/654a65-20190211-sara-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/9e741e246777b167f495ee195ee0882f0968eb50/widescreen/b559dd-20190211-sara-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "9e741e246777b167f495ee195ee0882f0968eb50",
+                        "long_caption": "Sara Watkins",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Sara Watkins",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190211-sara-watkins.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/normal/cf7396-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/normal/382684-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/normal/23a828-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/normal/529dde-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/normal/c70571-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/portrait/027384-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/portrait/044257-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/portrait/c304bd-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/portrait/04789f-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/portrait/891d27-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/square/b81e6e-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/square/5f9fa2-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/square/cca1a4-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/square/ad21e4-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/square/eb6700-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/thumbnail/86b660-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/thumbnail/630243-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 254,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/uncropped/0e47d9-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 381,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/uncropped/b9d9bc-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 635,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/uncropped/538581-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 888,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/uncropped/1a04eb-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1269,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/uncropped/322bef-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/widescreen/94a714-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/widescreen/40fd0a-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/widescreen/381d2b-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 786,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/widescreen/f35a7c-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c/widescreen/ea4652-20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "6e36cdbdbdcc157a3d2c833ca8f2f5c3e3e93f9c",
+                        "long_caption": "Andrew Bird performs new music with Madison Cunningham and Alan Hampton. ",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Andrew Bird performs new music with Madison Cunningham and Alan Hampton. ",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/normal/8a59da-20190211-holly-laurent.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/normal/206d6e-20190211-holly-laurent.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/normal/a4d3bd-20190211-holly-laurent.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/normal/b2527c-20190211-holly-laurent.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/normal/b0d355-20190211-holly-laurent.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/portrait/88a8ee-20190211-holly-laurent.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/portrait/b0d8cb-20190211-holly-laurent.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/portrait/709cc3-20190211-holly-laurent.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/portrait/0e87c3-20190211-holly-laurent.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/portrait/720a47-20190211-holly-laurent.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/square/b029e0-20190211-holly-laurent.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/square/091326-20190211-holly-laurent.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/square/21aff1-20190211-holly-laurent.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/square/4ca810-20190211-holly-laurent.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/square/4e1061-20190211-holly-laurent.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/thumbnail/407300-20190211-holly-laurent.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/thumbnail/38ea72-20190211-holly-laurent.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 339,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/uncropped/41d905-20190211-holly-laurent.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 509,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/uncropped/3e9a51-20190211-holly-laurent.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 848,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/uncropped/1d363e-20190211-holly-laurent.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1187,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/uncropped/8eb8e2-20190211-holly-laurent.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1695,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/uncropped/84c85a-20190211-holly-laurent.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/widescreen/057435-20190211-holly-laurent.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/widescreen/087004-20190211-holly-laurent.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/widescreen/d1f187-20190211-holly-laurent.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 787,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/widescreen/34d653-20190211-holly-laurent.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/147c1501989349e18ccf3f7dae57d5f2206471bd/widescreen/f6698d-20190211-holly-laurent.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "147c1501989349e18ccf3f7dae57d5f2206471bd",
+                        "long_caption": "Holly Laurent",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Holly Laurent",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190211-holly-laurent.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/normal/445da3-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/normal/337ee5-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/normal/1e718e-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/normal/627611-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/normal/5ea972-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/portrait/e9ef76-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/portrait/49629f-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/portrait/67df6d-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/portrait/564ec8-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/portrait/c1f9c6-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/square/adad93-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/square/6af6cf-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/square/92b473-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/square/2ea8e1-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/square/9c05e3-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/thumbnail/547089-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/thumbnail/5f8402-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 288,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/uncropped/e5e951-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 432,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/uncropped/46e88b-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 720,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/uncropped/6a2530-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1007,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/uncropped/a4e379-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1439,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/uncropped/03a599-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/widescreen/731a90-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/widescreen/fd34eb-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/widescreen/e3d2f5-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 786,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/widescreen/573c52-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/b5849b3e965cb5f09a277172c183d4cc75c602bd/widescreen/90c3db-20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "b5849b3e965cb5f09a277172c183d4cc75c602bd",
+                        "long_caption": "Jenny Lewis Performs \"Wasted Youth\" from her new album, On The Line. ",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Jenny Lewis Performs \"Wasted Youth\" from her new album, On The Line. ",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/normal/0e9495-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/normal/91e570-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/normal/6b655a-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/normal/0d9d7c-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/normal/f76ca3-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/portrait/53d2dc-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/portrait/80350f-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/portrait/8ca086-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/portrait/6bc81d-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/portrait/ae759e-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/square/014dfb-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/square/b59e5e-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/square/f9082c-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/square/56e9e4-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/square/a70a7e-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/thumbnail/9beddc-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/thumbnail/f43209-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 375,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/uncropped/894a3f-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/uncropped/2bfbaf-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 937,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/uncropped/13fd1b-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1312,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/uncropped/06a54a-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1874,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/uncropped/7f1517-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/widescreen/3b6fdd-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/widescreen/20f5dc-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/widescreen/223dc2-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 787,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/widescreen/74ce12-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/abe9a1110a79fa1a11a73d4ed08c1627e91a22a5/widescreen/8e2c80-20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "abe9a1110a79fa1a11a73d4ed08c1627e91a22a5",
+                        "long_caption": "Gabe Witcher rocks an electric guitar to celebrate the birthday of The Kinks' Dave Davies.",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Gabe Witcher rocks an electric guitar to celebrate Dave Davies' birthday.",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/normal/74dec4-20190204-sarah-silverman.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/normal/f15a83-20190204-sarah-silverman.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/normal/8a9cce-20190204-sarah-silverman.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/normal/1a389e-20190204-sarah-silverman.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/normal/a07238-20190204-sarah-silverman.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/portrait/20029f-20190204-sarah-silverman.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/portrait/91cb6c-20190204-sarah-silverman.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/portrait/7506a9-20190204-sarah-silverman.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/portrait/560452-20190204-sarah-silverman.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/portrait/5e0d13-20190204-sarah-silverman.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/square/c197b1-20190204-sarah-silverman.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/square/a718ad-20190204-sarah-silverman.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/square/f3a3bf-20190204-sarah-silverman.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/square/63e4b2-20190204-sarah-silverman.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/square/9645ae-20190204-sarah-silverman.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/thumbnail/b74392-20190204-sarah-silverman.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/thumbnail/bfa3a7-20190204-sarah-silverman.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 371,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/uncropped/95d85d-20190204-sarah-silverman.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 556,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/uncropped/944e46-20190204-sarah-silverman.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 927,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/uncropped/251e06-20190204-sarah-silverman.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1298,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/uncropped/168bfb-20190204-sarah-silverman.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1855,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/uncropped/43c4af-20190204-sarah-silverman.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/widescreen/abedfe-20190204-sarah-silverman.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/widescreen/2171e6-20190204-sarah-silverman.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/widescreen/1a8870-20190204-sarah-silverman.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 787,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/widescreen/dbaf03-20190204-sarah-silverman.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/979e8e9c93894a998e5f480c37fb0ce307097bfd/widescreen/f31013-20190204-sarah-silverman.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "979e8e9c93894a998e5f480c37fb0ce307097bfd",
+                        "long_caption": "Sarah Silverman ",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Sarah Silverman ",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-sarah-silverman.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/normal/f186fc-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/normal/99c865-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/normal/e76053-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/normal/bd0633-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/normal/799a52-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/portrait/1f59f9-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/portrait/b86271-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/portrait/1d2850-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/portrait/2e86e3-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2113,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/portrait/ac002e-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1690
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/square/2b1fc5-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/square/c92776-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/square/9a10f0-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/square/68dfd0-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/square/c31a3d-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/thumbnail/48023b-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/thumbnail/15da6b-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 297,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/uncropped/e069e7-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 445,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/uncropped/3837cc-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 742,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/uncropped/f535b3-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1039,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/uncropped/f111fe-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1485,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/uncropped/c8f7cd-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/widescreen/016941-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/widescreen/f4a4d5-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/widescreen/d6772d-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 787,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/widescreen/530911-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9/widescreen/1bff6c-20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "c6e52dfa8e3b2ec0f1b6c4e9c8c162fec548feb9",
+                        "long_caption": "Laura and Sarah Silverman perform Laura's first country song.",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Laura and Sarah Silverman perform Laura's first country song.",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/normal/b22958-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/normal/883457-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/normal/41396a-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/normal/9da6b6-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/normal/70133b-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/portrait/7a20c1-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/portrait/49025c-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/portrait/ec965b-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/portrait/9a0bb3-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/portrait/8749d8-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/square/a3987d-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/square/32a8bd-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/square/c061ba-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/square/d2a224-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/square/faf2da-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/thumbnail/12d8b5-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/thumbnail/43e921-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 245,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/uncropped/046c5c-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 368,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/uncropped/8f13a2-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 613,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/uncropped/2f13a3-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 858,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/uncropped/c99d49-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1225,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/uncropped/c0f043-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/widescreen/e8d28f-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/widescreen/a6d787-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/widescreen/8f3248-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 786,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/widescreen/7f9697-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1123,
+                                        "url": "https://img.apmcdn.org/13c33407afacbb78bc2435ad4e228e4692efb7cc/widescreen/3ed4a6-20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "13c33407afacbb78bc2435ad4e228e4692efb7cc",
+                        "long_caption": "Nickel Creek perform Scotch and Chocolate. ",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Nickel Creek perform Scotch and Chocolate. ",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/normal/4030c2-20190211-mike-yard.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/normal/8180e0-20190211-mike-yard.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/normal/cbf499-20190211-mike-yard.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1052,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/normal/ebea47-20190211-mike-yard.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/normal/7ee9f5-20190211-mike-yard.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/portrait/36ac3e-20190211-mike-yard.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/portrait/dadd2b-20190211-mike-yard.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/portrait/f03676-20190211-mike-yard.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/portrait/b4170b-20190211-mike-yard.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/portrait/be09db-20190211-mike-yard.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/square/be78d1-20190211-mike-yard.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/square/fa6e5a-20190211-mike-yard.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/square/c7e907-20190211-mike-yard.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/square/5de960-20190211-mike-yard.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/square/d558cd-20190211-mike-yard.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/thumbnail/349a9c-20190211-mike-yard.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/thumbnail/42b69a-20190211-mike-yard.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 302,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/uncropped/de3964-20190211-mike-yard.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 454,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/uncropped/5428a5-20190211-mike-yard.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 756,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/uncropped/6ed8d9-20190211-mike-yard.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1059,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/uncropped/2455c6-20190211-mike-yard.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1512,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/uncropped/7ba578-20190211-mike-yard.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/widescreen/6e438f-20190211-mike-yard.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/widescreen/363151-20190211-mike-yard.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/widescreen/30f5bf-20190211-mike-yard.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 787,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/widescreen/5b531b-20190211-mike-yard.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/26cfa8b39ed9018a39b72a0f07687a26a6d7502c/widescreen/fbf905-20190211-mike-yard.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "26cfa8b39ed9018a39b72a0f07687a26a6d7502c",
+                        "long_caption": "Mike Yard",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Mike Yard",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190211-mike-yard.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/normal/b6a2cb-20190204-cirocco-dunlap.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/normal/de6013-20190204-cirocco-dunlap.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/normal/d7ccc2-20190204-cirocco-dunlap.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/normal/66b3f5-20190204-cirocco-dunlap.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1494,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/normal/ea897a-20190204-cirocco-dunlap.jpg",
+                                        "width": 1987
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/portrait/6eea1f-20190204-cirocco-dunlap.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/portrait/ba77b2-20190204-cirocco-dunlap.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/portrait/df3be2-20190204-cirocco-dunlap.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/portrait/06a51a-20190204-cirocco-dunlap.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1981,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/portrait/f0060e-20190204-cirocco-dunlap.jpg",
+                                        "width": 1585
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/square/7c3899-20190204-cirocco-dunlap.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/square/0d19c9-20190204-cirocco-dunlap.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/square/09f5f5-20190204-cirocco-dunlap.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/square/8053b1-20190204-cirocco-dunlap.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1981,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/square/1f54ce-20190204-cirocco-dunlap.jpg",
+                                        "width": 1981
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/thumbnail/4bcff4-20190204-cirocco-dunlap.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/thumbnail/47136a-20190204-cirocco-dunlap.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 399,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/uncropped/a01d19-20190204-cirocco-dunlap.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 598,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/uncropped/cbead9-20190204-cirocco-dunlap.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 997,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/uncropped/6ddf58-20190204-cirocco-dunlap.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1396,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/uncropped/41caa0-20190204-cirocco-dunlap.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1981,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/uncropped/575bce-20190204-cirocco-dunlap.jpg",
+                                        "width": 1987
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/widescreen/188979-20190204-cirocco-dunlap.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/widescreen/831c5c-20190204-cirocco-dunlap.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/widescreen/4afeed-20190204-cirocco-dunlap.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 786,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/widescreen/8d3884-20190204-cirocco-dunlap.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1116,
+                                        "url": "https://img.apmcdn.org/20bce58e38ff322f6ee7ca100ceb795541088a53/widescreen/8e7129-20190204-cirocco-dunlap.jpg",
+                                        "width": 1987
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "20bce58e38ff322f6ee7ca100ceb795541088a53",
+                        "long_caption": "Cirocco Dunlap",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Cirocco Dunlap",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-cirocco-dunlap.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                },
+                {
+                    "attrs": {
+                        "aspect_ratios": {
+                            "normal": {
+                                "instances": [
+                                    {
+                                        "height": 301,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/normal/1c7838-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 451,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/normal/9d57e2-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 752,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/normal/9f73ea-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1053,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/normal/a4c22f-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1504,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/normal/fce418-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "normal"
+                            },
+                            "portrait": {
+                                "instances": [
+                                    {
+                                        "height": 500,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/portrait/f16e0b-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 750,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/portrait/f8f5f9-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1250,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/portrait/131dc2-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1750,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/portrait/9c0a30-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2500,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/portrait/d8e12d-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "portrait"
+                            },
+                            "square": {
+                                "instances": [
+                                    {
+                                        "height": 400,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/square/f0600a-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 600,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/square/90c84c-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 1000,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/square/727415-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1400,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/square/65c435-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 2000,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/square/e898bc-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "square"
+                            },
+                            "thumbnail": {
+                                "instances": [
+                                    {
+                                        "height": 90,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/thumbnail/538a34-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 120
+                                    },
+                                    {
+                                        "height": 226,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/thumbnail/8a1ad2-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 300
+                                    }
+                                ],
+                                "slug": "thumbnail"
+                            },
+                            "uncropped": {
+                                "instances": [
+                                    {
+                                        "height": 290,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/uncropped/885bef-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 435,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/uncropped/788731-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 724,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/uncropped/322eb6-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 1014,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/uncropped/a1b40f-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1449,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/uncropped/27cb5f-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "uncropped"
+                            },
+                            "widescreen": {
+                                "instances": [
+                                    {
+                                        "height": 225,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/widescreen/fd593e-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 400
+                                    },
+                                    {
+                                        "height": 337,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/widescreen/e0133d-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 600
+                                    },
+                                    {
+                                        "height": 562,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/widescreen/a195dd-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1000
+                                    },
+                                    {
+                                        "height": 787,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/widescreen/b18490-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 1400
+                                    },
+                                    {
+                                        "height": 1124,
+                                        "url": "https://img.apmcdn.org/5b8ba7aa290487d6d0e00594e5294fe054a7c66c/widescreen/a22790-20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                                        "width": 2000
+                                    }
+                                ],
+                                "slug": "widescreen"
+                            }
+                        },
+                        "credit": "American Public Media",
+                        "credit_url": "",
+                        "float": "none",
+                        "id": "5b8ba7aa290487d6d0e00594e5294fe054a7c66c",
+                        "long_caption": "Nickel Creek is Sara Watkins, Chris Thile and Sean Watkins. ",
+                        "preferred_aspect_ratio_slug": "widescreen",
+                        "short_caption": "Nickel Creek is Sara Watkins, Chris Thile and Sean Watkins. ",
+                        "type": "apmImage",
+                        "url": "https://img.publicradio.org/images/20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                        "width": "full"
+                    },
+                    "type": "apm_image"
+                }
+            ],
+            "type": "apm_gallery"
+        }
+    ],
+    "type": "doc"
+}
