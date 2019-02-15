@@ -1,0 +1,187 @@
+{
+    "content": [
+        {
+            "attrs": {
+                "aspect_ratios": {
+                    "normal": {
+                        "instances": [
+                            {
+                                "height": 301,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/normal/2b4215-20171030-aphc-7.jpg",
+                                "width": 400
+                            },
+                            {
+                                "height": 451,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/normal/609677-20171030-aphc-7.jpg",
+                                "width": 600
+                            },
+                            {
+                                "height": 752,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/normal/671ac7-20171030-aphc-7.jpg",
+                                "width": 1000
+                            },
+                            {
+                                "height": 1053,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/normal/8665d8-20171030-aphc-7.jpg",
+                                "width": 1400
+                            },
+                            {
+                                "height": 1504,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/normal/d268f7-20171030-aphc-7.jpg",
+                                "width": 2000
+                            }
+                        ],
+                        "slug": "normal"
+                    },
+                    "portrait": {
+                        "instances": [
+                            {
+                                "height": 500,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/portrait/237f1a-20171030-aphc-7.jpg",
+                                "width": 400
+                            },
+                            {
+                                "height": 750,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/portrait/db78c1-20171030-aphc-7.jpg",
+                                "width": 600
+                            },
+                            {
+                                "height": 1250,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/portrait/15add7-20171030-aphc-7.jpg",
+                                "width": 1000
+                            },
+                            {
+                                "height": 1750,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/portrait/3f7ed8-20171030-aphc-7.jpg",
+                                "width": 1400
+                            },
+                            {
+                                "height": 2184,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/portrait/dca1fb-20171030-aphc-7.jpg",
+                                "width": 1747
+                            }
+                        ],
+                        "slug": "portrait"
+                    },
+                    "square": {
+                        "instances": [
+                            {
+                                "height": 400,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/square/68172e-20171030-aphc-7.jpg",
+                                "width": 400
+                            },
+                            {
+                                "height": 600,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/square/3f1793-20171030-aphc-7.jpg",
+                                "width": 600
+                            },
+                            {
+                                "height": 1000,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/square/3455f8-20171030-aphc-7.jpg",
+                                "width": 1000
+                            },
+                            {
+                                "height": 1400,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/square/23da32-20171030-aphc-7.jpg",
+                                "width": 1400
+                            },
+                            {
+                                "height": 2000,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/square/1e71f8-20171030-aphc-7.jpg",
+                                "width": 2000
+                            }
+                        ],
+                        "slug": "square"
+                    },
+                    "thumbnail": {
+                        "instances": [
+                            {
+                                "height": 90,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/thumbnail/ab1cb5-20171030-aphc-7.jpg",
+                                "width": 120
+                            },
+                            {
+                                "height": 226,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/thumbnail/555c39-20171030-aphc-7.jpg",
+                                "width": 300
+                            }
+                        ],
+                        "slug": "thumbnail"
+                    },
+                    "uncropped": {
+                        "instances": [
+                            {
+                                "height": 247,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/uncropped/662361-20171030-aphc-7.jpg",
+                                "width": 400
+                            },
+                            {
+                                "height": 370,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/uncropped/bd51c9-20171030-aphc-7.jpg",
+                                "width": 600
+                            },
+                            {
+                                "height": 617,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/uncropped/934545-20171030-aphc-7.jpg",
+                                "width": 1000
+                            },
+                            {
+                                "height": 864,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/uncropped/4b6623-20171030-aphc-7.jpg",
+                                "width": 1400
+                            },
+                            {
+                                "height": 1235,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/uncropped/190f55-20171030-aphc-7.jpg",
+                                "width": 2000
+                            }
+                        ],
+                        "slug": "uncropped"
+                    },
+                    "widescreen": {
+                        "instances": [
+                            {
+                                "height": 225,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/widescreen/4a75cc-20171030-aphc-7.jpg",
+                                "width": 400
+                            },
+                            {
+                                "height": 337,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/widescreen/d2c413-20171030-aphc-7.jpg",
+                                "width": 600
+                            },
+                            {
+                                "height": 562,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/widescreen/2cc3ad-20171030-aphc-7.jpg",
+                                "width": 1000
+                            },
+                            {
+                                "height": 786,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/widescreen/de38f3-20171030-aphc-7.jpg",
+                                "width": 1400
+                            },
+                            {
+                                "height": 1124,
+                                "url": "https://img.apmcdn.org/0a29648ebf68cec8d18d6515ac12bcb6c809b94a/widescreen/53a15b-20171030-aphc-7.jpg",
+                                "width": 2000
+                            }
+                        ],
+                        "slug": "widescreen"
+                    }
+                },
+                "credit": "APM",
+                "credit_url": "",
+                "float": "right",
+                "id": "0a29648ebf68cec8d18d6515ac12bcb6c809b94a",
+                "long_caption": "Madison performs a new song on our October 28, 2017 show in Pasadena.",
+                "preferred_aspect_ratio_slug": "normal",
+                "short_caption": "Madison performs a new song on our October 28, 2017 show in Pasadena.",
+                "type": "apmImage",
+                "url": "https://img.publicradio.org/images/20171030-aphc-7.jpg",
+                "width": "half"
+            },
+            "type": "apm_image"
+        }
+    ],
+    "type": "doc"
+}
