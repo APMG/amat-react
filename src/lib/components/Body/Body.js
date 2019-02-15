@@ -11,8 +11,8 @@ class Body extends React.Component {
       <>
         <Default
           nodeData={this.props.nodeData}
-          embedded={this.props.embedded}
-          overrides={{}}
+          embedded={this.props.embedded ? this.props.embedded : {}}
+          overrides={this.props.overrides ? this.props.overrides : {}}
         />
       </>
     );

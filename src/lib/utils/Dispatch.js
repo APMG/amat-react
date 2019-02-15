@@ -3,7 +3,6 @@ import Doc from "../atoms/Doc/Doc";
 import Break from "../atoms/Break/Break";
 import Paragraph from "../atoms/Paragraph/Paragraph";
 import Heading from "../atoms/Heading/Heading";
-import Image from "../atoms/Image/Image";
 import HorizontalRule from "../atoms/HorizontalRule/HorizontalRule";
 import Text from "../atoms/Text/Text";
 import CustomHtml from "../atoms/CustomHtml/CustomHtml";
@@ -21,6 +20,7 @@ import ApmTableOfContents from "../atoms/ApmTableOfContents/ApmTableOfContents";
 import ApmRelatedList from "../atoms/ApmRelatedList/ApmRelatedList";
 import ApmRelatedLink from "../atoms/ApmRelatedLink/ApmRelatedLink";
 import ApmAudio from "../atoms/ApmAudio/ApmAudio";
+import { Image } from "apm-react-image/dist";
 
 const Components = {
   doc: Doc,
@@ -42,7 +42,8 @@ const Components = {
   apm_table_of_contents: ApmTableOfContents,
   apm_related_list: ApmRelatedList,
   apm_related_link: ApmRelatedLink,
-  apm_audio: ApmAudio
+  apm_audio: ApmAudio,
+  apm_image: Image
 };
 
 const Dispatch = (type, overrides = {}) => {
