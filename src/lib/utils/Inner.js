@@ -22,17 +22,21 @@ const Inner = (child, props) => {
         break;
 
       default:
-        component = (
-          <Dispatcher
-            key={uuid()}
-            nodeData={child}
-            embedded={props.embedded}
-            overrides={props.overrides}
-          />
-        );
+        component = defaultValue();
     }
 
     return component;
+  }
+
+  function defaultValue() {
+    return (
+      <Dispatcher
+        key={uuid()}
+        nodeData={child}
+        embedded={props.embedded}
+        overrides={props.overrides}
+      />
+    );
   }
 };
 
