@@ -19,7 +19,7 @@ class ApmGallery extends React.Component {
             return (
               <li className="apm-slide" key={uuid()}>
                 <figure
-                  className={`figure ${Slide.type} align-${Slide.float}`}
+                  className={`figure ${Slide.type} align-${Slide.attrs.float}`}
                   key={uuid()}
                 >
                   <Image
