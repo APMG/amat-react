@@ -1,5 +1,4 @@
 const path = require("path");
-const globImporter = require("node-sass-glob-importer");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = (env, argv) => {
