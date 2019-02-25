@@ -1,7 +1,6 @@
 const path = require("path");
 const globImporter = require("node-sass-glob-importer");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env, argv) => {
   // use devMode unless mode is set to production
@@ -40,28 +39,6 @@ module.exports = (env, argv) => {
               options: { minimize: true }
             }
           ]
-        },
-        {
-          test: /\.scss$/,
-          use: [
-            {
-              loader: devMode ? "style-loader" : MiniCssExtractPlugin.loader
-            },
-            {
-              loader: "css-loader",
-              options: {
-                sourceMap: true
-              }
-            },
-            {
-              loader: "sass-loader",
-              options: {
-                implementation: require("sass"),
-                importer: globImporter(),
-                sourceMap: true
-              }
-            }
-          ]
         }
       ]
     },
@@ -69,10 +46,6 @@ module.exports = (env, argv) => {
       new HtmlWebPackPlugin({
         template: "./src/index.html",
         filename: "./index.html"
-      }),
-      new MiniCssExtractPlugin({
-        filename: devMode ? "[name].css" : "[name].[hash].css",
-        chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
       })
     ]
     // output: {
