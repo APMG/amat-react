@@ -21,6 +21,7 @@ import ApmRelatedList from "../atoms/ApmRelatedList/ApmRelatedList";
 import ApmRelatedLink from "../atoms/ApmRelatedLink/ApmRelatedLink";
 import ApmAudio from "../atoms/ApmAudio/ApmAudio";
 import ApmGallery from "../atoms/ApmGallery/ApmGallery";
+import ApmStyleBox from "../atoms/ApmStyleBox/ApmStyleBox";
 import { Image } from "apm-react-image/dist";
 
 const Components = {
@@ -45,7 +46,8 @@ const Components = {
   apm_related_link: ApmRelatedLink,
   apm_audio: ApmAudio,
   apm_image: Image,
-  apm_gallery: ApmGallery
+  apm_gallery: ApmGallery,
+  apm_style_box: ApmStyleBox
 };
 
 const Dispatch = (type, overrides = {}) => {

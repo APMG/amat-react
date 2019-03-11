@@ -126,10 +126,6 @@
       "web.jsx",
       "jsx",
       "node"
-    ],
-    "watchPlugins": [
-      "/Users/ghankerson/code/amat-react/node_modules/jest-watch-typeahead/filename.js",
-      "/Users/ghankerson/code/amat-react/node_modules/jest-watch-typeahead/testname.js"
     ]
   }
 }
