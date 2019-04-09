@@ -29,7 +29,11 @@ class ApmTableOfContents extends React.Component {
           className={`table-of-contents-level-${header.attrs.level}`}
           key={uuid()}
         >
-          <a href={`#h${header.attrs.level}.heading_${header.attrs.level}`}>
+          <a
+            href={`#${header.content[0].text
+              .toLowerCase()
+              .replace(/[^a-z0-9+]+/gi, "")}.heading_${header.attrs.level}`}
+          >
             {header.content[0].text}
           </a>
         </li>
@@ -48,9 +52,12 @@ class ApmTableOfContents extends React.Component {
 // Alternate Heading Component with id's
 const Header = props => {
   const level = props.nodeData.attrs.level;
+  const content = props.nodeData.content[0].text
+    .toLowerCase()
+    .replace(/[^a-z0-9+]+/gi, "");
   const HeadingTag = `h${level}`;
   return (
-    <HeadingTag id={`h${level}.heading_${level}`}>
+    <HeadingTag id={`${content}.heading_${level}`}>
       {props.nodeData.content[0].text}
     </HeadingTag>
   );
