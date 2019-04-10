@@ -36,7 +36,7 @@ const Embedded = {
       provider_url: "https://www.youtube.com/",
       thumbnail_height: 360,
       type: "video",
-      href: "https://www.youtube.com/watch?v=OIf7d60lOR0"
+      url: "https://www.youtube.com/watch?v=OIf7d60lOR0"
     }
   ]
 };

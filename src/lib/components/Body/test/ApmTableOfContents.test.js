@@ -77,16 +77,17 @@ test("It renders a table of contents", () => {
   ReactDOM.render(<Body nodeData={Doc} />, container);
   let expected = `
         <ul class="table-of-contents">
-          <li class="table-of-contents-level-1"><a href="#h1.heading_1">Heading 1</a></li>
-          <li class="table-of-contents-level-2"><a href="#h2.heading_2">Heading 2</a></li>
-          <li class="table-of-contents-level-3"><a href="#h3.heading_3">Heading 3</a></li>
+          <li class="table-of-contents-level-1"><a href="#heading1.heading_1">Heading 1</a></li>
+          <li class="table-of-contents-level-2"><a href="#heading2.heading_2">Heading 2</a></li>
+          <li class="table-of-contents-level-3"><a href="#heading3.heading_3">Heading 3</a></li>
         </ul>
 
-        <h1 id="h1.heading_1">Heading 1</h1>
+        <h1 id="heading1.heading_1">Heading 1</h1>
         <p>A paragraph</p>
-        <h2 id="h2.heading_2">Heading 2</h2>
+        <h2 id="heading2.heading_2">Heading 2</h2>
         <p>more filler</p>
-        <h3 id="h3.heading_3">Heading 3</h3>`;
+        <h3 id="heading3.heading_3">Heading 3</h3>
+        `;
   let expectedOneLine = singleLineString(expected);
   expect(container.innerHTML).toEqual(expectedOneLine);
 });

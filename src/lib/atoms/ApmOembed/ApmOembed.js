@@ -7,7 +7,7 @@ class ApmOembed extends React.Component {
 
   findEmbedded() {
     return this.props.embedded.oembeds.find(embed => {
-      return embed.href === this.props.nodeData.attrs.src;
+      return embed.url === this.props.nodeData.attrs.src;
     });
   }
 
@@ -16,13 +16,18 @@ class ApmOembed extends React.Component {
   }
 
   render() {
-    const { src } = this.props.nodeData.attrs;
     const embed = this.findEmbedded();
-    const cname = embed.provider_name.toLowerCase().replace(/\s/g, "");
+    if (!embed) {
+      return <></>;
+    }
+    const cname =
+      embed && embed.provider_name
+        ? embed.provider_name.toLowerCase().replace(/\s/g, "")
+        : "";
     return (
       <div
         className={`amat-oembed ${cname}`}
-        data-url={src}
+        data-url={embed.url}
         dangerouslySetInnerHTML={this.markup(embed.html)}
       />
     );
