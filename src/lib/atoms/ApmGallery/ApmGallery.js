@@ -1,5 +1,5 @@
 import React from "react";
-import { Image } from "apm-react-image/dist";
+import { Image } from "apm-mimas";
 import uuid from "uuid";
 
 class ApmGallery extends React.Component {

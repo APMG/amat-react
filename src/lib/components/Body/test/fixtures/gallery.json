@@ -182,7 +182,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Jenny Lewis performs \"Red Bull & Hennessy\"",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-jenny-lewis-performs-red-bull-and-hennessy.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -364,7 +364,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Andrew Bird",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190202-lfh-andrew-bird.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190202-lfh-andrew-bird.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -546,7 +546,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Tom Papa goes out in L.A. for Out. IN. America",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-tom-papa-goes-out-in-l-a-for-out-in-america.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -728,7 +728,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Sara Watkins",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190211-sara-watkins.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190211-sara-watkins.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -910,7 +910,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Andrew Bird performs new music with Madison Cunningham and Alan Hampton. ",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-andrew-bird-performs-new-music-with-madison-cunningham-and-alan-hampton.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -1092,7 +1092,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Holly Laurent",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190211-holly-laurent.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190211-holly-laurent.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -1274,7 +1274,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Jenny Lewis Performs \"Wasted Youth\" from her new album, On The Line. ",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-jenny-lewis-performs-wasted-youth-from-her-new-album-on-the-line.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -1456,7 +1456,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Gabe Witcher rocks an electric guitar to celebrate Dave Davies' birthday.",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190211-gabe-witcher-rocks-an-electric-guitar-to-celebrate-dave-davies-birthday.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -1638,7 +1638,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Sarah Silverman ",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-sarah-silverman.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-sarah-silverman.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -1820,7 +1820,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Laura and Sarah Silverman perform Laura's first country song.",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-laura-and-sarah-silverman-perform-laura-s-first-country-song.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -2002,7 +2002,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Nickel Creek perform Scotch and Chocolate. ",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-nickel-creek-perform-scotch-and-chocolate.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -2184,7 +2184,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Mike Yard",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190211-mike-yard.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190211-mike-yard.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -2366,7 +2366,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Cirocco Dunlap",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-cirocco-dunlap.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-cirocco-dunlap.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"
@@ -2548,7 +2548,7 @@
                         "preferred_aspect_ratio_slug": "widescreen",
                         "short_caption": "Nickel Creek is Sara Watkins, Chris Thile and Sean Watkins. ",
                         "type": "apmImage",
-                        "url": "https://img.publicradio.org/images/20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
+                        "fallback": "https://img.publicradio.org/images/20190204-nickel-creek-is-sara-watkins-chris-thile-and-sean-watkins.jpg",
                         "width": "full"
                     },
                     "type": "apm_image"

@@ -1,232 +1,240 @@
 {
-
-    "id": "230616872ccba9d2ed34f89b64df8f89b8931d39",
-    "guid": "230616872ccba9d2ed34f89b64df8f89b8931d39",
-    "slug": "20170216-test-06",
-    "short_caption": "20170216-test-06",
-    "long_caption": "20170216-test-06",
-    "date_created": "2017-05-04T11:14:20-05:00",
-    "date_updated": "2017-05-04T11:15:11-05:00",
-    "content_area": "Archive",
-    "credit": "snap yourself",
-    "rights": {
-        "notes": "",
-        "source": "APM|MPR",
-        "redistributable": false
-    },
-    "type": "image/jpeg",
-    "thumbnail": {
-        "slug": "thumbnail",
-        "instances": [
-            {
-                "width": 120,
-                "height": 90,
-                "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/thumbnail/a1b2dd-20170216-test-06.jpg"
+    "images": [
+        null,
+        {
+            "id": "7eaf7dad199d94304b2e63a87aca7972eed0bc09",
+            "guid": "7eaf7dad199d94304b2e63a87aca7972eed0bc09",
+            "slug": "2019-03-pic",
+            "short_caption": "A Picture",
+            "long_caption": "A Picture",
+            "date_created": "2019-03-07T16:39:12-06:00",
+            "date_updated": "2019-03-07T16:39:36-06:00",
+            "content_area": "TBTL",
+            "credit": {
+                "name": "Walsh, Andrew",
+                "url": null
             },
-            {
-                "width": 300,
-                "height": 226,
-                "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/thumbnail/9e4664-20170216-test-06.jpg"
-            }
-        ]
-    },
-    "fallback": "https://img-dev.publicradio.org/images/20170216-test-06.jpg",
-    "preferred_aspect_ratio": {
-        "slug": "uncropped",
-        "instances": [
-            {
-                "width": 400,
-                "height": 267,
-                "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/ff9fba-20170216-test-06.jpg"
+            "rights": {
+                "notes": "",
+                "source": "APM|MPR",
+                "redistributable": false
             },
-            {
-                "width": 600,
-                "height": 400,
-                "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/d095ee-20170216-test-06.jpg"
+            "type": "image/jpeg",
+            "thumbnail": {
+                "slug": "thumbnail",
+                "instances": [
+                    {
+                        "width": 120,
+                        "height": 90,
+                        "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/thumbnail/c7ebaa-2019-03-pic.jpg"
+                    },
+                    {
+                        "width": 300,
+                        "height": 226,
+                        "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/thumbnail/099f48-2019-03-pic.jpg"
+                    }
+                ]
             },
-            {
-                "width": 1000,
-                "height": 667,
-                "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/a54fe7-20170216-test-06.jpg"
+            "fallback": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/f9365d-2019-03-pic.jpg",
+            "preferred_aspect_ratio": {
+                "slug": "uncropped",
+                "instances": [
+                    {
+                        "width": 400,
+                        "height": 299,
+                        "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/1640bb-2019-03-pic.jpg"
+                    },
+                    {
+                        "width": 600,
+                        "height": 449,
+                        "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/f9365d-2019-03-pic.jpg"
+                    },
+                    {
+                        "width": 1000,
+                        "height": 749,
+                        "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/2d3111-2019-03-pic.jpg"
+                    },
+                    {
+                        "width": 1400,
+                        "height": 1048,
+                        "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/43f8b5-2019-03-pic.jpg"
+                    },
+                    {
+                        "width": 2000,
+                        "height": 1497,
+                        "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/0c4923-2019-03-pic.jpg"
+                    }
+                ]
             },
-            {
-                "width": 1400,
-                "height": 933,
-                "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/50a7fe-20170216-test-06.jpg"
+            "aspect_ratios": {
+                "normal": {
+                    "slug": "normal",
+                    "instances": [
+                        {
+                            "width": 400,
+                            "height": 301,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/2d5e0b-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 600,
+                            "height": 451,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/997ab5-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1000,
+                            "height": 752,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/4098f1-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1400,
+                            "height": 1053,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/d69123-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 2000,
+                            "height": 1504,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/acb36d-2019-03-pic.jpg"
+                        }
+                    ]
+                },
+                "portrait": {
+                    "slug": "portrait",
+                    "instances": [
+                        {
+                            "width": 400,
+                            "height": 500,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/4a6fe7-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 600,
+                            "height": 750,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/9e83b3-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1000,
+                            "height": 1250,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/54fe69-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1226,
+                            "height": 1533,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/203da4-2019-03-pic.jpg"
+                        }
+                    ]
+                },
+                "square": {
+                    "slug": "square",
+                    "instances": [
+                        {
+                            "width": 400,
+                            "height": 400,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/75f4fc-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 600,
+                            "height": 600,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/66eb57-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1000,
+                            "height": 1000,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/4f92d6-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1400,
+                            "height": 1400,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/59cfca-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1533,
+                            "height": 1533,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/acb01d-2019-03-pic.jpg"
+                        }
+                    ]
+                },
+                "thumbnail": {
+                    "slug": "thumbnail",
+                    "instances": [
+                        {
+                            "width": 120,
+                            "height": 90,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/thumbnail/c7ebaa-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 300,
+                            "height": 226,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/thumbnail/099f48-2019-03-pic.jpg"
+                        }
+                    ]
+                },
+                "uncropped": {
+                    "slug": "uncropped",
+                    "instances": [
+                        {
+                            "width": 400,
+                            "height": 299,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/1640bb-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 600,
+                            "height": 449,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/f9365d-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1000,
+                            "height": 749,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/2d3111-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1400,
+                            "height": 1048,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/43f8b5-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 2000,
+                            "height": 1497,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/0c4923-2019-03-pic.jpg"
+                        }
+                    ]
+                },
+                "widescreen": {
+                    "slug": "widescreen",
+                    "instances": [
+                        {
+                            "width": 400,
+                            "height": 225,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/8de24d-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 600,
+                            "height": 337,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/b9f22e-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1000,
+                            "height": 562,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/8202c4-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 1400,
+                            "height": 787,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/f81cc7-2019-03-pic.jpg"
+                        },
+                        {
+                            "width": 2000,
+                            "height": 1124,
+                            "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/2b5025-2019-03-pic.jpg"
+                        }
+                    ]
+                }
             },
-            {
-                "width": 2000,
-                "height": 1333,
-                "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/e9d182-20170216-test-06.jpg"
-            }
-        ]
-    },
-    "aspect_ratios": {
-        "normal": {
-            "slug": "normal",
-            "instances": [
-                {
-                    "width": 400,
-                    "height": 301,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/normal/aa36d4-20170216-test-06.jpg"
-                },
-                {
-                    "width": 600,
-                    "height": 451,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/normal/97d89f-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1000,
-                    "height": 752,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/normal/a11ba7-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1400,
-                    "height": 1053,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/normal/d1e513-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1915,
-                    "height": 1440,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/normal/ec14b0-20170216-test-06.jpg"
-                }
-            ]
-        },
-        "portrait": {
-            "slug": "portrait",
-            "instances": [
-                {
-                    "width": 400,
-                    "height": 500,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/portrait/fddd15-20170216-test-06.jpg"
-                },
-                {
-                    "width": 600,
-                    "height": 750,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/portrait/a0203d-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1000,
-                    "height": 1250,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/portrait/2bdbb7-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1152,
-                    "height": 1440,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/portrait/032753-20170216-test-06.jpg"
-                }
-            ]
-        },
-        "square": {
-            "slug": "square",
-            "instances": [
-                {
-                    "width": 400,
-                    "height": 400,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/square/508c2c-20170216-test-06.jpg"
-                },
-                {
-                    "width": 600,
-                    "height": 600,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/square/26576e-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1000,
-                    "height": 1000,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/square/5e2cea-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1400,
-                    "height": 1400,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/square/668194-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1440,
-                    "height": 1440,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/square/b948c7-20170216-test-06.jpg"
-                }
-            ]
-        },
-        "thumbnail": {
-            "slug": "thumbnail",
-            "instances": [
-                {
-                    "width": 120,
-                    "height": 90,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/thumbnail/a1b2dd-20170216-test-06.jpg"
-                },
-                {
-                    "width": 300,
-                    "height": 226,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/thumbnail/9e4664-20170216-test-06.jpg"
-                }
-            ]
-        },
-        "uncropped": {
-            "slug": "uncropped",
-            "instances": [
-                {
-                    "width": 400,
-                    "height": 267,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/ff9fba-20170216-test-06.jpg"
-                },
-                {
-                    "width": 600,
-                    "height": 400,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/d095ee-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1000,
-                    "height": 667,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/a54fe7-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1400,
-                    "height": 933,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/50a7fe-20170216-test-06.jpg"
-                },
-                {
-                    "width": 2000,
-                    "height": 1333,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/uncropped/e9d182-20170216-test-06.jpg"
-                }
-            ]
-        },
-        "widescreen": {
-            "slug": "widescreen",
-            "instances": [
-                {
-                    "width": 400,
-                    "height": 225,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/widescreen/822968-20170216-test-06.jpg"
-                },
-                {
-                    "width": 600,
-                    "height": 337,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/widescreen/e54d9d-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1000,
-                    "height": 562,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/widescreen/047a4e-20170216-test-06.jpg"
-                },
-                {
-                    "width": 1400,
-                    "height": 786,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/widescreen/5158a4-20170216-test-06.jpg"
-                },
-                {
-                    "width": 2000,
-                    "height": 1123,
-                    "url": "https://img.apmcdn.org/dev/230616872ccba9d2ed34f89b64df8f89b8931d39/widescreen/dc822d-20170216-test-06.jpg"
-                }
-            ]
+            "xid": 300216,
+            "status": "active",
+            "tags": [],
+            "dateline": "",
+            "date_taken": null,
+            "external_type": "wordpress",
+            "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/03/Pic.jpg"
         }
-    },
-    "xid": 107438,
-    "status": "active",
-    "tags": [ ],
-    "dateline": "",
-    "date_taken": null
-
+    ]
 }

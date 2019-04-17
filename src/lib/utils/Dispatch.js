@@ -22,7 +22,8 @@ import ApmRelatedLink from "../atoms/ApmRelatedLink/ApmRelatedLink";
 import ApmAudio from "../atoms/ApmAudio/ApmAudio";
 import ApmGallery from "../atoms/ApmGallery/ApmGallery";
 import ApmStyleBox from "../atoms/ApmStyleBox/ApmStyleBox";
-import { Image } from "apm-react-image/dist";
+import ApmImage from "../atoms/ApmImage/ApmImage";
+import { Image } from "apm-mimas";
 
 const Components = {
   doc: Doc,
@@ -45,7 +46,7 @@ const Components = {
   apm_related_list: ApmRelatedList,
   apm_related_link: ApmRelatedLink,
   apm_audio: ApmAudio,
-  apm_image: Image,
+  apm_image: ApmImage,
   apm_gallery: ApmGallery,
   apm_style_box: ApmStyleBox
 };
