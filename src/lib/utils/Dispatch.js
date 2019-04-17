@@ -23,13 +23,11 @@ import ApmAudio from "../atoms/ApmAudio/ApmAudio";
 import ApmGallery from "../atoms/ApmGallery/ApmGallery";
 import ApmStyleBox from "../atoms/ApmStyleBox/ApmStyleBox";
 import ApmImage from "../atoms/ApmImage/ApmImage";
-import { Image } from "apm-mimas";
 
 const Components = {
   doc: Doc,
   horizontal_rule: HorizontalRule,
   paragraph: Paragraph,
-  image: Image,
   text: Text,
   heading: Heading,
   apm_custom_html: CustomHtml,
