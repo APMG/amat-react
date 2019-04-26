@@ -8,7 +8,7 @@ import ApmTableOfContents from "../atoms/ApmTableOfContents/ApmTableOfContents";
 // Will settle for wrking code for now. Happy to hear your suggestions - GH
 function Traverse(props) {
   let arr = [];
-  if (props.nodeData.type === "apm_attachment") {
+  if (props?.nodeData?.type === "apm_attachment") {
     arr.push(
       <ApmAttachment
         nodeData={props.nodeData}
@@ -18,7 +18,7 @@ function Traverse(props) {
     );
   }
 
-  if (props.nodeData.content) {
+  if (props?.nodeData?.content) {
     for (let i = 0; i < props.nodeData.content.length; ++i) {
       if (props.nodeData.content[i].type === "apm_table_of_contents") {
         arr.push(
