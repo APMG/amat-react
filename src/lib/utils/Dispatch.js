@@ -28,6 +28,7 @@ const Components = {
   doc: Doc,
   horizontal_rule: HorizontalRule,
   paragraph: Paragraph,
+  hard_break: Break,
   text: Text,
   heading: Heading,
   apm_custom_html: CustomHtml,

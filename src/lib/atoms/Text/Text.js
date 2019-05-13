@@ -6,7 +6,8 @@ class Text extends React.Component {
   }
 
   render() {
-    return <>{this.props.nodeData['text']}</>;
+    const txt = this.props.nodeData['text'].replace(/\B /g, "&nbsp;")
+    return <>{txt}</>;
   }
 }
 
