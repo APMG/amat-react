@@ -49,6 +49,6 @@ test('It renders an unordered list', () => {
   const container = document.createElement('div');
   ReactDOM.render(<Body nodeData={Doc} />, container);
   expect(container.innerHTML).toEqual(
-    '<ul><li><p>Hello, </p></li><li><p>World!</p></li></ul>'
+    '<ul><li><p>Hello,&nbsp;</p></li><li><p>World!</p></li></ul>'
   );
 });
