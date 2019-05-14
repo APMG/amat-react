@@ -17,8 +17,6 @@ class ApmGallery extends React.Component {
   }
 
   render() {
-    console.log("amat")
-    console.log(this.state.images);
     return (
       <div className="apm-gallery">
         <div className="apm-gallery_title">
