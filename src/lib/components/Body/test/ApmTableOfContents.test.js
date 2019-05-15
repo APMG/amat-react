@@ -1,15 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { cleanup } from "react-testing-library";
-import Body from "../Body";
-import { singleLineString } from "../../../utils/Utils";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { cleanup } from 'react-testing-library';
+import Body from '../Body';
+import { singleLineString } from '../../../utils/Utils';
 
 afterEach(cleanup);
 
 const Doc = {
   content: [
     {
-      type: "apm_table_of_contents",
+      type: 'apm_table_of_contents',
       attrs: {
         depth: 6
       }
@@ -20,20 +20,20 @@ const Doc = {
       },
       content: [
         {
-          text: "Heading 1",
-          type: "text"
+          text: 'Heading 1',
+          type: 'text'
         }
       ],
-      type: "heading"
+      type: 'heading'
     },
     {
       content: [
         {
-          text: "A paragraph",
-          type: "text"
+          text: 'A paragraph',
+          type: 'text'
         }
       ],
-      type: "paragraph"
+      type: 'paragraph'
     },
     {
       attrs: {
@@ -41,20 +41,20 @@ const Doc = {
       },
       content: [
         {
-          text: "Heading 2",
-          type: "text"
+          text: 'Heading 2',
+          type: 'text'
         }
       ],
-      type: "heading"
+      type: 'heading'
     },
     {
       content: [
         {
-          text: "more filler",
-          type: "text"
+          text: 'more filler',
+          type: 'text'
         }
       ],
-      type: "paragraph"
+      type: 'paragraph'
     },
     {
       attrs: {
@@ -62,18 +62,18 @@ const Doc = {
       },
       content: [
         {
-          text: "Heading 3",
-          type: "text"
+          text: 'Heading 3',
+          type: 'text'
         }
       ],
-      type: "heading"
+      type: 'heading'
     }
   ],
-  type: "doc"
+  type: 'doc'
 };
 
-test("It renders a table of contents", () => {
-  const container = document.createElement("div");
+test('It renders a table of contents', () => {
+  const container = document.createElement('div');
   ReactDOM.render(<Body nodeData={Doc} />, container);
   let expected = `
         <ul class="table-of-contents">

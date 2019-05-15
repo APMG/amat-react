@@ -1,5 +1,5 @@
-import React from "react";
-import Traverse from "../../utils/Traverse";
+import React from 'react';
+import Traverse from '../../utils/Traverse';
 
 class Paragraph extends React.Component {
   constructor(props) {

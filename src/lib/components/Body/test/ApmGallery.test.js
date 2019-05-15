@@ -1,14 +1,17 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { cleanup } from "react-testing-library";
-import Body from "../Body";
-import gallery from "./fixtures/gallery.json";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { cleanup } from 'react-testing-library';
+import Body from '../Body';
+import gallery from './fixtures/gallery.json';
 
 afterEach(cleanup);
 
-const expectedResult = test("It renders a gallery", () => {
-  const container = document.createElement("div");
-  ReactDOM.render(<Body nodeData={gallery.nodeData} embedded={gallery.embedded} />, container);
+test('It renders a gallery', () => {
+  const container = document.createElement('div');
+  ReactDOM.render(
+    <Body nodeData={gallery.nodeData} embedded={gallery.embedded} />,
+    container
+  );
   expect(container.innerHTML).toContain(
     '<div class="apm-gallery-title">This is a Gallery</div>'
   );

@@ -1,14 +1,15 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const ApmOembed = props => {
+const ApmOembed = (props) => {
   const findEmbedded = () => {
-    const ret = props.embedded.oembeds.find(embed => {
+    const ret = props.embedded.oembeds.find((embed) => {
       return embed.url === props.nodeData.attrs.src;
     });
     return ret;
   };
 
-  const markup = rawMarkup => {
+  const markup = (rawMarkup) => {
     return { __html: rawMarkup };
   };
 
@@ -20,8 +21,8 @@ const ApmOembed = props => {
   }
   const cname =
     embed && embed.provider_name
-      ? embed.provider_name.toLowerCase().replace(/\s/g, "")
-      : "";
+      ? embed.provider_name.toLowerCase().replace(/\s/g, '')
+      : '';
   return (
     <div
       className={`amat-oembed ${cname}`}
@@ -29,6 +30,11 @@ const ApmOembed = props => {
       dangerouslySetInnerHTML={markup(embed.html)}
     />
   );
+};
+
+ApmOembed.propTypes = {
+  embedded: PropTypes.object,
+  nodeData: PropTypes.object
 };
 
 export default ApmOembed;
