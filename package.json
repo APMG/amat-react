@@ -90,8 +90,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run sasslint && npm run prettier",
-      "pre-push": "npm run sasslint && npm run prettier"
+      "pre-commit": "npm run prettier",
+      "pre-push": "npm run eslint && npm run prettier"
     }
   },
   "eslintConfig": {
