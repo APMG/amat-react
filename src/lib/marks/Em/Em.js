@@ -1,14 +1,12 @@
-import React from "react";
-import Traverse from "../../utils/Traverse";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class Em extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Em = (props) => {
+  return <em>{props.inner}</em>;
+};
 
-  render() {
-    return <em>{this.props.inner}</em>;
-  }
-}
+Em.propTypes = {
+  inner: PropTypes.object
+};
 
 export default Em;

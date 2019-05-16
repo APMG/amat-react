@@ -1,14 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class Text extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Text = (props) => {
+  const txt = props.nodeData['text'].replace(/\B /g, '\u00a0');
+  return <>{txt}</>;
+};
 
-  render() {
-    const txt = this.props.nodeData['text'].replace(/\B /g, "\u00a0")
-    return <>{txt}</>;
-  }
-}
+Text.propTypes = {
+  nodeData: PropTypes.object
+};
 
 export default Text;

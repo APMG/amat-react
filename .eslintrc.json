@@ -9,8 +9,9 @@
     "prettier/react"
   ],
   "rules": {
+    "jsx-a11y/media-has-caption": 0,
     "jsx-a11y/label-has-for": 0,
-    "jsx-a11y/media-has-caption": 0
+    "react/no-unused-prop-types": 1
   },
   "plugins": ["react", "import", "jsx-a11y"],
   "settings": {

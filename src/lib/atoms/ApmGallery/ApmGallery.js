@@ -1,32 +1,25 @@
-import React from "react";
-import { Image } from "apm-mimas";
-import ApmImage from '../ApmImage/ApmImage'
-import uuid from "uuid";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Slideshow } from 'apm-enceladus';
 
-class ApmGallery extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const ApmGallery = (props) => {
+  let images = [];
+  props.nodeData.content.forEach((slide) => {
+    images.push(slide.attrs);
+  });
 
-  render() {
-    const slides = this.props.nodeData.content;
-    return (
-      <div className="apm-gallery">
-        <div className="apm-gallery-title">
-          {this.props.nodeData.attrs.title}
-        </div>
-        <ul className="apm-gallery-slides">
-          {slides.map(slide => {
-            return (
-              <li className="apm-slide" key={uuid()}>
-                <ApmImage image={slide.attrs} embedded={this.props.embedded} />
-              </li>
-            );
-          })}
-        </ul>
+  return (
+    <div className="apm-gallery">
+      <div className="apm-gallery_title">{props.nodeData.attrs.title}</div>
+      <div className="apm-gallery_slides">
+        <Slideshow images={images} animation="slide" />
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+ApmGallery.propTypes = {
+  nodeData: PropTypes.object
+};
 
 export default ApmGallery;

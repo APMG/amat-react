@@ -1,0 +1,4 @@
+# Location of CSS:
+src/styles/**/*
+# Location of built files:
+dist/**/*

@@ -1,20 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class CustomHtml extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const CustomHtml = (props) => {
+  const markup = { __html: props.nodeData.attrs.html };
+  return <div dangerouslySetInnerHTML={markup} />;
+};
 
-  markup() {
-    return { __html: this.props.nodeData.attrs.html };
-  }
-  render() {
-    return (
-      <>
-        <div dangerouslySetInnerHTML={this.markup()} />
-      </>
-    );
-  }
-}
+CustomHtml.propTypes = {
+  nodeData: PropTypes.object
+};
 
 export default CustomHtml;

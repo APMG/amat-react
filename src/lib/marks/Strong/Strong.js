@@ -1,14 +1,12 @@
-import React from "react";
-import Traverse from "../../utils/Traverse";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class Strong extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Strong = (props) => {
+  return <strong>{props.inner}</strong>;
+};
 
-  render() {
-    return <strong>{this.props.inner}</strong>;
-  }
-}
+Strong.propTypes = {
+  inner: PropTypes.object
+};
 
 export default Strong;

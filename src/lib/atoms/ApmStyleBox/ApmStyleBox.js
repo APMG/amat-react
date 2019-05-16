@@ -1,15 +1,21 @@
-import React from "react";
-import Traverse from "../../utils/Traverse";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Traverse from '../../utils/Traverse';
 
-class ApmStyleBox extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const ApmStyleBox = (props) => {
+  const { custom_class } = props.nodeData.attrs;
+  return (
+    <div
+      className={`apm-style-box ${custom_class}-box`}
+      data-custom-class={custom_class}
+    >
+      {Traverse(props)}
+    </div>
+  );
+};
 
-  render() {
-    const {custom_class} = this.props.nodeData.attrs
-    return <div className={`apm-style-box ${custom_class}-box`} data-custom-class={custom_class}>{Traverse(this.props)}</div>;
-  }
-}
+ApmStyleBox.propTypes = {
+  nodeData: PropTypes.object
+};
 
 export default ApmStyleBox;

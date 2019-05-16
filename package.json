@@ -5,6 +5,7 @@
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "license": "MIT",
   "files": [
     "dist",
     "README.md"
@@ -13,10 +14,37 @@
     "type": "git",
     "url": "git@github.com/APMG/amat-react.git"
   },
-  "dependencies": {
-    "@babel/core": "7.2.2",
+  "scripts": {
+    "start": "webpack --mode development",
+    "build": "webpack --mode production",
+    "test": "node scripts/test.js",
+    "eslint": "eslint .",
+    "prettier": "prettier --check '**/**.js'",
+    "prettier:fix": "prettier --check '**/**.js' --write"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "chalk": "^2.4.2",
+    "classnames": "^2.2.6",
+    "css-loader": "^2.1.1",
+    "eslint-config-prettier": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "husky": "^2.3.0",
+    "pkg-dir": "^3.0.0",
+    "react-pose": "^4.0.8",
+    "react-swipeable": "^5.2.1",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.3.1"
+  },
+  "dependencies": {
     "@svgr/webpack": "^4.2.0",
+    "apm-enceladus": "^0.1.0",
     "apm-mimas": "^0.1.5",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -44,9 +72,9 @@
     "jest-pnp-resolver": "1.0.2",
     "jest-resolve": "23.6.0",
     "jest-watch-typeahead": "^0.2.1",
-    "mini-css-extract-plugin": "0.5.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
+    "prettier": "^1.17.1",
     "react": "^16.8.6",
     "react-app-polyfill": "^0.2.2",
     "react-dev-utils": "^7.0.5",
@@ -60,11 +88,11 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
   },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "build:dev": "rm -rf dist && NODE_ENV=development babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
-    "test": "node scripts/test.js"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier",
+      "pre-push": "npm run eslint && npm run prettier"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -75,20 +103,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "@babel/cli": "^7.4.3",
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.4.0",
-    "babel-loader": "^8.0.5",
-    "chalk": "^2.4.2",
-    "html-loader": "^0.5.5",
-    "pkg-dir": "^3.0.0",
-    "webpack-cli": "^3.3.1"
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",

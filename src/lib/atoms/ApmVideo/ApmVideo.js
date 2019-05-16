@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 class ApmVideo extends React.Component {
   constructor(props) {
@@ -6,7 +8,7 @@ class ApmVideo extends React.Component {
   }
 
   findEmbedded() {
-    return this.props.embedded.oembeds.find(embed => {
+    return this.props.embedded.oembeds.find((embed) => {
       return embed.href === this.props.nodeData.attrs.url;
     });
   }
@@ -16,9 +18,13 @@ class ApmVideo extends React.Component {
   }
 
   render() {
-    const { url, long_caption, credit, credit_url } = this.props.nodeData.attrs;
+    const { long_caption, credit, credit_url } = this.props.nodeData.attrs;
     const embed = this.findEmbedded();
-    const cname = embed.provider_name.toLowerCase().replace(/\s/g, "");
+    const cname = embed.provider_name.toLowerCase().replace(/\s/g, '');
+    const classes = classNames({
+      'apm-video': true,
+      [cname]: cname
+    });
     return (
       <figure
         className="figure"
@@ -26,7 +32,7 @@ class ApmVideo extends React.Component {
         data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"
       >
         <div
-          className={`apm-video ${cname}`}
+          className={classes}
           dangerouslySetInnerHTML={this.markup(embed.html)}
         />
         <figcaption className="figure_caption">
@@ -39,5 +45,10 @@ class ApmVideo extends React.Component {
     );
   }
 }
+
+ApmVideo.propTypes = {
+  nodeData: PropTypes.object,
+  embedded: PropTypes.object
+};
 
 export default ApmVideo;

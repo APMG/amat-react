@@ -1,22 +1,21 @@
-import React from "react";
-import Default from "../../atoms/Default/Default";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Default from '../../atoms/Default/Default';
 
-class Body extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Body = (props) => {
+  return (
+    <Default
+      nodeData={props.nodeData}
+      embedded={props.embedded ? props.embedded : {}}
+      overrides={props.overrides ? props.overrides : {}}
+    />
+  );
+};
 
-  render() {
-    return (
-      <>
-        <Default
-          nodeData={this.props.nodeData}
-          embedded={this.props.embedded ? this.props.embedded : {}}
-          overrides={this.props.overrides ? this.props.overrides : {}}
-        />
-      </>
-    );
-  }
-}
+Body.propTypes = {
+  nodeData: PropTypes.object,
+  embedded: PropTypes.object,
+  overrides: PropTypes.object
+};
 
 export default Body;

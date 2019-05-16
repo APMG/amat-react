@@ -1,20 +1,20 @@
-import React from "react";
-import Traverse from "../../utils/Traverse";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class Link extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Link = (props) => {
+  const { href, title, inner } = props;
+  const attrs = title ? { href: href, title: title } : { href: href };
+  return (
+    <>
+      <a {...attrs}>{inner}</a>
+    </>
+  );
+};
 
-  render() {
-    const { href, title } = this.props;
-    const attrs = title ? { href: href, title: title } : { href: href };
-    return (
-      <>
-        <a {...attrs}>{this.props.inner}</a>
-      </>
-    );
-  }
-}
+Link.propTypes = {
+  inner: PropTypes.object,
+  href: PropTypes.string,
+  title: PropTypes.string
+};
 
 export default Link;

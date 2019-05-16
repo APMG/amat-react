@@ -1,17 +1,16 @@
-import React from "react";
-import Traverse from "../../utils/Traverse";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Traverse from '../../utils/Traverse';
 
-class Heading extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const Heading = (props) => {
+  const level = props.nodeData.attrs.level;
+  const HeadingTag = `h${level}`;
 
-  render() {
-    const level = this.props.nodeData.attrs.level;
-    const HeadingTag = `h${level}`;
+  return <HeadingTag>{Traverse(props)}</HeadingTag>;
+};
 
-    return <HeadingTag>{Traverse(this.props)}</HeadingTag>;
-  }
-}
+Heading.propTypes = {
+  nodeData: PropTypes.object
+};
 
 export default Heading;
