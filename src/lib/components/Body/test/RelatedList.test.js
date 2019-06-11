@@ -45,9 +45,7 @@ test('It renders a link in a paragraph', () => {
           <div class="apm-related-list-title">This is some other cool stuff</div>
           <ul class="apm-related-list-body">
             <li class="apm-related-link">
-              <div class="apm-related-link">
-                <a href="http://mnzoo.org/blog/animals/brown-bear/"><span class="apm-related-link-prefix">More about</span>Bears</a>
-              </div>
+              <span class="apm-related-link-prefix">More about</span><a href="http://mnzoo.org/blog/animals/brown-bear/">Bears</a>
             </li>
           </ul>
         </div>`;

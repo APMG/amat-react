@@ -5,12 +5,8 @@ const ApmRelatedLink = (props) => {
   const { prefix, title, url } = props.nodeData.attrs;
   return (
     <li className="apm-related-link">
-      <div className="apm-related-link">
-        <a href={url}>
-          <span className="apm-related-link-prefix">{prefix}</span>
-          {title}
-        </a>
-      </div>
+      <span className="apm-related-link-prefix">{prefix}</span>
+      <a href={url}>{title}</a>
     </li>
   );
 };
