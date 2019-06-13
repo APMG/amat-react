@@ -35,7 +35,7 @@ const Components = {
   strong: Strong,
   em: Em,
   blockquote: Blockquote,
-  unordered_list: UnorderedList,
+  bullet_list: UnorderedList,
   ordered_list: OrderedList,
   list_item: ListItem,
   apm_oembed: ApmOembed,

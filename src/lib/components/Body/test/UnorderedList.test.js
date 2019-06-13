@@ -10,7 +10,7 @@ const Doc = {
   version: 1,
   content: [
     {
-      type: 'unordered_list',
+      type: 'bullet_list',
       content: [
         {
           type: 'list_item',
