@@ -9,7 +9,7 @@ class ApmVideo extends React.Component {
 
   findEmbedded() {
     return this.props.embedded.oembeds.find((embed) => {
-      return embed.href === this.props.nodeData.attrs.url;
+      return embed.url === this.props.nodeData.attrs.url;
     });
   }
 
