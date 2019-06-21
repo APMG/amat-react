@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Slideshow } from 'apm-enceladus';
+import { Slideshow } from '@apmg/enceladus';
 
 const ApmGallery = (props) => {
   let images = [];

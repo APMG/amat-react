@@ -18,6 +18,7 @@ import ApmVideo from '../atoms/ApmVideo/ApmVideo';
 import ApmTableOfContents from '../atoms/ApmTableOfContents/ApmTableOfContents';
 import ApmRelatedList from '../atoms/ApmRelatedList/ApmRelatedList';
 import ApmRelatedLink from '../atoms/ApmRelatedLink/ApmRelatedLink';
+import ApmRelatedLinkListItem from '../atoms/ApmRelatedLinkListItem/ApmRelatedLinkListItem';
 import ApmAudio from '../atoms/ApmAudio/ApmAudio';
 import ApmGallery from '../atoms/ApmGallery/ApmGallery';
 import ApmStyleBox from '../atoms/ApmStyleBox/ApmStyleBox';
@@ -43,6 +44,7 @@ const Components = {
   apm_table_of_contents: ApmTableOfContents,
   apm_related_list: ApmRelatedList,
   apm_related_link: ApmRelatedLink,
+  apm_related_link_list_item: ApmRelatedLinkListItem,
   apm_audio: ApmAudio,
   apm_image: ApmImage,
   apm_gallery: ApmGallery,
