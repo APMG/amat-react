@@ -6,15 +6,6 @@ import { singleLineString } from '../../../utils/Utils';
 
 afterEach(cleanup);
 
-// const RelatedLink = {
-//   attrs: {
-//     prefix: 'More about',
-//     title: 'Bears',
-//     url: 'http://mnzoo.org/blog/animals/brown-bear/'
-//   },
-//   type: 'apm_related_link'
-// };
-
 const Doc = {
   type: 'doc',
   version: 1,
@@ -38,7 +29,7 @@ const Doc = {
   ]
 };
 
-test('It renders a link in a paragraph', () => {
+test('It renders a list of related links', () => {
   const container = document.createElement('div');
   ReactDOM.render(<Body nodeData={Doc} />, container);
   const expected = `<div class="apm-related-list">
