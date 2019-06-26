@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image } from 'apm-mimas';
+import { Image } from '@apmg/mimas';
 
 const ApmImage = (props) => {
   function classes() {
