@@ -17,7 +17,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "jest",
+    "test": "jest --watch",
+    "test:ci": "jest",
     "eslint": "eslint .",
     "prettier": "prettier --check '**/**.js'",
     "prettier:fix": "prettier --check '**/**.js' --write",
