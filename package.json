@@ -1,6 +1,6 @@
 {
   "name": "@apmg/amat",
-  "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org",
+  "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org]",
   "version": "0.2.0",
   "private": false,
   "main": "dist/index.js",
@@ -23,10 +23,13 @@
     "prettier:fix": "prettier --check '**/**.js' --write",
     "clean": "rm -rf node_modules dist package-lock.json && npm cache verify"
   },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
   "dependencies": {
     "@apmg/enceladus": "^0.2.0",
     "@apmg/mimas": "^0.2.0",
-    "react-dom": "^16.8.6",
     "rollup": "^1.16.2",
     "rollup-plugin-babel": "^4.3.3"
   },
@@ -48,7 +51,8 @@
     "jest": "^24.8.0",
     "jest-prop-type-error": "^1.1.0",
     "prettier": "^1.18.2",
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "husky": {
     "hooks": {
