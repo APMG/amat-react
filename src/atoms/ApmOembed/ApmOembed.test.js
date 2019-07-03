@@ -43,7 +43,7 @@ const embedded = {
 test('It renders an Oembed', () => {
   const { container } = render(<Body nodeData={doc} embedded={embedded} />);
 
-  const expected = `<div class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>`;
+  const expected = `<div><div class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></div>`;
 
   expect(container.innerHTML).toEqual(expected.replace(/\n/, ''));
 });
