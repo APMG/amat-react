@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import EmbedContainer from 'react-oembed-container';
 
 const ApmOembed = (props) => {
   const findEmbedded = () => {
@@ -23,12 +24,15 @@ const ApmOembed = (props) => {
     embed && embed.provider_name
       ? embed.provider_name.toLowerCase().replace(/\s/g, '')
       : '';
+  const html = markup(embed.html);
   return (
-    <div
-      className={`amat-oembed ${cname}`}
-      data-url={embed.url}
-      dangerouslySetInnerHTML={markup(embed.html)}
-    />
+    <EmbedContainer markup={embed.html}>
+      <div
+        className={`amat-oembed ${cname}`}
+        data-url={embed.url}
+        dangerouslySetInnerHTML={html}
+      />
+    </EmbedContainer>
   );
 };
 
