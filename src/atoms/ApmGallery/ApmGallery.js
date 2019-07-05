@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { Slideshow } from '@apmg/enceladus';
 
 const ApmGallery = (props) => {
-  let images = [];
   if (!props.nodeData.content) {
     return null;
   }
+  let images = [];
   props.nodeData.content.forEach((slide) => {
     images.push(slide.attrs);
   });
