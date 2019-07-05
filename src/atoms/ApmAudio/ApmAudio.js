@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ApmAudio = (props) => {
+  if (props.minimal) {
+    return null;
+  }
   const { float, width, title, audio_credit, url } = props.nodeData.attrs;
 
   return (
@@ -16,7 +19,8 @@ const ApmAudio = (props) => {
 };
 
 ApmAudio.propTypes = {
-  nodeData: PropTypes.object
+  nodeData: PropTypes.object,
+  minimal: PropTypes.bool
 };
 
 export default ApmAudio;

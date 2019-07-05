@@ -14,6 +14,7 @@ const Inner = (child, props) => {
           overrides={props.overrides}
           image={child.attrs}
           aspectRatio={child.attrs.preferred_aspect_ratio_slug}
+          minimal={props.minimal}
         />
       );
     default:
@@ -23,6 +24,7 @@ const Inner = (child, props) => {
           nodeData={child}
           embedded={props.embedded}
           overrides={props.overrides}
+          minimal={props.minimal}
         />
       );
   }
@@ -30,7 +32,8 @@ const Inner = (child, props) => {
 
 Inner.propTypes = {
   embedded: PropTypes.object,
-  overrides: PropTypes.object
+  overrides: PropTypes.object,
+  minimal: PropTypes.bool
 };
 
 export default Inner;

@@ -25,6 +25,9 @@ class ApmVideo extends React.Component {
       'apm-video': true,
       [cname]: cname
     });
+    if (this.props.minimal) {
+      return null;
+    }
     return (
       <figure
         className="figure"
@@ -48,7 +51,8 @@ class ApmVideo extends React.Component {
 
 ApmVideo.propTypes = {
   nodeData: PropTypes.object,
-  embedded: PropTypes.object
+  embedded: PropTypes.object,
+  minimal: PropTypes.bool
 };
 
 export default ApmVideo;

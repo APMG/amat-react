@@ -14,6 +14,7 @@ function Traverse(props) {
         nodeData={props.nodeData}
         embedded={props.embedded}
         key={uuid()}
+        minimal={props.minimal}
       />
     );
   }

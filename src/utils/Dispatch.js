@@ -51,8 +51,8 @@ const Components = {
   apm_style_box: ApmStyleBox
 };
 
-const Dispatch = (type, overrides = {}) => {
-  const mergedComponents = { ...Components, ...overrides };
+const Dispatch = (type, overrides = {}, minimal = false) => {
+  const mergedComponents = { ...Components, ...overrides, minimal };
   return mergedComponents[type] || Default;
 };
 

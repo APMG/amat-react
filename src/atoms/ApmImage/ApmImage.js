@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import { Image } from '@apmg/mimas';
 
 const ApmImage = (props) => {
+  if (props.minimal) {
+    return null;
+  }
   function classes() {
     const position = props.image.float ? `figure-${props.image.float}` : '';
     const size = `figure-${props.image.width ? props.image.width : 'full'}`;
@@ -57,7 +60,8 @@ const ApmImage = (props) => {
 
 ApmImage.propTypes = {
   image: PropTypes.object,
-  embedded: PropTypes.object
+  embedded: PropTypes.object,
+  minimal: PropTypes.bool
 };
 
 export default ApmImage;
