@@ -4,6 +4,9 @@ import { Slideshow } from '@apmg/enceladus';
 
 const ApmGallery = (props) => {
   let images = [];
+  if (!props.nodeData.content) {
+    return null;
+  }
   props.nodeData.content.forEach((slide) => {
     images.push(slide.attrs);
   });
