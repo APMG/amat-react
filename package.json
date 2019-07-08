@@ -1,10 +1,9 @@
 {
   "name": "@apmg/amat",
   "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org]",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": false,
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/bundle.js",
   "license": "MIT",
   "files": [
     "dist",
@@ -29,7 +28,7 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "@apmg/enceladus": "^0.2.0",
+    "@apmg/enceladus": "^0.2.3",
     "@apmg/mimas": "^0.2.0",
     "react-oembed-container": "^0.3.0",
     "rollup": "^1.16.4",
