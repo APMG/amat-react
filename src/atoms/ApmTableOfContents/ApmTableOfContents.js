@@ -5,6 +5,9 @@ import Dispatch from '../../utils/Dispatch';
 import HeadingWithTag from '../Heading/HeadingWithTag';
 
 const ApmTableOfContents = (props) => {
+  if (props.minimal) {
+    return null;
+  }
   const Headers = props.nodeData.filter((node) => node.type === 'heading');
   const nodes = props.nodeData.filter(
     (node) => node.type !== 'apm_table_of_contents'
@@ -42,7 +45,8 @@ const ApmTableOfContents = (props) => {
 };
 
 ApmTableOfContents.propTypes = {
-  nodeData: PropTypes.array
+  nodeData: PropTypes.array,
+  minimal: PropTypes.bool
 };
 
 export default ApmTableOfContents;

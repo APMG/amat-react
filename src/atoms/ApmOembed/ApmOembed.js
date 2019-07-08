@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import EmbedContainer from 'react-oembed-container';
 
 const ApmOembed = (props) => {
+  if (props.minimal) {
+    return null;
+  }
   const findEmbedded = () => {
     const ret = props.embedded.oembeds.find((embed) => {
       return embed.url === props.nodeData.attrs.src;
@@ -38,7 +41,8 @@ const ApmOembed = (props) => {
 
 ApmOembed.propTypes = {
   embedded: PropTypes.object,
-  nodeData: PropTypes.object
+  nodeData: PropTypes.object,
+  minimal: PropTypes.bool
 };
 
 export default ApmOembed;

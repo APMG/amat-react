@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Slideshow } from '@apmg/enceladus';
 
 const ApmGallery = (props) => {
-  if (!props.nodeData.content) {
+  if (!props.nodeData.content || props.minimal) {
     return null;
   }
   let images = [];
@@ -22,7 +22,8 @@ const ApmGallery = (props) => {
 };
 
 ApmGallery.propTypes = {
-  nodeData: PropTypes.object
+  nodeData: PropTypes.object,
+  minimal: PropTypes.bool
 };
 
 export default ApmGallery;
