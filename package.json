@@ -28,7 +28,7 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "@apmg/enceladus": "^0.3.0-beta.1",
+    "@apmg/enceladus": "^0.3.0-beta.3",
     "@apmg/mimas": "^0.2.0",
     "@apmg/react-oembed-container": "git://github.com/APMG/react-oembed-container.git#twitter-load-fix",
     "rollup": "^1.16.4",
