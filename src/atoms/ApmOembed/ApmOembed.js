@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import EmbedContainer from 'react-oembed-container';
+import EmbedContainer from '@apmg/react-oembed-container';
 
 const ApmOembed = (props) => {
   if (props.minimal) {
