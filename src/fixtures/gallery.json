@@ -1,279 +1,416 @@
 {
-    "nodeData": {
-      "type": "doc",
-      "content": [
-        {
-          "type": "apm_gallery",
-          "attrs": {
-            "title": "This is a Gallery"
-          },
-          "content": [
-            {
-              "type": "apm_image",
-              "attrs": {
-                "id": "370f3fd6cf05f715d893d9fe9d3551a79b9fdfae",
-                "url": "https://img-dev.publicradio.org/images/2019-02-mug-shots.jpg",
-                "type": "apmImage",
-                "float": "none",
-                "width": "full",
-                "credit": "Walsh, Andrew",
-                "credit_url": null,
-                "long_caption": "These are the mugs pics we were supposed to post to yesterday's show page.",
-                "aspect_ratios": {
-                  "normal": {
-                    "slug": "normal",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/e94109-2019-02-mug-shots.jpg",
-                        "width": 400,
-                        "height": 301
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/319eb2-2019-02-mug-shots.jpg",
-                        "width": 600,
-                        "height": 451
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/2582fc-2019-02-mug-shots.jpg",
-                        "width": 638,
-                        "height": 480
-                      }
-                    ]
-                  },
-                  "square": {
-                    "slug": "square",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/square/1c077e-2019-02-mug-shots.jpg",
-                        "width": 400,
-                        "height": 400
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/square/b914d0-2019-02-mug-shots.jpg",
-                        "width": 600,
-                        "height": 600
-                      }
-                    ]
-                  },
-                  "portrait": {
-                    "slug": "portrait",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/portrait/564042-2019-02-mug-shots.jpg",
-                        "width": 400,
-                        "height": 500
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/portrait/8e99e0-2019-02-mug-shots.jpg",
-                        "width": 600,
-                        "height": 750
-                      }
-                    ]
-                  },
-                  "thumbnail": {
-                    "slug": "thumbnail",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/thumbnail/d6c4f1-2019-02-mug-shots.jpg",
-                        "width": 120,
-                        "height": 90
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/thumbnail/839a7f-2019-02-mug-shots.jpg",
-                        "width": 300,
-                        "height": 226
-                      }
-                    ]
-                  },
-                  "uncropped": {
-                    "slug": "uncropped",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/cc1931-2019-02-mug-shots.jpg",
-                        "width": 400,
-                        "height": 149
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/a01566-2019-02-mug-shots.jpg",
-                        "width": 600,
-                        "height": 223
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/8f0ef6-2019-02-mug-shots.jpg",
-                        "width": 1000,
-                        "height": 372
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/6aac6e-2019-02-mug-shots.jpg",
-                        "width": 1289,
-                        "height": 480
-                      }
-                    ]
-                  },
-                  "widescreen": {
-                    "slug": "widescreen",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/09f63e-2019-02-mug-shots.jpg",
-                        "width": 400,
-                        "height": 225
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/b400ac-2019-02-mug-shots.jpg",
-                        "width": 600,
-                        "height": 337
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/6e2652-2019-02-mug-shots.jpg",
-                        "width": 854,
-                        "height": 480
-                      }
-                    ]
-                  }
+  "nodeData": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "apm_gallery",
+        "attrs": {
+          "title": "This is a Gallery v2"
+        },
+        "content": [
+          {
+            "type": "apm_image",
+            "attrs": {
+              "id": "370f3fd6cf05f715d893d9fe9d3551a79b9fdfae",
+              "url": "https://img-dev.publicradio.org/images/2019-02-mug-shots.jpg",
+              "type": "apmImage",
+              "float": "none",
+              "width": "full",
+              "credit": "Walsh, Andrew",
+              "credit_url": "https://www.mprnews.org",
+              "long_caption": "These are the mugs pics we were supposed to post to yesterdays show page.",
+              "aspect_ratios": {
+                "normal": {
+                  "slug": "normal",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/e94109-2019-02-mug-shots.jpg",
+                      "width": 400,
+                      "height": 301
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/319eb2-2019-02-mug-shots.jpg",
+                      "width": 600,
+                      "height": 451
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/2582fc-2019-02-mug-shots.jpg",
+                      "width": 638,
+                      "height": 480
+                    }
+                  ]
                 },
-                "short_caption": "Mug-Shots.jpg",
-                "preferred_aspect_ratio_slug": "uncropped"
-              }
+                "square": {
+                  "slug": "square",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/square/1c077e-2019-02-mug-shots.jpg",
+                      "width": 400,
+                      "height": 400
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/square/b914d0-2019-02-mug-shots.jpg",
+                      "width": 600,
+                      "height": 600
+                    }
+                  ]
+                },
+                "portrait": {
+                  "slug": "portrait",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/portrait/564042-2019-02-mug-shots.jpg",
+                      "width": 400,
+                      "height": 500
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/portrait/8e99e0-2019-02-mug-shots.jpg",
+                      "width": 600,
+                      "height": 750
+                    }
+                  ]
+                },
+                "thumbnail": {
+                  "slug": "thumbnail",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/thumbnail/d6c4f1-2019-02-mug-shots.jpg",
+                      "width": 120,
+                      "height": 90
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/thumbnail/839a7f-2019-02-mug-shots.jpg",
+                      "width": 300,
+                      "height": 226
+                    }
+                  ]
+                },
+                "uncropped": {
+                  "slug": "uncropped",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/cc1931-2019-02-mug-shots.jpg",
+                      "width": 400,
+                      "height": 149
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/a01566-2019-02-mug-shots.jpg",
+                      "width": 600,
+                      "height": 223
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/8f0ef6-2019-02-mug-shots.jpg",
+                      "width": 1000,
+                      "height": 372
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/6aac6e-2019-02-mug-shots.jpg",
+                      "width": 1289,
+                      "height": 480
+                    }
+                  ]
+                },
+                "widescreen": {
+                  "slug": "widescreen",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/09f63e-2019-02-mug-shots.jpg",
+                      "width": 400,
+                      "height": 225
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/b400ac-2019-02-mug-shots.jpg",
+                      "width": 600,
+                      "height": 337
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/6e2652-2019-02-mug-shots.jpg",
+                      "width": 854,
+                      "height": 480
+                    }
+                  ]
+                }
+              },
+              "short_caption": "Mug-Shots.jpg",
+              "preferred_aspect_ratio_slug": "uncropped"
+            }
+          },
+          {
+            "type": "apm_image",
+            "attrs": {
+              "id": "efb17e16803c0ac6945cae3fc3293be79662643a",
+              "url": "https://img-dev.publicradio.org/images/2019-02-show-pic-shelves.jpg",
+              "type": "apmImage",
+              "float": "none",
+              "width": "full",
+              "credit": "Walsh, Andrew",
+              "credit_url": null,
+              "long_caption": "Show-Pic-Shelves.jpg",
+              "aspect_ratios": {
+                "normal": {
+                  "slug": "normal",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/normal/43475a-2019-02-show-pic-shelves.jpg",
+                      "width": 400,
+                      "height": 301
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/normal/ba28e9-2019-02-show-pic-shelves.jpg",
+                      "width": 600,
+                      "height": 451
+                    }
+                  ]
+                },
+                "square": {
+                  "slug": "square",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/square/f26c24-2019-02-show-pic-shelves.jpg",
+                      "width": 400,
+                      "height": 400
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/square/286314-2019-02-show-pic-shelves.jpg",
+                      "width": 600,
+                      "height": 600
+                    }
+                  ]
+                },
+                "portrait": {
+                  "slug": "portrait",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/portrait/9f7b59-2019-02-show-pic-shelves.jpg",
+                      "width": 400,
+                      "height": 500
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/portrait/2927ac-2019-02-show-pic-shelves.jpg",
+                      "width": 600,
+                      "height": 750
+                    }
+                  ]
+                },
+                "thumbnail": {
+                  "slug": "thumbnail",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/thumbnail/095666-2019-02-show-pic-shelves.jpg",
+                      "width": 120,
+                      "height": 90
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/thumbnail/6a8582-2019-02-show-pic-shelves.jpg",
+                      "width": 300,
+                      "height": 226
+                    }
+                  ]
+                },
+                "uncropped": {
+                  "slug": "uncropped",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/c1aa8d-2019-02-show-pic-shelves.jpg",
+                      "width": 400,
+                      "height": 332
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/56d523-2019-02-show-pic-shelves.jpg",
+                      "width": 585,
+                      "height": 486
+                    }
+                  ]
+                },
+                "widescreen": {
+                  "slug": "widescreen",
+                  "instances": [
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/widescreen/ace769-2019-02-show-pic-shelves.jpg",
+                      "width": 400,
+                      "height": 225
+                    },
+                    {
+                      "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/widescreen/015e08-2019-02-show-pic-shelves.jpg",
+                      "width": 600,
+                      "height": 337
+                    }
+                  ]
+                }
+              },
+              "short_caption": "Show-Pic-Shelves.jpg",
+              "preferred_aspect_ratio_slug": "uncropped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "embedded": {
+    "images": [
+      {
+        "id": "8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7",
+        "guid": "8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7",
+        "slug": "2019-02-show-pic-andrew-hawaii",
+        "short_caption": "Show-Pic-Andrew-Hawaii.jpg",
+        "long_caption": "Andrew vacations",
+        "date_created": "2019-03-07T16: 39: 14-06: 00",
+        "date_updated": "2019-03-07T16: 41: 10-06: 00",
+        "content_area": "TBTL",
+        "credit": {
+          "name": "Walsh, Andrew",
+          "url": null
+        },
+        "rights": {
+          "notes": "",
+          "source": "APM|MPR",
+          "redistributable": false
+        },
+        "type": "image/jpeg",
+        "thumbnail": {
+          "slug": "thumbnail",
+          "instances": [
+            {
+              "width": 120,
+              "height": 90,
+              "url": "https: //img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/thumbnail/96b8ef-2019-02-show-pic-andrew-hawaii.jpg"
             },
             {
-              "type": "apm_image",
-              "attrs": {
-                "id": "efb17e16803c0ac6945cae3fc3293be79662643a",
-                "url": "https://img-dev.publicradio.org/images/2019-02-show-pic-shelves.jpg",
-                "type": "apmImage",
-                "float": "none",
-                "width": "full",
-                "credit": "Walsh, Andrew",
-                "credit_url": null,
-                "long_caption": "Show-Pic-Shelves.jpg",
-                "aspect_ratios": {
-                  "normal": {
-                    "slug": "normal",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/normal/43475a-2019-02-show-pic-shelves.jpg",
-                        "width": 400,
-                        "height": 301
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/normal/ba28e9-2019-02-show-pic-shelves.jpg",
-                        "width": 600,
-                        "height": 451
-                      }
-                    ]
-                  },
-                  "square": {
-                    "slug": "square",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/square/f26c24-2019-02-show-pic-shelves.jpg",
-                        "width": 400,
-                        "height": 400
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/square/286314-2019-02-show-pic-shelves.jpg",
-                        "width": 600,
-                        "height": 600
-                      }
-                    ]
-                  },
-                  "portrait": {
-                    "slug": "portrait",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/portrait/9f7b59-2019-02-show-pic-shelves.jpg",
-                        "width": 400,
-                        "height": 500
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/portrait/2927ac-2019-02-show-pic-shelves.jpg",
-                        "width": 600,
-                        "height": 750
-                      }
-                    ]
-                  },
-                  "thumbnail": {
-                    "slug": "thumbnail",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/thumbnail/095666-2019-02-show-pic-shelves.jpg",
-                        "width": 120,
-                        "height": 90
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/thumbnail/6a8582-2019-02-show-pic-shelves.jpg",
-                        "width": 300,
-                        "height": 226
-                      }
-                    ]
-                  },
-                  "uncropped": {
-                    "slug": "uncropped",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/c1aa8d-2019-02-show-pic-shelves.jpg",
-                        "width": 400,
-                        "height": 332
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/56d523-2019-02-show-pic-shelves.jpg",
-                        "width": 585,
-                        "height": 486
-                      }
-                    ]
-                  },
-                  "widescreen": {
-                    "slug": "widescreen",
-                    "instances": [
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/widescreen/ace769-2019-02-show-pic-shelves.jpg",
-                        "width": 400,
-                        "height": 225
-                      },
-                      {
-                        "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/widescreen/015e08-2019-02-show-pic-shelves.jpg",
-                        "width": 600,
-                        "height": 337
-                      }
-                    ]
-                  }
-                },
-                "short_caption": "Show-Pic-Shelves.jpg",
-                "preferred_aspect_ratio_slug": "uncropped"
-              }
+              "width": 300,
+              "height": 226,
+              "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/thumbnail/a7b27c-2019-02-show-pic-andrew-hawaii.jpg"
             }
           ]
-        }
-      ]
-    },
-    "embedded": {
-      "images": [
-        {
-          "id": "8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7",
-          "guid": "8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7",
-          "slug": "2019-02-show-pic-andrew-hawaii",
-          "short_caption": "Show-Pic-Andrew-Hawaii.jpg",
-          "long_caption": "Andrew vacations",
-          "date_created": "2019-03-07T16: 39: 14-06: 00",
-          "date_updated": "2019-03-07T16: 41: 10-06: 00",
-          "content_area": "TBTL",
-          "credit": {
-            "name": "Walsh, Andrew",
-            "url": null
+        },
+        "fallback": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/7cde69-2019-02-show-pic-andrew-hawaii.jpg",
+        "preferred_aspect_ratio": {
+          "slug": "uncropped",
+          "instances": [
+            {
+              "width": 400,
+              "height": 300,
+              "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/61ecb2-2019-02-show-pic-andrew-hawaii.jpg"
+            },
+            {
+              "width": 600,
+              "height": 450,
+              "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/7cde69-2019-02-show-pic-andrew-hawaii.jpg"
+            },
+            {
+              "width": 1000,
+              "height": 750,
+              "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/f986b0-2019-02-show-pic-andrew-hawaii.jpg"
+            },
+            {
+              "width": 1400,
+              "height": 1050,
+              "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/7f61c9-2019-02-show-pic-andrew-hawaii.jpg"
+            },
+            {
+              "width": 2000,
+              "height": 1500,
+              "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/00ca36-2019-02-show-pic-andrew-hawaii.jpg"
+            }
+          ]
+        },
+        "aspect_ratios": {
+          "normal": {
+            "slug": "normal",
+            "instances": [
+              {
+                "width": 400,
+                "height": 301,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/768772-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 600,
+                "height": 451,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/e1f195-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 752,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/6951ad-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 1053,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/87bd20-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 1504,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/cf512a-2019-02-show-pic-andrew-hawaii.jpg"
+              }
+            ]
           },
-          "rights": {
-            "notes": "",
-            "source": "APM|MPR",
-            "redistributable": false
+          "portrait": {
+            "slug": "portrait",
+            "instances": [
+              {
+                "width": 400,
+                "height": 500,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/c7b892-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 600,
+                "height": 750,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/9840f7-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 1250,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/99a0f0-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 1750,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/dba2bc-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 2500,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/1bf81c-2019-02-show-pic-andrew-hawaii.jpg"
+              }
+            ]
           },
-          "type": "image/jpeg",
+          "square": {
+            "slug": "square",
+            "instances": [
+              {
+                "width": 400,
+                "height": 400,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/89b204-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 600,
+                "height": 600,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/8f4b9d-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 1000,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/a2e7ca-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 1400,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/351892-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 2000,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/9020c5-2019-02-show-pic-andrew-hawaii.jpg"
+              }
+            ]
+          },
           "thumbnail": {
             "slug": "thumbnail",
             "instances": [
               {
                 "width": 120,
                 "height": 90,
-                "url": "https: //img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/thumbnail/96b8ef-2019-02-show-pic-andrew-hawaii.jpg"
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/thumbnail/96b8ef-2019-02-show-pic-andrew-hawaii.jpg"
               },
               {
                 "width": 300,
@@ -282,8 +419,7 @@
               }
             ]
           },
-          "fallback": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/7cde69-2019-02-show-pic-andrew-hawaii.jpg",
-          "preferred_aspect_ratio": {
+          "uncropped": {
             "slug": "uncropped",
             "instances": [
               {
@@ -313,200 +449,161 @@
               }
             ]
           },
-          "aspect_ratios": {
-            "normal": {
-              "slug": "normal",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 301,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/768772-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 451,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/e1f195-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 752,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/6951ad-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1053,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/87bd20-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1504,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/normal/cf512a-2019-02-show-pic-andrew-hawaii.jpg"
-                }
-              ]
-            },
-            "portrait": {
-              "slug": "portrait",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 500,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/c7b892-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/9840f7-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 1250,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/99a0f0-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1750,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/dba2bc-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 2500,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/portrait/1bf81c-2019-02-show-pic-andrew-hawaii.jpg"
-                }
-              ]
-            },
-            "square": {
-              "slug": "square",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 400,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/89b204-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 600,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/8f4b9d-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 1000,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/a2e7ca-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1400,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/351892-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 2000,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/square/9020c5-2019-02-show-pic-andrew-hawaii.jpg"
-                }
-              ]
-            },
-            "thumbnail": {
-              "slug": "thumbnail",
-              "instances": [
-                {
-                  "width": 120,
-                  "height": 90,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/thumbnail/96b8ef-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 300,
-                  "height": 226,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/thumbnail/a7b27c-2019-02-show-pic-andrew-hawaii.jpg"
-                }
-              ]
-            },
-            "uncropped": {
-              "slug": "uncropped",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 300,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/61ecb2-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 450,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/7cde69-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/f986b0-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1050,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/7f61c9-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1500,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/uncropped/00ca36-2019-02-show-pic-andrew-hawaii.jpg"
-                }
-              ]
-            },
-            "widescreen": {
-              "slug": "widescreen",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 225,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/f7f3c8-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 337,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/5e55c3-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 562,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/259b86-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 786,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/eb51fc-2019-02-show-pic-andrew-hawaii.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1124,
-                  "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/1bb687-2019-02-show-pic-andrew-hawaii.jpg"
-                }
-              ]
-            }
-          },
-          "xid": 300223,
-          "status": "active",
-          "tags": [],
-          "dateline": "",
-          "date_taken": "2019-02-21",
-          "external_type": "wordpress",
-          "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/02/Show-Pic-Andrew-Hawaii.jpg"
+          "widescreen": {
+            "slug": "widescreen",
+            "instances": [
+              {
+                "width": 400,
+                "height": 225,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/f7f3c8-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 600,
+                "height": 337,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/5e55c3-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 562,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/259b86-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 786,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/eb51fc-2019-02-show-pic-andrew-hawaii.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 1124,
+                "url": "https://img.apmcdn.org/dev/8bb4ac84c7fb4913f4c1a4d98632449c97bef4e7/widescreen/1bb687-2019-02-show-pic-andrew-hawaii.jpg"
+              }
+            ]
+          }
         },
-        {
-          "id": "218eed6352713ddeb46a3330e35d9eaa8ba58f06",
-          "guid": "218eed6352713ddeb46a3330e35d9eaa8ba58f06",
-          "slug": "2019-03-mtm-taxes-1",
-          "short_caption": "MTM Taxes 1",
-          "long_caption": "MTM Taxes 1",
-          "date_created": "2019-03-07T16:39:13-06:00",
-          "date_updated": "2019-03-07T16:39:47-06:00",
-          "content_area": "TBTL targeted by Rasmussen",
-          "credit": {
-            "name": "Walsh, Andrew",
-            "url": null
+        "xid": 300223,
+        "status": "active",
+        "tags": [],
+        "dateline": "",
+        "date_taken": "2019-02-21",
+        "external_type": "wordpress",
+        "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/02/Show-Pic-Andrew-Hawaii.jpg"
+      },
+      {
+        "id": "218eed6352713ddeb46a3330e35d9eaa8ba58f06",
+        "guid": "218eed6352713ddeb46a3330e35d9eaa8ba58f06",
+        "slug": "2019-03-mtm-taxes-1",
+        "short_caption": "MTM Taxes 1",
+        "long_caption": "MTM Taxes 1",
+        "date_created": "2019-03-07T16:39:13-06:00",
+        "date_updated": "2019-03-07T16:39:47-06:00",
+        "content_area": "TBTL targeted by Rasmussen",
+        "credit": {
+          "name": "Walsh, Andrew",
+          "url": null
+        },
+        "rights": {
+          "notes": "",
+          "source": "APM|MPR",
+          "redistributable": false
+        },
+        "type": "image/jpeg",
+        "thumbnail": {
+          "slug": "thumbnail",
+          "instances": [
+            {
+              "width": 120,
+              "height": 90,
+              "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/thumbnail/1e8172-2019-03-mtm-taxes-1.jpg"
+            },
+            {
+              "width": 300,
+              "height": 226,
+              "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/thumbnail/6f5c62-2019-03-mtm-taxes-1.jpg"
+            }
+          ]
+        },
+        "fallback": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/47a38a-2019-03-mtm-taxes-1.jpg",
+        "preferred_aspect_ratio": {
+          "slug": "uncropped",
+          "instances": [
+            {
+              "width": 400,
+              "height": 292,
+              "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/55f57c-2019-03-mtm-taxes-1.jpg"
+            },
+            {
+              "width": 600,
+              "height": 438,
+              "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/47a38a-2019-03-mtm-taxes-1.jpg"
+            },
+            {
+              "width": 1000,
+              "height": 730,
+              "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/b5c908-2019-03-mtm-taxes-1.jpg"
+            },
+            {
+              "width": 1009,
+              "height": 737,
+              "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/5aeaf1-2019-03-mtm-taxes-1.jpg"
+            }
+          ]
+        },
+        "aspect_ratios": {
+          "normal": {
+            "slug": "normal",
+            "instances": [
+              {
+                "width": 400,
+                "height": 301,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/normal/8a8f26-2019-03-mtm-taxes-1.jpg"
+              },
+              {
+                "width": 600,
+                "height": 451,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/normal/09ec08-2019-03-mtm-taxes-1.jpg"
+              },
+              {
+                "width": 980,
+                "height": 737,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/normal/aa3f3f-2019-03-mtm-taxes-1.jpg"
+              }
+            ]
           },
-          "rights": {
-            "notes": "",
-            "source": "APM|MPR",
-            "redistributable": false
+          "portrait": {
+            "slug": "portrait",
+            "instances": [
+              {
+                "width": 400,
+                "height": 500,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/portrait/46850b-2019-03-mtm-taxes-1.jpg"
+              },
+              {
+                "width": 600,
+                "height": 750,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/portrait/5f10d7-2019-03-mtm-taxes-1.jpg"
+              }
+            ]
           },
-          "type": "image/jpeg",
+          "square": {
+            "slug": "square",
+            "instances": [
+              {
+                "width": 400,
+                "height": 400,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/square/d3daf2-2019-03-mtm-taxes-1.jpg"
+              },
+              {
+                "width": 600,
+                "height": 600,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/square/541c27-2019-03-mtm-taxes-1.jpg"
+              },
+              {
+                "width": 737,
+                "height": 737,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/square/8babca-2019-03-mtm-taxes-1.jpg"
+              }
+            ]
+          },
           "thumbnail": {
             "slug": "thumbnail",
             "instances": [
@@ -522,8 +619,7 @@
               }
             ]
           },
-          "fallback": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/47a38a-2019-03-mtm-taxes-1.jpg",
-          "preferred_aspect_ratio": {
+          "uncropped": {
             "slug": "uncropped",
             "instances": [
               {
@@ -548,156 +644,137 @@
               }
             ]
           },
-          "aspect_ratios": {
-            "normal": {
-              "slug": "normal",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 301,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/normal/8a8f26-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 451,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/normal/09ec08-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 980,
-                  "height": 737,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/normal/aa3f3f-2019-03-mtm-taxes-1.jpg"
-                }
-              ]
-            },
-            "portrait": {
-              "slug": "portrait",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 500,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/portrait/46850b-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/portrait/5f10d7-2019-03-mtm-taxes-1.jpg"
-                }
-              ]
-            },
-            "square": {
-              "slug": "square",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 400,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/square/d3daf2-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 600,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/square/541c27-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 737,
-                  "height": 737,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/square/8babca-2019-03-mtm-taxes-1.jpg"
-                }
-              ]
-            },
-            "thumbnail": {
-              "slug": "thumbnail",
-              "instances": [
-                {
-                  "width": 120,
-                  "height": 90,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/thumbnail/1e8172-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 300,
-                  "height": 226,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/thumbnail/6f5c62-2019-03-mtm-taxes-1.jpg"
-                }
-              ]
-            },
-            "uncropped": {
-              "slug": "uncropped",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 292,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/55f57c-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 438,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/47a38a-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 730,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/b5c908-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 1009,
-                  "height": 737,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/uncropped/5aeaf1-2019-03-mtm-taxes-1.jpg"
-                }
-              ]
-            },
-            "widescreen": {
-              "slug": "widescreen",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 225,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/widescreen/417e52-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 337,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/widescreen/c3aff6-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 562,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/widescreen/9a721b-2019-03-mtm-taxes-1.jpg"
-                },
-                {
-                  "width": 1009,
-                  "height": 567,
-                  "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/widescreen/220880-2019-03-mtm-taxes-1.jpg"
-                }
-              ]
-            }
-          },
-          "xid": 300219,
-          "status": "active",
-          "tags": [],
-          "dateline": "",
-          "date_taken": null,
-          "external_type": "wordpress",
-          "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/03/MTM-Taxes-1.jpg"
+          "widescreen": {
+            "slug": "widescreen",
+            "instances": [
+              {
+                "width": 400,
+                "height": 225,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/widescreen/417e52-2019-03-mtm-taxes-1.jpg"
+              },
+              {
+                "width": 600,
+                "height": 337,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/widescreen/c3aff6-2019-03-mtm-taxes-1.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 562,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/widescreen/9a721b-2019-03-mtm-taxes-1.jpg"
+              },
+              {
+                "width": 1009,
+                "height": 567,
+                "url": "https://img.apmcdn.org/dev/218eed6352713ddeb46a3330e35d9eaa8ba58f06/widescreen/220880-2019-03-mtm-taxes-1.jpg"
+              }
+            ]
+          }
         },
-        null,
-        {
-          "id": "4daa2792d9ff77478bc172ec68df8012df4d63fe",
-          "guid": "4daa2792d9ff77478bc172ec68df8012df4d63fe",
-          "slug": "2014-09-kl3",
-          "short_caption": "kl3",
-          "long_caption": "kl3",
-          "date_created": "2019-02-05T11:12:02-06:00",
-          "date_updated": "2019-02-05T14:44:13-06:00",
-          "content_area": "APM Podcasts",
-          "credit": {
-            "name": "Neuman, Steve",
-            "url": null
+        "xid": 300219,
+        "status": "active",
+        "tags": [],
+        "dateline": "",
+        "date_taken": null,
+        "external_type": "wordpress",
+        "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/03/MTM-Taxes-1.jpg"
+      },
+      null,
+      {
+        "id": "4daa2792d9ff77478bc172ec68df8012df4d63fe",
+        "guid": "4daa2792d9ff77478bc172ec68df8012df4d63fe",
+        "slug": "2014-09-kl3",
+        "short_caption": "kl3",
+        "long_caption": "kl3",
+        "date_created": "2019-02-05T11:12:02-06:00",
+        "date_updated": "2019-02-05T14:44:13-06:00",
+        "content_area": "APM Podcasts",
+        "credit": {
+          "name": "Neuman, Steve",
+          "url": null
+        },
+        "rights": {
+          "notes": "",
+          "source": "APM|MPR",
+          "redistributable": false
+        },
+        "type": "image/jpeg",
+        "thumbnail": {
+          "slug": "thumbnail",
+          "instances": [
+            {
+              "width": 120,
+              "height": 90,
+              "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/thumbnail/96451f-2014-09-kl3.jpg"
+            },
+            {
+              "width": 300,
+              "height": 225,
+              "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/thumbnail/93cd21-2014-09-kl3.jpg"
+            }
+          ]
+        },
+        "fallback": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/uncropped/ad8b82-2014-09-kl3.jpg",
+        "preferred_aspect_ratio": {
+          "slug": "uncropped",
+          "instances": [
+            {
+              "width": 400,
+              "height": 246,
+              "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/uncropped/d030b6-2014-09-kl3.jpg"
+            },
+            {
+              "width": 586,
+              "height": 360,
+              "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/uncropped/ad8b82-2014-09-kl3.jpg"
+            }
+          ]
+        },
+        "aspect_ratios": {
+          "normal": {
+            "slug": "normal",
+            "instances": [
+              {
+                "width": 400,
+                "height": 301,
+                "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/normal/d6b027-2014-09-kl3.jpg"
+              },
+              {
+                "width": 600,
+                "height": 451,
+                "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/normal/7a5162-2014-09-kl3.jpg"
+              }
+            ]
           },
-          "rights": {
-            "notes": "",
-            "source": "APM|MPR",
-            "redistributable": false
+          "portrait": {
+            "slug": "portrait",
+            "instances": [
+              {
+                "width": 400,
+                "height": 500,
+                "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/portrait/e26c24-2014-09-kl3.jpg"
+              },
+              {
+                "width": 600,
+                "height": 750,
+                "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/portrait/5a2b05-2014-09-kl3.jpg"
+              }
+            ]
           },
-          "type": "image/jpeg",
+          "square": {
+            "slug": "square",
+            "instances": [
+              {
+                "width": 400,
+                "height": 400,
+                "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/square/51b859-2014-09-kl3.jpg"
+              },
+              {
+                "width": 600,
+                "height": 600,
+                "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/square/eae539-2014-09-kl3.jpg"
+              }
+            ]
+          },
           "thumbnail": {
             "slug": "thumbnail",
             "instances": [
@@ -713,8 +790,7 @@
               }
             ]
           },
-          "fallback": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/uncropped/ad8b82-2014-09-kl3.jpg",
-          "preferred_aspect_ratio": {
+          "uncropped": {
             "slug": "uncropped",
             "instances": [
               {
@@ -729,125 +805,141 @@
               }
             ]
           },
-          "aspect_ratios": {
-            "normal": {
-              "slug": "normal",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 301,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/normal/d6b027-2014-09-kl3.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 451,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/normal/7a5162-2014-09-kl3.jpg"
-                }
-              ]
-            },
-            "portrait": {
-              "slug": "portrait",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 500,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/portrait/e26c24-2014-09-kl3.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/portrait/5a2b05-2014-09-kl3.jpg"
-                }
-              ]
-            },
-            "square": {
-              "slug": "square",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 400,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/square/51b859-2014-09-kl3.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 600,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/square/eae539-2014-09-kl3.jpg"
-                }
-              ]
-            },
-            "thumbnail": {
-              "slug": "thumbnail",
-              "instances": [
-                {
-                  "width": 120,
-                  "height": 90,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/thumbnail/96451f-2014-09-kl3.jpg"
-                },
-                {
-                  "width": 300,
-                  "height": 225,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/thumbnail/93cd21-2014-09-kl3.jpg"
-                }
-              ]
-            },
-            "uncropped": {
-              "slug": "uncropped",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 246,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/uncropped/d030b6-2014-09-kl3.jpg"
-                },
-                {
-                  "width": 586,
-                  "height": 360,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/uncropped/ad8b82-2014-09-kl3.jpg"
-                }
-              ]
-            },
-            "widescreen": {
-              "slug": "widescreen",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 225,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/widescreen/15a51d-2014-09-kl3.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 337,
-                  "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/widescreen/831c1b-2014-09-kl3.jpg"
-                }
-              ]
-            }
-          },
-          "xid": 300210,
-          "status": "active",
-          "tags": [],
-          "dateline": "",
-          "date_taken": null,
-          "external_type": "wordpress",
-          "external_id": "http://www.infiniteguest.org/wp-content/uploads/2014/09/kl3.jpg"
+          "widescreen": {
+            "slug": "widescreen",
+            "instances": [
+              {
+                "width": 400,
+                "height": 225,
+                "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/widescreen/15a51d-2014-09-kl3.jpg"
+              },
+              {
+                "width": 600,
+                "height": 337,
+                "url": "https://img.apmcdn.org/dev/4daa2792d9ff77478bc172ec68df8012df4d63fe/widescreen/831c1b-2014-09-kl3.jpg"
+              }
+            ]
+          }
         },
-        {
-          "id": "370f3fd6cf05f715d893d9fe9d3551a79b9fdfae",
-          "guid": "370f3fd6cf05f715d893d9fe9d3551a79b9fdfae",
-          "slug": "2019-02-mug-shots",
-          "short_caption": "Mug-Shots.jpg",
-          "long_caption": "These are the mugs pics we were supposed to post to yesterday's show page.",
-          "date_created": "2019-03-07T16:39:17-06:00",
-          "date_updated": "2019-03-07T16:41:36-06:00",
-          "content_area": "TBTL",
-          "credit": {
-            "name": "Walsh, Andrew",
-            "url": null
+        "xid": 300210,
+        "status": "active",
+        "tags": [],
+        "dateline": "",
+        "date_taken": null,
+        "external_type": "wordpress",
+        "external_id": "http://www.infiniteguest.org/wp-content/uploads/2014/09/kl3.jpg"
+      },
+      {
+        "id": "370f3fd6cf05f715d893d9fe9d3551a79b9fdfae",
+        "guid": "370f3fd6cf05f715d893d9fe9d3551a79b9fdfae",
+        "slug": "2019-02-mug-shots",
+        "short_caption": "Mug-Shots.jpg",
+        "long_caption": "These are the mugs pics we were supposed to post to yesterdays show page.",
+        "date_created": "2019-03-07T16:39:17-06:00",
+        "date_updated": "2019-03-07T16:41:36-06:00",
+        "content_area": "TBTL",
+        "credit": {
+          "name": "Walsh, Andrew",
+          "url": null
+        },
+        "rights": {
+          "notes": "",
+          "source": "APM|MPR",
+          "redistributable": false
+        },
+        "type": "image/jpeg",
+        "thumbnail": {
+          "slug": "thumbnail",
+          "instances": [
+            {
+              "width": 120,
+              "height": 90,
+              "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/thumbnail/d6c4f1-2019-02-mug-shots.jpg"
+            },
+            {
+              "width": 300,
+              "height": 226,
+              "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/thumbnail/839a7f-2019-02-mug-shots.jpg"
+            }
+          ]
+        },
+        "fallback": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/a01566-2019-02-mug-shots.jpg",
+        "preferred_aspect_ratio": {
+          "slug": "uncropped",
+          "instances": [
+            {
+              "width": 400,
+              "height": 149,
+              "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/cc1931-2019-02-mug-shots.jpg"
+            },
+            {
+              "width": 600,
+              "height": 223,
+              "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/a01566-2019-02-mug-shots.jpg"
+            },
+            {
+              "width": 1000,
+              "height": 372,
+              "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/8f0ef6-2019-02-mug-shots.jpg"
+            },
+            {
+              "width": 1289,
+              "height": 480,
+              "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/6aac6e-2019-02-mug-shots.jpg"
+            }
+          ]
+        },
+        "aspect_ratios": {
+          "normal": {
+            "slug": "normal",
+            "instances": [
+              {
+                "width": 400,
+                "height": 301,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/e94109-2019-02-mug-shots.jpg"
+              },
+              {
+                "width": 600,
+                "height": 451,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/319eb2-2019-02-mug-shots.jpg"
+              },
+              {
+                "width": 638,
+                "height": 480,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/2582fc-2019-02-mug-shots.jpg"
+              }
+            ]
           },
-          "rights": {
-            "notes": "",
-            "source": "APM|MPR",
-            "redistributable": false
+          "portrait": {
+            "slug": "portrait",
+            "instances": [
+              {
+                "width": 400,
+                "height": 500,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/portrait/564042-2019-02-mug-shots.jpg"
+              },
+              {
+                "width": 600,
+                "height": 750,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/portrait/8e99e0-2019-02-mug-shots.jpg"
+              }
+            ]
           },
-          "type": "image/jpeg",
+          "square": {
+            "slug": "square",
+            "instances": [
+              {
+                "width": 400,
+                "height": 400,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/square/1c077e-2019-02-mug-shots.jpg"
+              },
+              {
+                "width": 600,
+                "height": 600,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/square/b914d0-2019-02-mug-shots.jpg"
+              }
+            ]
+          },
           "thumbnail": {
             "slug": "thumbnail",
             "instances": [
@@ -863,8 +955,7 @@
               }
             ]
           },
-          "fallback": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/a01566-2019-02-mug-shots.jpg",
-          "preferred_aspect_ratio": {
+          "uncropped": {
             "slug": "uncropped",
             "instances": [
               {
@@ -889,145 +980,131 @@
               }
             ]
           },
-          "aspect_ratios": {
-            "normal": {
-              "slug": "normal",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 301,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/e94109-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 451,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/319eb2-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 638,
-                  "height": 480,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/normal/2582fc-2019-02-mug-shots.jpg"
-                }
-              ]
-            },
-            "portrait": {
-              "slug": "portrait",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 500,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/portrait/564042-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/portrait/8e99e0-2019-02-mug-shots.jpg"
-                }
-              ]
-            },
-            "square": {
-              "slug": "square",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 400,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/square/1c077e-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 600,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/square/b914d0-2019-02-mug-shots.jpg"
-                }
-              ]
-            },
-            "thumbnail": {
-              "slug": "thumbnail",
-              "instances": [
-                {
-                  "width": 120,
-                  "height": 90,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/thumbnail/d6c4f1-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 300,
-                  "height": 226,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/thumbnail/839a7f-2019-02-mug-shots.jpg"
-                }
-              ]
-            },
-            "uncropped": {
-              "slug": "uncropped",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 149,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/cc1931-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 223,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/a01566-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 372,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/8f0ef6-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 1289,
-                  "height": 480,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/uncropped/6aac6e-2019-02-mug-shots.jpg"
-                }
-              ]
-            },
-            "widescreen": {
-              "slug": "widescreen",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 225,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/09f63e-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 337,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/b400ac-2019-02-mug-shots.jpg"
-                },
-                {
-                  "width": 854,
-                  "height": 480,
-                  "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/6e2652-2019-02-mug-shots.jpg"
-                }
-              ]
-            }
-          },
-          "xid": 300232,
-          "status": "active",
-          "tags": [],
-          "dateline": "",
-          "date_taken": "2019-02-06",
-          "external_type": "wordpress",
-          "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/02/Mug-Shots.jpg"
+          "widescreen": {
+            "slug": "widescreen",
+            "instances": [
+              {
+                "width": 400,
+                "height": 225,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/09f63e-2019-02-mug-shots.jpg"
+              },
+              {
+                "width": 600,
+                "height": 337,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/b400ac-2019-02-mug-shots.jpg"
+              },
+              {
+                "width": 854,
+                "height": 480,
+                "url": "https://img.apmcdn.org/dev/370f3fd6cf05f715d893d9fe9d3551a79b9fdfae/widescreen/6e2652-2019-02-mug-shots.jpg"
+              }
+            ]
+          }
         },
-        {
-          "id": "efb17e16803c0ac6945cae3fc3293be79662643a",
-          "guid": "efb17e16803c0ac6945cae3fc3293be79662643a",
-          "slug": "2019-02-show-pic-shelves",
-          "short_caption": "Show-Pic-Shelves.jpg",
-          "long_caption": "Show-Pic-Shelves.jpg",
-          "date_created": "2019-03-07T16:39:16-06:00",
-          "date_updated": "2019-03-07T16:41:26-06:00",
-          "content_area": "TBTL targeted by Rasmussen",
-          "credit": {
-            "name": "Walsh, Andrew",
-            "url": null
+        "xid": 300232,
+        "status": "active",
+        "tags": [],
+        "dateline": "",
+        "date_taken": "2019-02-06",
+        "external_type": "wordpress",
+        "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/02/Mug-Shots.jpg"
+      },
+      {
+        "id": "efb17e16803c0ac6945cae3fc3293be79662643a",
+        "guid": "efb17e16803c0ac6945cae3fc3293be79662643a",
+        "slug": "2019-02-show-pic-shelves",
+        "short_caption": "Show-Pic-Shelves.jpg",
+        "long_caption": "Show-Pic-Shelves.jpg",
+        "date_created": "2019-03-07T16:39:16-06:00",
+        "date_updated": "2019-03-07T16:41:26-06:00",
+        "content_area": "TBTL targeted by Rasmussen",
+        "credit": {
+          "name": "Walsh, Andrew",
+          "url": null
+        },
+        "rights": {
+          "notes": "",
+          "source": "APM|MPR",
+          "redistributable": false
+        },
+        "type": "image/jpeg",
+        "thumbnail": {
+          "slug": "thumbnail",
+          "instances": [
+            {
+              "width": 120,
+              "height": 90,
+              "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/thumbnail/095666-2019-02-show-pic-shelves.jpg"
+            },
+            {
+              "width": 300,
+              "height": 226,
+              "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/thumbnail/6a8582-2019-02-show-pic-shelves.jpg"
+            }
+          ]
+        },
+        "fallback": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/56d523-2019-02-show-pic-shelves.jpg",
+        "preferred_aspect_ratio": {
+          "slug": "uncropped",
+          "instances": [
+            {
+              "width": 400,
+              "height": 332,
+              "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/c1aa8d-2019-02-show-pic-shelves.jpg"
+            },
+            {
+              "width": 585,
+              "height": 486,
+              "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/56d523-2019-02-show-pic-shelves.jpg"
+            }
+          ]
+        },
+        "aspect_ratios": {
+          "normal": {
+            "slug": "normal",
+            "instances": [
+              {
+                "width": 400,
+                "height": 301,
+                "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/normal/43475a-2019-02-show-pic-shelves.jpg"
+              },
+              {
+                "width": 600,
+                "height": 451,
+                "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/normal/ba28e9-2019-02-show-pic-shelves.jpg"
+              }
+            ]
           },
-          "rights": {
-            "notes": "",
-            "source": "APM|MPR",
-            "redistributable": false
+          "portrait": {
+            "slug": "portrait",
+            "instances": [
+              {
+                "width": 400,
+                "height": 500,
+                "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/portrait/9f7b59-2019-02-show-pic-shelves.jpg"
+              },
+              {
+                "width": 600,
+                "height": 750,
+                "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/portrait/2927ac-2019-02-show-pic-shelves.jpg"
+              }
+            ]
           },
-          "type": "image/jpeg",
+          "square": {
+            "slug": "square",
+            "instances": [
+              {
+                "width": 400,
+                "height": 400,
+                "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/square/f26c24-2019-02-show-pic-shelves.jpg"
+              },
+              {
+                "width": 600,
+                "height": 600,
+                "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/square/286314-2019-02-show-pic-shelves.jpg"
+              }
+            ]
+          },
           "thumbnail": {
             "slug": "thumbnail",
             "instances": [
@@ -1043,8 +1120,7 @@
               }
             ]
           },
-          "fallback": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/56d523-2019-02-show-pic-shelves.jpg",
-          "preferred_aspect_ratio": {
+          "uncropped": {
             "slug": "uncropped",
             "instances": [
               {
@@ -1059,125 +1135,186 @@
               }
             ]
           },
-          "aspect_ratios": {
-            "normal": {
-              "slug": "normal",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 301,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/normal/43475a-2019-02-show-pic-shelves.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 451,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/normal/ba28e9-2019-02-show-pic-shelves.jpg"
-                }
-              ]
-            },
-            "portrait": {
-              "slug": "portrait",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 500,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/portrait/9f7b59-2019-02-show-pic-shelves.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/portrait/2927ac-2019-02-show-pic-shelves.jpg"
-                }
-              ]
-            },
-            "square": {
-              "slug": "square",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 400,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/square/f26c24-2019-02-show-pic-shelves.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 600,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/square/286314-2019-02-show-pic-shelves.jpg"
-                }
-              ]
-            },
-            "thumbnail": {
-              "slug": "thumbnail",
-              "instances": [
-                {
-                  "width": 120,
-                  "height": 90,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/thumbnail/095666-2019-02-show-pic-shelves.jpg"
-                },
-                {
-                  "width": 300,
-                  "height": 226,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/thumbnail/6a8582-2019-02-show-pic-shelves.jpg"
-                }
-              ]
-            },
-            "uncropped": {
-              "slug": "uncropped",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 332,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/c1aa8d-2019-02-show-pic-shelves.jpg"
-                },
-                {
-                  "width": 585,
-                  "height": 486,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/uncropped/56d523-2019-02-show-pic-shelves.jpg"
-                }
-              ]
-            },
-            "widescreen": {
-              "slug": "widescreen",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 225,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/widescreen/ace769-2019-02-show-pic-shelves.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 337,
-                  "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/widescreen/015e08-2019-02-show-pic-shelves.jpg"
-                }
-              ]
-            }
-          },
-          "xid": 300230,
-          "status": "active",
-          "tags": [],
-          "dateline": "",
-          "date_taken": null,
-          "external_type": "wordpress",
-          "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/02/Show-Pic-Shelves.jpg"
+          "widescreen": {
+            "slug": "widescreen",
+            "instances": [
+              {
+                "width": 400,
+                "height": 225,
+                "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/widescreen/ace769-2019-02-show-pic-shelves.jpg"
+              },
+              {
+                "width": 600,
+                "height": 337,
+                "url": "https://img.apmcdn.org/dev/efb17e16803c0ac6945cae3fc3293be79662643a/widescreen/015e08-2019-02-show-pic-shelves.jpg"
+              }
+            ]
+          }
         },
-        {
-          "id": "0a2c1165ec75ca34b42856bb7131a3533fc170da",
-          "guid": "0a2c1165ec75ca34b42856bb7131a3533fc170da",
-          "slug": "2019-02-apple",
-          "short_caption": "apple",
-          "long_caption": "apple",
-          "date_created": "2019-03-07T16:39:14-06:00",
-          "date_updated": "2019-03-07T16:40:44-06:00",
-          "content_area": "TBTL targeted by Rasmussen",
-          "credit": {
-            "name": "Lopez, Kristina",
-            "url": null
+        "xid": 300230,
+        "status": "active",
+        "tags": [],
+        "dateline": "",
+        "date_taken": null,
+        "external_type": "wordpress",
+        "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/02/Show-Pic-Shelves.jpg"
+      },
+      {
+        "id": "0a2c1165ec75ca34b42856bb7131a3533fc170da",
+        "guid": "0a2c1165ec75ca34b42856bb7131a3533fc170da",
+        "slug": "2019-02-apple",
+        "short_caption": "apple",
+        "long_caption": "apple",
+        "date_created": "2019-03-07T16:39:14-06:00",
+        "date_updated": "2019-03-07T16:40:44-06:00",
+        "content_area": "TBTL targeted by Rasmussen",
+        "credit": {
+          "name": "Lopez, Kristina",
+          "url": null
+        },
+        "rights": {
+          "notes": "",
+          "source": "APM|MPR",
+          "redistributable": false
+        },
+        "type": "image/jpeg",
+        "thumbnail": {
+          "slug": "thumbnail",
+          "instances": [
+            {
+              "width": 120,
+              "height": 90,
+              "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/thumbnail/4110e3-2019-02-apple.jpg"
+            },
+            {
+              "width": 300,
+              "height": 226,
+              "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/thumbnail/67562f-2019-02-apple.jpg"
+            }
+          ]
+        },
+        "fallback": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/2c2ace-2019-02-apple.jpg",
+        "preferred_aspect_ratio": {
+          "slug": "uncropped",
+          "instances": [
+            {
+              "width": 400,
+              "height": 300,
+              "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/738d6c-2019-02-apple.jpg"
+            },
+            {
+              "width": 600,
+              "height": 450,
+              "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/2c2ace-2019-02-apple.jpg"
+            },
+            {
+              "width": 1000,
+              "height": 750,
+              "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/a5f602-2019-02-apple.jpg"
+            },
+            {
+              "width": 1400,
+              "height": 1050,
+              "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/5d7f22-2019-02-apple.jpg"
+            },
+            {
+              "width": 2000,
+              "height": 1500,
+              "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/dd48f7-2019-02-apple.jpg"
+            }
+          ]
+        },
+        "aspect_ratios": {
+          "normal": {
+            "slug": "normal",
+            "instances": [
+              {
+                "width": 400,
+                "height": 301,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/d3188a-2019-02-apple.jpg"
+              },
+              {
+                "width": 600,
+                "height": 451,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/002b94-2019-02-apple.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 752,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/29ed52-2019-02-apple.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 1053,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/575c91-2019-02-apple.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 1504,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/644bfe-2019-02-apple.jpg"
+              }
+            ]
           },
-          "rights": {
-            "notes": "",
-            "source": "APM|MPR",
-            "redistributable": false
+          "portrait": {
+            "slug": "portrait",
+            "instances": [
+              {
+                "width": 400,
+                "height": 500,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/cd3f3a-2019-02-apple.jpg"
+              },
+              {
+                "width": 600,
+                "height": 750,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/dd722e-2019-02-apple.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 1250,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/848249-2019-02-apple.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 1750,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/56d932-2019-02-apple.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 2500,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/488f93-2019-02-apple.jpg"
+              }
+            ]
           },
-          "type": "image/jpeg",
+          "square": {
+            "slug": "square",
+            "instances": [
+              {
+                "width": 400,
+                "height": 400,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/4e1c37-2019-02-apple.jpg"
+              },
+              {
+                "width": 600,
+                "height": 600,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/7dec52-2019-02-apple.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 1000,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/392845-2019-02-apple.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 1400,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/85b8a9-2019-02-apple.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 2000,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/17c68e-2019-02-apple.jpg"
+              }
+            ]
+          },
           "thumbnail": {
             "slug": "thumbnail",
             "instances": [
@@ -1193,8 +1330,7 @@
               }
             ]
           },
-          "fallback": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/2c2ace-2019-02-apple.jpg",
-          "preferred_aspect_ratio": {
+          "uncropped": {
             "slug": "uncropped",
             "instances": [
               {
@@ -1224,200 +1360,196 @@
               }
             ]
           },
-          "aspect_ratios": {
-            "normal": {
-              "slug": "normal",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 301,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/d3188a-2019-02-apple.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 451,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/002b94-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 752,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/29ed52-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1053,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/575c91-2019-02-apple.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1504,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/normal/644bfe-2019-02-apple.jpg"
-                }
-              ]
-            },
-            "portrait": {
-              "slug": "portrait",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 500,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/cd3f3a-2019-02-apple.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/dd722e-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 1250,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/848249-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1750,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/56d932-2019-02-apple.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 2500,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/portrait/488f93-2019-02-apple.jpg"
-                }
-              ]
-            },
-            "square": {
-              "slug": "square",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 400,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/4e1c37-2019-02-apple.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 600,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/7dec52-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 1000,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/392845-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1400,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/85b8a9-2019-02-apple.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 2000,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/square/17c68e-2019-02-apple.jpg"
-                }
-              ]
-            },
-            "thumbnail": {
-              "slug": "thumbnail",
-              "instances": [
-                {
-                  "width": 120,
-                  "height": 90,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/thumbnail/4110e3-2019-02-apple.jpg"
-                },
-                {
-                  "width": 300,
-                  "height": 226,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/thumbnail/67562f-2019-02-apple.jpg"
-                }
-              ]
-            },
-            "uncropped": {
-              "slug": "uncropped",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 300,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/738d6c-2019-02-apple.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 450,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/2c2ace-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/a5f602-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1050,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/5d7f22-2019-02-apple.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1500,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/uncropped/dd48f7-2019-02-apple.jpg"
-                }
-              ]
-            },
-            "widescreen": {
-              "slug": "widescreen",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 225,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/cd6be5-2019-02-apple.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 337,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/81dea9-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 562,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/cb96a5-2019-02-apple.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 786,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/3cac3c-2019-02-apple.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1124,
-                  "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/35d70c-2019-02-apple.jpg"
-                }
-              ]
-            }
-          },
-          "xid": 300224,
-          "status": "active",
-          "tags": [],
-          "dateline": "",
-          "date_taken": null,
-          "external_type": "wordpress",
-          "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/02/apple.jpg"
+          "widescreen": {
+            "slug": "widescreen",
+            "instances": [
+              {
+                "width": 400,
+                "height": 225,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/cd6be5-2019-02-apple.jpg"
+              },
+              {
+                "width": 600,
+                "height": 337,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/81dea9-2019-02-apple.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 562,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/cb96a5-2019-02-apple.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 786,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/3cac3c-2019-02-apple.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 1124,
+                "url": "https://img.apmcdn.org/dev/0a2c1165ec75ca34b42856bb7131a3533fc170da/widescreen/35d70c-2019-02-apple.jpg"
+              }
+            ]
+          }
         },
-        {
-          "id": "7eaf7dad199d94304b2e63a87aca7972eed0bc09",
-          "guid": "7eaf7dad199d94304b2e63a87aca7972eed0bc09",
-          "slug": "2019-03-pic",
-          "short_caption": "Pic.jpg",
-          "long_caption": "Pic.jpg",
-          "date_created": "2019-03-07T16:39:12-06:00",
-          "date_updated": "2019-03-07T16:39:36-06:00",
-          "content_area": "TBTL",
-          "credit": {
-            "name": "Walsh, Andrew",
-            "url": null
+        "xid": 300224,
+        "status": "active",
+        "tags": [],
+        "dateline": "",
+        "date_taken": null,
+        "external_type": "wordpress",
+        "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/02/apple.jpg"
+      },
+      {
+        "id": "7eaf7dad199d94304b2e63a87aca7972eed0bc09",
+        "guid": "7eaf7dad199d94304b2e63a87aca7972eed0bc09",
+        "slug": "2019-03-pic",
+        "short_caption": "Pic.jpg",
+        "long_caption": "Pic.jpg",
+        "date_created": "2019-03-07T16:39:12-06:00",
+        "date_updated": "2019-03-07T16:39:36-06:00",
+        "content_area": "TBTL",
+        "credit": {
+          "name": "Walsh, Andrew",
+          "url": null
+        },
+        "rights": {
+          "notes": "",
+          "source": "APM|MPR",
+          "redistributable": false
+        },
+        "type": "image/jpeg",
+        "thumbnail": {
+          "slug": "thumbnail",
+          "instances": [
+            {
+              "width": 120,
+              "height": 90,
+              "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/thumbnail/c7ebaa-2019-03-pic.jpg"
+            },
+            {
+              "width": 300,
+              "height": 226,
+              "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/thumbnail/099f48-2019-03-pic.jpg"
+            }
+          ]
+        },
+        "fallback": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/f9365d-2019-03-pic.jpg",
+        "preferred_aspect_ratio": {
+          "slug": "uncropped",
+          "instances": [
+            {
+              "width": 400,
+              "height": 299,
+              "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/1640bb-2019-03-pic.jpg"
+            },
+            {
+              "width": 600,
+              "height": 449,
+              "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/f9365d-2019-03-pic.jpg"
+            },
+            {
+              "width": 1000,
+              "height": 749,
+              "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/2d3111-2019-03-pic.jpg"
+            },
+            {
+              "width": 1400,
+              "height": 1048,
+              "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/43f8b5-2019-03-pic.jpg"
+            },
+            {
+              "width": 2000,
+              "height": 1497,
+              "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/0c4923-2019-03-pic.jpg"
+            }
+          ]
+        },
+        "aspect_ratios": {
+          "normal": {
+            "slug": "normal",
+            "instances": [
+              {
+                "width": 400,
+                "height": 301,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/2d5e0b-2019-03-pic.jpg"
+              },
+              {
+                "width": 600,
+                "height": 451,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/997ab5-2019-03-pic.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 752,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/4098f1-2019-03-pic.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 1053,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/d69123-2019-03-pic.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 1504,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/acb36d-2019-03-pic.jpg"
+              }
+            ]
           },
-          "rights": {
-            "notes": "",
-            "source": "APM|MPR",
-            "redistributable": false
+          "portrait": {
+            "slug": "portrait",
+            "instances": [
+              {
+                "width": 400,
+                "height": 500,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/4a6fe7-2019-03-pic.jpg"
+              },
+              {
+                "width": 600,
+                "height": 750,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/9e83b3-2019-03-pic.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 1250,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/54fe69-2019-03-pic.jpg"
+              },
+              {
+                "width": 1226,
+                "height": 1533,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/203da4-2019-03-pic.jpg"
+              }
+            ]
           },
-          "type": "image/jpeg",
+          "square": {
+            "slug": "square",
+            "instances": [
+              {
+                "width": 400,
+                "height": 400,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/75f4fc-2019-03-pic.jpg"
+              },
+              {
+                "width": 600,
+                "height": 600,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/66eb57-2019-03-pic.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 1000,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/4f92d6-2019-03-pic.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 1400,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/59cfca-2019-03-pic.jpg"
+              },
+              {
+                "width": 1533,
+                "height": 1533,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/acb01d-2019-03-pic.jpg"
+              }
+            ]
+          },
           "thumbnail": {
             "slug": "thumbnail",
             "instances": [
@@ -1433,8 +1565,7 @@
               }
             ]
           },
-          "fallback": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/f9365d-2019-03-pic.jpg",
-          "preferred_aspect_ratio": {
+          "uncropped": {
             "slug": "uncropped",
             "instances": [
               {
@@ -1464,176 +1595,45 @@
               }
             ]
           },
-          "aspect_ratios": {
-            "normal": {
-              "slug": "normal",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 301,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/2d5e0b-2019-03-pic.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 451,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/997ab5-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 752,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/4098f1-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1053,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/d69123-2019-03-pic.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1504,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/normal/acb36d-2019-03-pic.jpg"
-                }
-              ]
-            },
-            "portrait": {
-              "slug": "portrait",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 500,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/4a6fe7-2019-03-pic.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 750,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/9e83b3-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 1250,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/54fe69-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1226,
-                  "height": 1533,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/portrait/203da4-2019-03-pic.jpg"
-                }
-              ]
-            },
-            "square": {
-              "slug": "square",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 400,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/75f4fc-2019-03-pic.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 600,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/66eb57-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 1000,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/4f92d6-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1400,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/59cfca-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1533,
-                  "height": 1533,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/square/acb01d-2019-03-pic.jpg"
-                }
-              ]
-            },
-            "thumbnail": {
-              "slug": "thumbnail",
-              "instances": [
-                {
-                  "width": 120,
-                  "height": 90,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/thumbnail/c7ebaa-2019-03-pic.jpg"
-                },
-                {
-                  "width": 300,
-                  "height": 226,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/thumbnail/099f48-2019-03-pic.jpg"
-                }
-              ]
-            },
-            "uncropped": {
-              "slug": "uncropped",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 299,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/1640bb-2019-03-pic.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 449,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/f9365d-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 749,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/2d3111-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 1048,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/43f8b5-2019-03-pic.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1497,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/uncropped/0c4923-2019-03-pic.jpg"
-                }
-              ]
-            },
-            "widescreen": {
-              "slug": "widescreen",
-              "instances": [
-                {
-                  "width": 400,
-                  "height": 225,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/8de24d-2019-03-pic.jpg"
-                },
-                {
-                  "width": 600,
-                  "height": 337,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/b9f22e-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1000,
-                  "height": 562,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/8202c4-2019-03-pic.jpg"
-                },
-                {
-                  "width": 1400,
-                  "height": 787,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/f81cc7-2019-03-pic.jpg"
-                },
-                {
-                  "width": 2000,
-                  "height": 1124,
-                  "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/2b5025-2019-03-pic.jpg"
-                }
-              ]
-            }
-          },
-          "xid": 300216,
-          "status": "active",
-          "tags": [],
-          "dateline": "",
-          "date_taken": null,
-          "external_type": "wordpress",
-          "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/03/Pic.jpg"
-        }
-      ]
-    }
+          "widescreen": {
+            "slug": "widescreen",
+            "instances": [
+              {
+                "width": 400,
+                "height": 225,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/8de24d-2019-03-pic.jpg"
+              },
+              {
+                "width": 600,
+                "height": 337,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/b9f22e-2019-03-pic.jpg"
+              },
+              {
+                "width": 1000,
+                "height": 562,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/8202c4-2019-03-pic.jpg"
+              },
+              {
+                "width": 1400,
+                "height": 787,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/f81cc7-2019-03-pic.jpg"
+              },
+              {
+                "width": 2000,
+                "height": 1124,
+                "url": "https://img.apmcdn.org/dev/7eaf7dad199d94304b2e63a87aca7972eed0bc09/widescreen/2b5025-2019-03-pic.jpg"
+              }
+            ]
+          }
+        },
+        "xid": 300216,
+        "status": "active",
+        "tags": [],
+        "dateline": "",
+        "date_taken": null,
+        "external_type": "wordpress",
+        "external_id": "https://www.apmpodcasts.org/wp-content/uploads/2019/03/Pic.jpg"
+      }
+    ]
   }
+}
