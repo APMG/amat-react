@@ -20,6 +20,7 @@ const ApmOembed = (props) => {
   let embed;
   try {
     embed = findEmbedded();
+    if (!embed.html) return props.fallback_text;
   } catch (err) {
     return <></>;
   }
@@ -42,7 +43,8 @@ const ApmOembed = (props) => {
 ApmOembed.propTypes = {
   embedded: PropTypes.object,
   nodeData: PropTypes.object,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  fallback_text: PropTypes.string
 };
 
 export default ApmOembed;
