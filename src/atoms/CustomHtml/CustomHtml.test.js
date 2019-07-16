@@ -23,6 +23,6 @@ test('It renders a body from a Prosemirror doc', () => {
   const { container } = render(<Body nodeData={doc} />);
 
   expect(container.firstChild.innerHTML).toEqual(
-    '<blink>Hello, world!</blink>'
+    '<div><blink>Hello, world!</blink></div>'
   );
 });
