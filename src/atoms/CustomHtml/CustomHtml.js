@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import Sidechain from '@nprapps/sidechain';
 
-// This component should strip out scripts but allow iFrames
-
 // In the future we may want to just add "responsive iFrame" as an Amat object that reporters can just use, separating it from the CustomHtml stuff.
 
 class CustomHtml extends React.Component {
@@ -22,24 +20,11 @@ class CustomHtml extends React.Component {
       'text/html'
     );
 
-    console.log(this.props.nodeData);
-
-    // debugger;
-
     // store scripts in script tags to run later
     let scripts = doc.querySelectorAll('script');
     let iframes = doc.querySelectorAll('iframe');
 
-    // if there are any script tags (i.e. not in iframes), use fallback
-
-    // remove scripts from markup itself
-    // [].forEach.call(scripts, function(script) {
-    //   script.parentNode.removeChild(script);
-    // });
-
-    // let string = new XMLSerializer().serializeToString(doc);
-
-    // debugger;
+    // this probably needs a better check, but basically, if a CustomHTML element is not wrapped in an iFrame and there are script tags, it then wraps this whole bit of CustomHtml in a script tag.
     let html =
       scripts.length > 0 && iframes.length === 0
         ? `<iframe class="features-marketplace document" width="100%" height="650px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${this.props.nodeData.attrs.fallback_url}"></iframe>`
