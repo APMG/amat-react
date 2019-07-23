@@ -1,4 +1,5 @@
 import babel from 'rollup-plugin-babel';
+import json from 'rollup-plugin-json';
 import pkg from './package.json';
 
 const deps = Object.keys(pkg.dependencies || {});
@@ -12,8 +13,9 @@ export default [
     output: [{ file: pkg.main, format: 'cjs' }],
     plugins: [
       babel({
-        exclude: ['node_modules/**']
-      })
+        exclude: ['node_modules/**', '*.json']
+      }),
+      json()
     ]
   }
 ];
