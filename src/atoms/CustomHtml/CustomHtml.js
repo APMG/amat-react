@@ -47,16 +47,20 @@ function cleanHtml(attrs) {
   let cond = {
     isIframe: iframes.length > 0,
     hasScript: scripts.length > 0,
-    hasFallbackUrl: fallbackUrl || fallbackUrl !== '' || fallbackUrl !== null,
+    hasFallbackUrl: fallbackUrl !== '',
     isApproved: whitelistRegex.test(fallbackUrl) // TODO: test me in isolation
   };
 
   if (!cond.isIframe && cond.hasScript) {
     // if a valid script is provided but not in an iframe, wrap in an iframe
     if (cond.hasFallbackUrl && cond.isApproved) {
-      return `<iframe style="over" width="100%" height="650px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${fallbackUrl}"></iframe>`;
+      return `<iframe width="100%" height="650px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${fallbackUrl}"></iframe>`;
     } else {
       // otherwise, strip out the scripts and return that HTML lump
+      [].forEach.call(scripts, function(script) {
+        script.parentNode.removeChild(script);
+      });
+
       let docString = new XMLSerializer().serializeToString(doc);
       return docString;
     }
