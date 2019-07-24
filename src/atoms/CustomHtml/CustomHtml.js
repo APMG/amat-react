@@ -44,16 +44,17 @@ function cleanHtml(attrs) {
   let fallbackUrl = attrs.fallback_url;
   let whitelistRegex = new RegExp(whitelist.approved.join('|'));
 
+  // set up some conditionals for the logic below
   let cond = {
     isIframe: iframes.length > 0,
     hasScript: scripts.length > 0,
     hasFallbackUrl: fallbackUrl !== '',
-    isApproved: whitelistRegex.test(fallbackUrl) // TODO: test me in isolation
+    isApproved: whitelistRegex.test(fallbackUrl)
   };
 
   if (!cond.isIframe && cond.hasScript) {
-    // if a valid script is provided but not in an iframe, wrap in an iframe
     if (cond.hasFallbackUrl && cond.isApproved) {
+      // if a valid script is provided but not in an iframe, wrap in an iframe
       return `<iframe width="100%" height="650px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${fallbackUrl}"></iframe>`;
     } else {
       // otherwise, strip out the scripts and return that HTML lump
