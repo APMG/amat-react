@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, cleanup, prettyDOM } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import CustomHtml from './CustomHtml';
 
 afterEach(cleanup);
@@ -83,6 +83,26 @@ const scriptNoFallback = {
   overrides: {}
 };
 
+const scriptBadFallback = {
+  embedded: {
+    attachments: [],
+    audio: [],
+    oembeds: [],
+    images: []
+  },
+  minimal: false,
+  nodeData: {
+    attrs: {
+      fallback_text: 'badScript',
+      fallback_url: 'http://www.downloadmehehehe.virus',
+      html:
+        '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&utm_source=typeform.com-13901520-ProPlus3&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
+    },
+    type: 'apm_custom_html'
+  },
+  overrides: {}
+};
+
 test('Renders basic HTML body', () => {
   const { container } = render(
     <CustomHtml
@@ -98,7 +118,7 @@ test('Renders basic HTML body', () => {
   expect(container.querySelectorAll('iframe').length).toEqual(0);
 });
 
-test('Renders iframe', () => {
+test('Renders defined iframe', () => {
   const { container } = render(
     <CustomHtml
       embedded={iframe.embedded}
@@ -115,7 +135,7 @@ test('Renders iframe', () => {
   expect(container.querySelectorAll('iframe').length).toEqual(1);
 });
 
-test('Renders fallback script', () => {
+test('Renders fallback script in an iframe', () => {
   const { container } = render(
     <CustomHtml
       embedded={script.embedded}
@@ -132,13 +152,30 @@ test('Renders fallback script', () => {
   expect(container.querySelectorAll('iframe').length).toEqual(1);
 });
 
-test('Strips out scripts not in iframes provided with no fallback', () => {
+test('If no fallback src is provided, the remaining scripts are stripped out', () => {
   const { container } = render(
     <CustomHtml
       embedded={scriptNoFallback.embedded}
       nodeData={scriptNoFallback.nodeData}
       minimal={scriptNoFallback.minimal}
       type={scriptNoFallback.type}
+    />
+  );
+
+  expect(container.firstChild.innerHTML).toEqual(
+    '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div>  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
+  );
+  expect(container.querySelectorAll('script').length).toEqual(0);
+  expect(container.querySelectorAll('iframe').length).toEqual(0);
+});
+
+test('If the fallback src is not on our whitelist, all scripts are stripped out', () => {
+  const { container } = render(
+    <CustomHtml
+      embedded={scriptBadFallback.embedded}
+      nodeData={scriptBadFallback.nodeData}
+      minimal={scriptBadFallback.minimal}
+      type={scriptBadFallback.type}
     />
   );
 
