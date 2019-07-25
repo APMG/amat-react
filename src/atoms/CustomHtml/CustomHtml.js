@@ -55,7 +55,26 @@ function cleanHtml(attrs) {
   if (!cond.isIframe && cond.hasScript) {
     if (cond.hasFallbackUrl && cond.isApproved) {
       // if a valid script is provided but not in an iframe, wrap in an iframe
-      return `<iframe width="100%" height="650px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${fallbackUrl}"></iframe>`;
+      return `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${fallbackUrl}"></iframe>`;
+    } else if (!cond.hasFallbackUrl) {
+      // Scroll through the script(s), get their srcs (if applicable) and check against whitelist.
+      [].forEach.call(scripts, function(script) {
+        let isAllowed = whitelistRegex.test(script.src);
+
+        console.log(script);
+
+        if (!isAllowed) {
+          script.parentNode.removeChild(script);
+          console.log('script was removed');
+        }
+      });
+
+      let docString = new XMLSerializer().serializeToString(doc);
+      return `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${`data:text/html;charset=utf-8,${encodeURI(
+        docString
+      )}`}"></iframe>`;
+
+      // this is kind of a last-ditch thing that *may* not work depending on the individual code being inserted, whether it is being run on localhost or on prod, and whether it uses cookies. Your best bet is really making your own <iframe />
     } else {
       // otherwise, strip out the scripts and return that HTML lump
       [].forEach.call(scripts, function(script) {
