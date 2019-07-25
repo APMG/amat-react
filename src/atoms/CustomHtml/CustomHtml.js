@@ -61,11 +61,8 @@ function cleanHtml(attrs) {
       [].forEach.call(scripts, function(script) {
         let isAllowed = whitelistRegex.test(script.src);
 
-        console.log(script);
-
         if (!isAllowed) {
           script.parentNode.removeChild(script);
-          console.log('script was removed');
         }
       });
 
