@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Link = (props) => {
   const { href, title, inner, className } = props;
-  let attrs = { href: href }
+  let attrs = { href: href };
   if (title) {
     attrs['title'] = title;
   }

@@ -58,7 +58,6 @@ const docWithTitle = {
   ]
 };
 
-
 test('It renders a link in a paragraph', () => {
   const { container } = render(<Body nodeData={doc} />);
 
