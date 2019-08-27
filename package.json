@@ -1,7 +1,7 @@
 {
   "name": "@apmg/amat",
   "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org]",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": false,
   "main": "dist/bundle.js",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "@apmg/enceladus": "^0.4.1",
+    "@apmg/enceladus": "^0.5.1",
     "@apmg/mimas": "^0.2.0",
     "@apmg/react-oembed-container": "git://github.com/APMG/react-oembed-container.git#twitter-load-fix",
     "react-html-parser": "^2.0.2",
