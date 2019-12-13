@@ -28,7 +28,7 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "@apmg/enceladus": "^0.5.1",
+    "@apmg/enceladus": "^0.5.3",
     "@apmg/mimas": "^0.2.0",
     "@apmg/react-oembed-container": "git://github.com/APMG/react-oembed-container.git#twitter-load-fix",
     "react-html-parser": "^2.0.2",
@@ -46,6 +46,7 @@
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
     "eslint": "^6.1.0",
+    "eslint-utils": ">=1.4.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -57,7 +58,8 @@
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "rollup-plugin-json": "^4.0.0"
+    "rollup-plugin-json": "^4.0.0",
+    "serialize-javascript": ">=2.1.1"
   },
   "husky": {
     "hooks": {

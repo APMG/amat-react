@@ -4,14 +4,13 @@ import PropTypes from 'prop-types';
 import uuid from 'uuid';
 
 const Inner = (child, props) => {
-  const Dispatcher = Dispatch(child.type);
+  const Dispatcher = Dispatch(child.type, props.overrides);
   switch (child.type) {
     case 'apm_image':
       return (
         <Dispatcher
           key={uuid()}
           embedded={props.embedded}
-          overrides={props.overrides}
           image={child.attrs}
           aspectRatio={child.attrs.preferred_aspect_ratio_slug}
           minimal={props.minimal}
@@ -23,7 +22,6 @@ const Inner = (child, props) => {
           key={uuid()}
           nodeData={child}
           embedded={props.embedded}
-          overrides={props.overrides}
           minimal={props.minimal}
         />
       );
