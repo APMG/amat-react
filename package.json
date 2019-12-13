@@ -46,6 +46,7 @@
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
     "eslint": "^6.1.0",
+    "eslint-utils": ">=1.4.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
@@ -57,7 +58,8 @@
     "prettier": "^1.18.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "rollup-plugin-json": "^4.0.0"
+    "rollup-plugin-json": "^4.0.0",
+    "serialize-javascript": ">=2.1.1"
   },
   "husky": {
     "hooks": {
