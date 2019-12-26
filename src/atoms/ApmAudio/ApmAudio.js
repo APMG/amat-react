@@ -7,7 +7,7 @@ const ApmAudio = (props) => {
   }
   const { float, width, title, audio_credit } = props.nodeData.attrs;
   const audio = props.embedded.audio.find(
-    (adio) => adio.id === props.nodeData.attrs.audio_id
+    (item) => item.id === props.nodeData.attrs.audio_id
   );
 
   return (
