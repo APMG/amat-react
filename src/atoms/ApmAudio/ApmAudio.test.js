@@ -26,12 +26,28 @@ const doc = {
   ]
 };
 
+const embeddedAssetJson = {
+  audio: [
+    {
+      id: '1PHWXXMZZY2VXMNW99XRF67BXM',
+      encodings: [
+        {
+          play_file_path:
+            'https://play-dev.publicradio.org/%user_agent/o/devel/foo/foo_20191204_2_128.mp3'
+        }
+      ]
+    }
+  ]
+};
+
 test('It renders audio', () => {
-  const { container } = render(<Body nodeData={doc} />);
+  const { container } = render(
+    <Body nodeData={doc} embedded={embeddedAssetJson} />
+  );
 
   const expected = `
       <figure class="figure full align-right">
-        <audio controls="" src="http://download.publicradio.org/minnesota/archive_portal/NHPRC/95222.mp3">
+        <audio controls="" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
         </audio>
         <figcaption class="figure_caption">
           <div class="figure_caption_content">
