@@ -5,11 +5,17 @@ const ApmAudio = (props) => {
   if (props.minimal) {
     return null;
   }
-  const { float, width, title, audio_credit, url } = props.nodeData.attrs;
+  const { float, width, title, audio_credit } = props.nodeData.attrs;
+  const audio = props.embedded.audio.find(
+    (adio) => adio.id === props.nodeData.attrs.audio_id
+  );
 
   return (
     <figure className={`figure ${width} align-${float}`}>
-      <audio controls="controls" src={url} />
+      <audio
+        controls="controls"
+        src={audio.encodings[0].play_file_path.replace('%user_agent', 'web')}
+      />
       <figcaption className="figure_caption">
         <div className="figure_caption_content">{title}</div>
         <span className="figure_credit">by {audio_credit}</span>
@@ -20,6 +26,7 @@ const ApmAudio = (props) => {
 
 ApmAudio.propTypes = {
   nodeData: PropTypes.object,
+  embedded: PropTypes.object,
   minimal: PropTypes.bool
 };
 
