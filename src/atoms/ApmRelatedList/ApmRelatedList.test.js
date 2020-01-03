@@ -2,6 +2,7 @@ import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import Body from '../../components/Body/Body';
 import { singleLineString } from '../../utils/utils';
+import ApmRelatedList from './ApmRelatedList';
 
 afterEach(cleanup);
 
@@ -41,4 +42,22 @@ test('It renders a list of related links', () => {
         </div>`;
 
   expect(container.innerHTML).toEqual(singleLineString(expected));
+});
+
+test("It doesn't render links when minimal is true", () => {
+  const { container } = render(
+    <ApmRelatedList nodeData={doc.content[0]} minimal={true} />
+  );
+
+  const expected = '';
+
+  expect(container.innerHTML).toEqual(expected);
+});
+
+test("It really truly doesn't render when minimal is true", () => {
+  const { container } = render(<Body nodeData={doc} minimal={true} />);
+
+  const expected = '';
+
+  expect(container.innerHTML).toEqual(expected);
 });
