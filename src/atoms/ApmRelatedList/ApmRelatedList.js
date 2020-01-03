@@ -14,6 +14,7 @@ const enlistify = (props) => {
 };
 
 const ApmRelatedList = (props) => {
+  if (props.minimal) return null;
   const { title } = props.nodeData.attrs;
   return (
     <div className="apm-related-list">
@@ -24,6 +25,7 @@ const ApmRelatedList = (props) => {
 };
 
 ApmRelatedList.propTypes = {
+  minimal: PropTypes.bool,
   nodeData: PropTypes.object
 };
 
