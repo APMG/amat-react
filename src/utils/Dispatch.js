@@ -23,6 +23,7 @@ import ApmAudio from '../atoms/ApmAudio/ApmAudio';
 import ApmGallery from '../atoms/ApmGallery/ApmGallery';
 import ApmStyleBox from '../atoms/ApmStyleBox/ApmStyleBox';
 import ApmImage from '../atoms/ApmImage/ApmImage';
+import ApmVerse from '../atoms/ApmVerse/ApmVerse';
 
 const Components = {
   doc: Doc,
@@ -48,7 +49,8 @@ const Components = {
   apm_audio: ApmAudio,
   apm_image: ApmImage,
   apm_gallery: ApmGallery,
-  apm_style_box: ApmStyleBox
+  apm_style_box: ApmStyleBox,
+  apm_verse: ApmVerse
 };
 
 const Dispatch = (type, overrides = {}, minimal = false) => {
