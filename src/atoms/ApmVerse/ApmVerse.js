@@ -3,13 +3,7 @@ import PropTypes from 'prop-types';
 import Traverse from '../../utils/Traverse';
 
 const ApmVerse = (props) => {
-  return (
-    <pre
-      className={`verse`}
-    >
-      {Traverse(props)}
-    </pre>
-  );
+  return <pre className={`verse`}>{Traverse(props)}</pre>;
 };
 
 ApmVerse.propTypes = {
