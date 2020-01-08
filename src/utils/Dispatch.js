@@ -24,7 +24,7 @@ import ApmGallery from '../atoms/ApmGallery/ApmGallery';
 import ApmStyleBox from '../atoms/ApmStyleBox/ApmStyleBox';
 import ApmImage from '../atoms/ApmImage/ApmImage';
 import ApmVerse from '../atoms/ApmVerse/ApmVerse';
-import ApmAside from '../atoms/ApmAside/ApmAside';
+import Aside from '../atoms/Aside/Aside';
 
 const Components = {
   doc: Doc,
@@ -52,7 +52,7 @@ const Components = {
   apm_gallery: ApmGallery,
   apm_style_box: ApmStyleBox,
   apm_verse: ApmVerse,
-  apm_aside: ApmAside
+  aside: Aside
 };
 
 const Dispatch = (type, overrides = {}, minimal = false) => {
