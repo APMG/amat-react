@@ -4,11 +4,11 @@ import Traverse from '../../utils/Traverse';
 
 const ApmVerse = (props) => {
   return (
-    <div
+    <pre
       className={`verse`}
     >
       {Traverse(props)}
-    </div>
+    </pre>
   );
 };
 
