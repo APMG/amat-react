@@ -9,7 +9,7 @@ const doc = {
   version: 1,
   content: [
     {
-      type: 'apm_aside',
+      type: 'aside',
       content: [
         {
           content: [
