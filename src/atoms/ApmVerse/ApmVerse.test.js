@@ -22,7 +22,6 @@ const doc = {
           type: 'text',
           text: '  poetic text.'
         }
-
       ]
     }
   ]
