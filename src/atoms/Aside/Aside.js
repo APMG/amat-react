@@ -6,7 +6,7 @@ const Aside = (props) => {
   return <aside>{Traverse(props)}</aside>;
 };
 
-ApmAside.propTypes = {
+Aside.propTypes = {
   nodeData: PropTypes.object
 };
 
