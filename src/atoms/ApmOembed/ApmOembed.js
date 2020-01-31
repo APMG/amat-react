@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import EmbedContainer from '@apmg/react-oembed-container';
 
 const ApmOembed = (props) => {
+  useEffect(() => {
+    embed = findEmbedded();
+    if (embed.provider_name === 'NPR') {
+      import('@nprapps/sidechain');
+    }
+  });
+
   if (props.minimal) {
     return null;
   }
@@ -14,7 +21,7 @@ const ApmOembed = (props) => {
   };
 
   const markup = (rawMarkup) => {
-    return { __html: rawMarkup };
+    return { __html: rawMarkup.replace(/\n/g, '') };
   };
 
   let embed;
