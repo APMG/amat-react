@@ -31,6 +31,7 @@
     "@apmg/enceladus": "^0.5.4",
     "@apmg/mimas": "^0.2.0",
     "@apmg/react-oembed-container": "git://github.com/APMG/react-oembed-container.git#twitter-load-fix",
+    "@nprapps/sidechain": "^1.0.12",
     "react-html-parser": "^2.0.2",
     "rollup": "^1.17.0",
     "rollup-plugin-babel": "^4.3.3"

@@ -45,5 +45,42 @@ test('It renders an Oembed', () => {
 
   const expected = `<div><div class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></div>`;
 
-  expect(container.innerHTML).toEqual(expected.replace(/\n/, ''));
+  expect(container.innerHTML).toEqual(expected);
+});
+
+const NprDoc = {
+  type: 'doc',
+  version: 1,
+  content: [
+    {
+      type: 'apm_oembed',
+      attrs: {
+        src: 'https://apps.npr.org/liveblogs/20200203-iowa/embed.html'
+      }
+    }
+  ]
+};
+const NprEmbedded = {
+  oembeds: [
+    {
+      type: 'rich',
+      version: '1.0',
+      provider_name: 'NPR',
+      provider_url: 'https://www.npr.org/',
+      url: 'https://apps.npr.org/liveblogs/20200203-iowa/embed.html',
+      html:
+        '<div class=\'sidechain-wrapper\'>\n  <side-chain src="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"></side-chain>\n</div>\n'
+    }
+  ]
+};
+
+test('It renders an NPR Fauxembed', () => {
+  const { container } = render(
+    <Body nodeData={NprDoc} embedded={NprEmbedded} />
+  );
+
+  const NprExpected =
+    '<div><div class="amat-oembed npr" data-url="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"><div class="sidechain-wrapper">  <side-chain src="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"></side-chain></div></div></div>';
+
+  expect(container.innerHTML).toEqual(NprExpected);
 });
