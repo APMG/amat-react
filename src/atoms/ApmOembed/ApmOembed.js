@@ -24,7 +24,7 @@ const ApmOembed = (props) => {
     if (embed != null && embed.provider_name === 'NPR') {
       import('@nprapps/sidechain');
     }
-  });
+  }, []);
 
   if (embed == null || embed == undefined) {
     return (
@@ -41,6 +41,7 @@ const ApmOembed = (props) => {
     return (
       <EmbedContainer markup={embed.html}>
         <div
+          data-testid="embed-container"
           className={`amat-oembed ${cname}`}
           data-url={embed.url}
           dangerouslySetInnerHTML={html}
