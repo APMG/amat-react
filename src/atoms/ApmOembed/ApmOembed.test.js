@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  render,
-  cleanup,
-  waitForElement,
-  getByTestId
-} from '@testing-library/react';
+import { render, cleanup, waitForElement } from '@testing-library/react';
 import Body from '../../components/Body/Body';
 
 afterEach(cleanup);
