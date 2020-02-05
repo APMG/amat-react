@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, waitForElement } from '@testing-library/react';
 import Body from '../../components/Body/Body';
 
 afterEach(cleanup);
@@ -40,11 +40,13 @@ const embedded = {
   ]
 };
 
-test('It renders an Oembed', () => {
-  const { container } = render(<Body nodeData={doc} embedded={embedded} />);
+test('It renders an Oembed', async () => {
+  const { container, getByTestId } = render(
+    <Body nodeData={doc} embedded={embedded} />
+  );
 
-  const expected = `<div><div class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></div>`;
-
+  const expected = `<div><div data-testid="embed-container" class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></div>`;
+  await waitForElement(() => getByTestId('embed-container'));
   expect(container.innerHTML).toEqual(expected);
 });
 
@@ -74,13 +76,13 @@ const NprEmbedded = {
   ]
 };
 
-test('It renders an NPR Fauxembed', () => {
-  const { container } = render(
+test('It renders an NPR Fauxembed', async () => {
+  const { container, getByTestId } = render(
     <Body nodeData={NprDoc} embedded={NprEmbedded} />
   );
 
   const NprExpected =
-    '<div><div class="amat-oembed npr" data-url="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"><div class="sidechain-wrapper">  <side-chain src="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"></side-chain></div></div></div>';
-
+    '<div><div data-testid="embed-container" class="amat-oembed npr" data-url="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"><div class="sidechain-wrapper">  <side-chain src="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"></side-chain></div></div></div>';
+  await waitForElement(() => getByTestId('embed-container'));
   expect(container.innerHTML).toEqual(NprExpected);
 });
