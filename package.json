@@ -1,7 +1,7 @@
 {
   "name": "@apmg/amat",
   "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org, Jason Phan jphan@mpr.org]",
-  "version": "0.3.19",
+  "version": "0.3.20-beta-2",
   "private": false,
   "main": "dist/bundle.js",
   "license": "MIT",
@@ -55,10 +55,8 @@
     "jest": "^24.8.0",
     "jest-environment-jsdom-fourteen": "^0.1.0",
     "jest-prop-type-error": "^1.1.0",
-    "next": "^9.0.2",
+    "next": "^9.1.1",
     "prettier": "^1.18.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "rollup-plugin-json": "^4.0.0",
     "serialize-javascript": ">=2.1.1"
   },
