@@ -56,7 +56,11 @@ const Components = {
 };
 
 const Dispatch = (type, overrides = {}, minimal = false) => {
-  const mergedComponents = { ...Components, ...overrides, minimal };
+  const mergedComponents = {
+    ...Components,
+    ...overrides,
+    minimal
+  };
   return mergedComponents[type] || Default;
 };
 

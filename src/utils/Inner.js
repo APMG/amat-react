@@ -15,6 +15,7 @@ const Inner = (child, props) => {
           aspectRatio={child.attrs.preferred_aspect_ratio_slug}
           minimal={props.minimal}
           overrides={props.overrides}
+          isAmp={props.isAmp}
         />
       );
     default:
@@ -25,6 +26,7 @@ const Inner = (child, props) => {
           embedded={props.embedded}
           minimal={props.minimal}
           overrides={props.overrides}
+          isAmp={props.isAmp}
         />
       );
   }
@@ -33,7 +35,8 @@ const Inner = (child, props) => {
 Inner.propTypes = {
   embedded: PropTypes.object,
   overrides: PropTypes.object,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  isAmp: PropTypes.bool
 };
 
 export default Inner;
