@@ -55,8 +55,11 @@ const Components = {
   aside: Aside
 };
 
-const Dispatch = (type, overrides = {}, minimal = false) => {
-  const mergedComponents = { ...Components, ...overrides, minimal };
+const Dispatch = (type, overrides = {}) => {
+  const mergedComponents =
+    Object.keys(overrides).length > 0
+      ? Object.assign(Components, overrides)
+      : Components;
   return mergedComponents[type] || Default;
 };
 
