@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Traverse from '../../utils/Traverse';
 
-class Default extends Component {
-  render() {
-    return <>{Traverse(this.props)}</>;
-  }
-}
+const Default = (props) => {
+  return <>{Traverse(props)}</>;
+};
 
 export default Default;

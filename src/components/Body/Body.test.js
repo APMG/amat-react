@@ -5,7 +5,7 @@ import Body from './Body';
 
 afterEach(cleanup);
 
-test('It renders html from a prosemirror doc ', () => {
+test('First it renders a link from a prosemirror doc ', () => {
   const doc = {
     content: [
       {

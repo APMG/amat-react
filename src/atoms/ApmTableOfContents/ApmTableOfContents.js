@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import uuid from 'uuid';
-import Dispatch from '../../utils/Dispatch';
 import HeadingWithTag from '../Heading/HeadingWithTag';
 
 const ApmTableOfContents = (props) => {
@@ -15,8 +14,13 @@ const ApmTableOfContents = (props) => {
 
   const theRest = nodes.map((node) => {
     // Find the right component with the Dispatcher sending in the alternate Heading component
-    const Dispatcher = Dispatch(node.type, { heading: HeadingWithTag });
-    return <Dispatcher key={uuid()} nodeData={node} />;
+    const Components = Object.assign(props.components, {
+      heading: HeadingWithTag
+    });
+    const Dispatcher = Components[node.type];
+    return (
+      <Dispatcher key={uuid()} nodeData={node} components={props.components} />
+    );
   });
 
   return (
@@ -46,7 +50,8 @@ const ApmTableOfContents = (props) => {
 
 ApmTableOfContents.propTypes = {
   nodeData: PropTypes.array,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  components: PropTypes.object
 };
 
 export default ApmTableOfContents;
