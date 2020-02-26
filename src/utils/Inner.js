@@ -1,10 +1,9 @@
 import React from 'react';
-import Dispatch from './Dispatch';
 import PropTypes from 'prop-types';
 import uuid from 'uuid';
 
 const Inner = (child, props) => {
-  const Dispatcher = Dispatch(child.type, props.overrides);
+  const Dispatcher = props.components[child.type];
   switch (child.type) {
     case 'apm_image':
       return (
@@ -14,7 +13,7 @@ const Inner = (child, props) => {
           image={child.attrs}
           aspectRatio={child.attrs.preferred_aspect_ratio_slug}
           minimal={props.minimal}
-          overrides={props.overrides}
+          components={props.components}
         />
       );
     default:
@@ -24,7 +23,7 @@ const Inner = (child, props) => {
           nodeData={child}
           embedded={props.embedded}
           minimal={props.minimal}
-          overrides={props.overrides}
+          components={props.components}
         />
       );
   }
@@ -32,8 +31,8 @@ const Inner = (child, props) => {
 
 Inner.propTypes = {
   embedded: PropTypes.object,
-  overrides: PropTypes.object,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  components: PropTypes.object
 };
 
 export default Inner;
