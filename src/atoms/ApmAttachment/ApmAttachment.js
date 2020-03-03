@@ -12,9 +12,12 @@ const ApmAttachment = (props) => {
   const neo = attachment_url(attachment_id, props.embedded);
 
   return (
-    <div className={`amat-apm-attachment ${neo.mime_type.replace(/\//, '-')}`}>
-      <a href={neo.url}>{title}</a>
-    </div>
+    <a
+      className={`amat-apm-attachment ${neo.mime_type.replace(/\//, '-')}`}
+      href={neo.url}
+    >
+      {title}
+    </a>
   );
 };
 

@@ -1,4 +1,3 @@
-import Default from '../atoms/Default/Default';
 import Doc from '../atoms/Doc/Doc';
 import Break from '../atoms/Break/Break';
 import Paragraph from '../atoms/Paragraph/Paragraph';
@@ -22,39 +21,44 @@ import ApmRelatedLinkListItem from '../atoms/ApmRelatedLinkListItem/ApmRelatedLi
 import ApmAudio from '../atoms/ApmAudio/ApmAudio';
 import ApmGallery from '../atoms/ApmGallery/ApmGallery';
 import ApmStyleBox from '../atoms/ApmStyleBox/ApmStyleBox';
+import ApmAttachment from '../atoms/ApmAttachment/ApmAttachment';
 import ApmImage from '../atoms/ApmImage/ApmImage';
 import ApmVerse from '../atoms/ApmVerse/ApmVerse';
 import Aside from '../atoms/Aside/Aside';
 
-const Components = {
-  doc: Doc,
-  horizontal_rule: HorizontalRule,
-  paragraph: Paragraph,
-  hard_break: Break,
-  text: Text,
-  heading: Heading,
-  apm_custom_html: CustomHtml,
-  link: Link,
-  strong: Strong,
-  em: Em,
-  blockquote: Blockquote,
-  bullet_list: UnorderedList,
-  ordered_list: OrderedList,
-  list_item: ListItem,
-  apm_oembed: ApmOembed,
-  apm_video: ApmVideo,
-  apm_table_of_contents: ApmTableOfContents,
-  apm_related_list: ApmRelatedList,
-  apm_related_link: ApmRelatedLink,
-  apm_related_link_list_item: ApmRelatedLinkListItem,
-  apm_audio: ApmAudio,
-  apm_image: ApmImage,
-  apm_gallery: ApmGallery,
-  apm_style_box: ApmStyleBox,
-  apm_verse: ApmVerse,
-  aside: Aside
+const DefaultComponents = () => {
+  return {
+    apm_attachment: ApmAttachment,
+    apm_audio: ApmAudio,
+    apm_custom_html: CustomHtml,
+    apm_gallery: ApmGallery,
+    apm_oembed: ApmOembed,
+    apm_image: ApmImage,
+    apm_related_link: ApmRelatedLink,
+    apm_related_link_list_item: ApmRelatedLinkListItem,
+    apm_related_list: ApmRelatedList,
+    apm_style_box: ApmStyleBox,
+    apm_table_of_contents: ApmTableOfContents,
+    apm_verse: ApmVerse,
+    apm_video: ApmVideo,
+    aside: Aside,
+    blockquote: Blockquote,
+    bullet_list: UnorderedList,
+    doc: Doc,
+    em: Em,
+    hard_break: Break,
+    heading: Heading,
+    horizontal_rule: HorizontalRule,
+    link: Link,
+    list_item: ListItem,
+    ordered_list: OrderedList,
+    paragraph: Paragraph,
+    strong: Strong,
+    text: Text
+  };
 };
 
+<<<<<<< HEAD:src/utils/Dispatch.js
 const Dispatch = (type, overrides = {}, minimal = false) => {
   const mergedComponents = {
     ...Components,
@@ -65,3 +69,6 @@ const Dispatch = (type, overrides = {}, minimal = false) => {
 };
 
 export default Dispatch;
+=======
+export default DefaultComponents;
+>>>>>>> 3410704dd8a63ed7f330526eb530fef8c7b8e2df:src/utils/DefaultComponents.js

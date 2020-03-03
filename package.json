@@ -1,7 +1,11 @@
 {
   "name": "@apmg/amat",
   "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org, Jason Phan jphan@mpr.org]",
+<<<<<<< HEAD
   "version": "0.3.22",
+=======
+  "version": "0.3.23",
+>>>>>>> 3410704dd8a63ed7f330526eb530fef8c7b8e2df
   "private": false,
   "main": "dist/bundle.js",
   "license": "MIT",
