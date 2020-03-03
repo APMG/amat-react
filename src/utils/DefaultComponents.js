@@ -58,17 +58,4 @@ const DefaultComponents = () => {
   };
 };
 
-<<<<<<< HEAD:src/utils/Dispatch.js
-const Dispatch = (type, overrides = {}, minimal = false) => {
-  const mergedComponents = {
-    ...Components,
-    ...overrides,
-    minimal
-  };
-  return mergedComponents[type] || Default;
-};
-
-export default Dispatch;
-=======
 export default DefaultComponents;
->>>>>>> 3410704dd8a63ed7f330526eb530fef8c7b8e2df:src/utils/DefaultComponents.js
