@@ -25,7 +25,7 @@ const Inner = (child, props) => {
           embedded={props.embedded}
           minimal={props.minimal}
           components={props.components}
-          isAmpl={props.isAmp}
+          isAmp={props.isAmp}
         />
       );
   }
