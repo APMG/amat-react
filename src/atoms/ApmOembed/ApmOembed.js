@@ -13,11 +13,11 @@ const ApmOembed = (props) => {
     return <AmpVideo {...embed} />;
   }
 
-  const findEmbedded = () => {
+  function findEmbedded() {
     return props.embedded.oembeds.find(
       (embed) => embed.url === props.nodeData.attrs.src
     );
-  };
+  }
 
   const markup = (rawMarkup, isAmp) => {
     let __html = rawMarkup.replace(/\n/g, '');
