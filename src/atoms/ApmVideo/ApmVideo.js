@@ -13,8 +13,14 @@ class ApmVideo extends React.Component {
     });
   }
 
-  markup(rawMarkup) {
-    return { __html: rawMarkup };
+  markup(rawMarkup, isAmp) {
+    let __html = rawMarkup;
+    if (isAmp) {
+      __html = __html
+        .replace(/<iframe/g, '<amp-iframe')
+        .replace(/<\/iframe/g, '</amp-iframe');
+    }
+    return { __html };
   }
 
   render() {
@@ -36,7 +42,7 @@ class ApmVideo extends React.Component {
       >
         <div
           className={classes}
-          dangerouslySetInnerHTML={this.markup(embed.html)}
+          dangerouslySetInnerHTML={this.markup(embed.html, this.props.isAmp)}
         />
         <figcaption className="figure_caption">
           <span className="figure_credit">
@@ -52,7 +58,8 @@ class ApmVideo extends React.Component {
 ApmVideo.propTypes = {
   nodeData: PropTypes.object,
   embedded: PropTypes.object,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  isAmp: PropTypes.bool
 };
 
 export default ApmVideo;

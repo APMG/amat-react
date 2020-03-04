@@ -50,6 +50,16 @@ test('It renders an Oembed', async () => {
   expect(container.innerHTML).toEqual(expected);
 });
 
+test('It renders an AMP Oembed', async () => {
+  const { container, getByTestId } = render(
+    <Body nodeData={doc} embedded={embedded} isAmp={true} />
+  );
+
+  const expected = `<div><div data-testid="embed-container" class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><amp-iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></amp-iframe></div></div>`;
+  await waitForElement(() => getByTestId('embed-container'));
+  expect(container.innerHTML).toEqual(expected);
+});
+
 const NprDoc = {
   type: 'doc',
   version: 1,

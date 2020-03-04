@@ -13,8 +13,14 @@ const ApmOembed = (props) => {
     );
   };
 
-  const markup = (rawMarkup) => {
-    return { __html: rawMarkup.replace(/\n/g, '') };
+  const markup = (rawMarkup, isAmp) => {
+    let __html = rawMarkup.replace(/\n/g, '');
+    if (isAmp) {
+      __html = __html
+        .replace(/<iframe/g, '<amp-iframe')
+        .replace(/<\/iframe/g, '</amp-iframe');
+    }
+    return { __html };
   };
 
   const [embed, setEmbed] = useState(null);
@@ -37,7 +43,7 @@ const ApmOembed = (props) => {
       embed && embed.provider_name
         ? embed.provider_name.toLowerCase().replace(/\s/g, '')
         : '';
-    const html = markup(embed.html);
+    const html = markup(embed.html, props.isAmp);
     return (
       <EmbedContainer markup={embed.html}>
         <div
@@ -55,7 +61,8 @@ ApmOembed.propTypes = {
   embedded: PropTypes.object,
   nodeData: PropTypes.object,
   minimal: PropTypes.bool,
-  fallback_text: PropTypes.string
+  fallback_text: PropTypes.string,
+  isAmp: PropTypes.bool
 };
 
 export default ApmOembed;
