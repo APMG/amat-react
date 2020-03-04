@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import EmbedContainer from '@apmg/react-oembed-container';
+import AmpVideo from '../AmpVideo/AmpVideo';
 
 const ApmOembed = (props) => {
   if (props.minimal) {
     return null;
+  }
+
+  const embed = findEmbedded();
+  if (props.isAmp && embed?.type === 'video') {
+    return <AmpVideo {...embed} />;
   }
 
   const findEmbedded = () => {
@@ -23,10 +29,7 @@ const ApmOembed = (props) => {
     return { __html };
   };
 
-  const [embed, setEmbed] = useState(null);
-
   useEffect(() => {
-    setEmbed(findEmbedded());
     if (embed != null && embed.provider_name === 'NPR') {
       import('@nprapps/sidechain');
     }
