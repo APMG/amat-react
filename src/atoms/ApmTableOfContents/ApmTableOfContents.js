@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import uuid from 'uuid';
+import { v4 as uuid } from 'uuid';
 import HeadingWithTag from '../Heading/HeadingWithTag';
 
 const ApmTableOfContents = (props) => {
