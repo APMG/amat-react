@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import AmpVideo from '../AmpVideo/AmpVideo';
 
 class ApmVideo extends React.Component {
   constructor(props) {
@@ -26,6 +27,9 @@ class ApmVideo extends React.Component {
   render() {
     const { long_caption, credit, credit_url } = this.props.nodeData.attrs;
     const embed = this.findEmbedded();
+    if (embed && this.props.isAmp) {
+      return <AmpVideo {...embed} />;
+    }
     const cname = embed.provider_name.toLowerCase().replace(/\s/g, '');
     const classes = classNames({
       'apm-video': true,
