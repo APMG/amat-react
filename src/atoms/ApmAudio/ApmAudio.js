@@ -6,7 +6,7 @@ const ApmAudio = (props) => {
     return null;
   }
 
-  const { float, width, height, title, audio_credit } = props.nodeData.attrs;
+  const { float, width, title, audio_credit } = props.nodeData.attrs;
   const audio = props.embedded.audio.find(
     (item) => item.id === props.nodeData.attrs.audio_id
   );
@@ -15,8 +15,8 @@ const ApmAudio = (props) => {
     return (
     <figure className={`figure ${width} align-${float}`}>
       <amp-audio
-        width={width}
-        height={height}
+        width="500"
+        height="42"
         src={audio.encodings[0].play_file_path.replace('%user_agent', 'web')}
       >
         <div fallback>
