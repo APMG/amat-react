@@ -2,9 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const AmpVideo = (props) => {
+  function extractSrc(html) {
+    let match = /src="([^"]+)/.exec(html);
+    if (match.length === 2) return match[1];
+  }
+
   return (
     <amp-iframe
-      src={props.url}
+      src={extractSrc(props.html)}
       width={props.width}
       height={props.height}
       layout="responsive"
@@ -23,7 +28,7 @@ const AmpVideo = (props) => {
 };
 
 AmpVideo.propTypes = {
-  url: PropTypes.string,
+  html: PropTypes.string,
   height: PropTypes.number,
   width: PropTypes.number,
   thumbnail_url: PropTypes.string,
