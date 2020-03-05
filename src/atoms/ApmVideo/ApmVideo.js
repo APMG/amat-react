@@ -14,13 +14,8 @@ class ApmVideo extends React.Component {
     });
   }
 
-  markup(rawMarkup, isAmp) {
+  markup(rawMarkup) {
     let __html = rawMarkup;
-    if (isAmp) {
-      __html = __html
-        .replace(/<iframe/g, '<amp-iframe')
-        .replace(/<\/iframe/g, '</amp-iframe');
-    }
     return { __html };
   }
 
@@ -46,7 +41,7 @@ class ApmVideo extends React.Component {
       >
         <div
           className={classes}
-          dangerouslySetInnerHTML={this.markup(embed.html, this.props.isAmp)}
+          dangerouslySetInnerHTML={this.markup(embed.html)}
         />
         <figcaption className="figure_caption">
           <span className="figure_credit">

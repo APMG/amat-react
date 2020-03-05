@@ -50,13 +50,13 @@ test('It renders an Oembed', async () => {
   expect(container.innerHTML).toEqual(expected);
 });
 
-test('It renders an AMP Oembed', async () => {
+test('It renders an AMP Video', async () => {
   const { container, getByTestId } = render(
     <Body nodeData={doc} embedded={embedded} isAmp={true} />
   );
 
-  const expected = `<div><div data-testid="embed-container" class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><amp-iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></amp-iframe></div></div>`;
-  await waitForElement(() => getByTestId('embed-container'));
+  const expected = `<amp-iframe data-testid="amp-video" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" width="480" height="270" layout="responsive" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups"><amp-img placeholder="true" src="https://i.ytimg.com/vi/OIf7d60lOR0/hqdefault.jpg" width="480" height="360" layout="fill"></amp-img></amp-iframe>`;
+  await waitForElement(() => getByTestId('amp-video'));
   expect(container.innerHTML).toEqual(expected);
 });
 

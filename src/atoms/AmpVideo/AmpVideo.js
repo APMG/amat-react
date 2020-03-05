@@ -9,6 +9,7 @@ const AmpVideo = (props) => {
 
   return (
     <amp-iframe
+      data-testid="amp-video"
       src={extractSrc(props.html)}
       width={props.width}
       height={props.height}
