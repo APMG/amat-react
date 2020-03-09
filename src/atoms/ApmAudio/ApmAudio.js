@@ -26,21 +26,22 @@ const ApmAudio = (props) => {
       </figcaption>
     </figure>
     )
+  } else {
+    return (
+      <figure className={`figure ${width} align-${float}`}>
+        <audio
+          controls="controls"
+          src={audio.encodings[0].play_file_path.replace('%user_agent', 'web')}
+        >
+        </audio>
+        <figcaption className="figure_caption">
+          <div className="figure_caption_content">{title}</div>
+          <span className="figure_credit">by {audio_credit}</span>
+        </figcaption>
+      </figure>
+    );
   }
 
-  return (
-    <figure className={`figure ${width} align-${float}`}>
-      <audio
-        controls="controls"
-        src={audio.encodings[0].play_file_path.replace('%user_agent', 'web')}
-      >
-      </audio>
-      <figcaption className="figure_caption">
-        <div className="figure_caption_content">{title}</div>
-        <span className="figure_credit">by {audio_credit}</span>
-      </figcaption>
-    </figure>
-  );
 };
 
 ApmAudio.propTypes = {
