@@ -13,27 +13,25 @@ const ApmAudio = (props) => {
 
   if (props.isAmp) {
     return (
-    <figure className={`figure ${width} align-${float}`}>
-      <amp-audio
-        width="500"
-        height="42"
-        src={audio.encodings[0].play_file_path.replace('%user_agent', 'web')}
-      >
-      </amp-audio>
-      <figcaption className="figure_caption">
-        <div className="figure_caption_content">{title}</div>
-        <span className="figure_credit">by {audio_credit}</span>
-      </figcaption>
-    </figure>
-    )
+      <figure className={`figure ${width} align-${float}`}>
+        <amp-audio
+          width="500"
+          height="42"
+          src={audio.encodings[0].play_file_path.replace('%user_agent', 'web')}
+        ></amp-audio>
+        <figcaption className="figure_caption">
+          <div className="figure_caption_content">{title}</div>
+          <span className="figure_credit">by {audio_credit}</span>
+        </figcaption>
+      </figure>
+    );
   } else {
     return (
       <figure className={`figure ${width} align-${float}`}>
         <audio
           controls="controls"
           src={audio.encodings[0].play_file_path.replace('%user_agent', 'web')}
-        >
-        </audio>
+        ></audio>
         <figcaption className="figure_caption">
           <div className="figure_caption_content">{title}</div>
           <span className="figure_credit">by {audio_credit}</span>
@@ -41,7 +39,6 @@ const ApmAudio = (props) => {
       </figure>
     );
   }
-
 };
 
 ApmAudio.propTypes = {
