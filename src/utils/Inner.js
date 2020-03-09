@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import uuid from 'uuid';
+import { v4 as uuid } from 'uuid';
 
 const Inner = (child, props) => {
   const Dispatcher = props.components[child.type];
@@ -14,6 +14,7 @@ const Inner = (child, props) => {
           aspectRatio={child.attrs.preferred_aspect_ratio_slug}
           minimal={props.minimal}
           components={props.components}
+          isAmp={props.isAmp}
         />
       );
     default:
@@ -24,6 +25,7 @@ const Inner = (child, props) => {
           embedded={props.embedded}
           minimal={props.minimal}
           components={props.components}
+          isAmp={props.isAmp}
         />
       );
   }
@@ -32,7 +34,8 @@ const Inner = (child, props) => {
 Inner.propTypes = {
   embedded: PropTypes.object,
   minimal: PropTypes.bool,
-  components: PropTypes.object
+  components: PropTypes.object,
+  isAmp: PropTypes.bool
 };
 
 export default Inner;

@@ -62,3 +62,26 @@ test('It renders audio', () => {
 
   expect(container.innerHTML).toEqual(singleLineString(expected));
 });
+
+test('It renders AMP audio', () => {
+  const { container } = render(
+    <Body nodeData={doc} embedded={embeddedAssetJson} isAmp={true} />
+  );
+
+  const expected = `
+      <figure class="figure full align-right">
+        <amp-audio width="500" height="42" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
+        </amp-audio>
+        <figcaption class="figure_caption">
+          <div class="figure_caption_content">
+            Some sound from the intervieWWWWWWWWW
+          </div>
+          <span class="figure_credit">
+            by American Public Media - 2017
+          </span>
+        </figcaption>
+      </figure>
+  `;
+
+  expect(container.innerHTML).toEqual(singleLineString(expected));
+});

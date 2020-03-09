@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import AmpVideo from '../AmpVideo/AmpVideo';
 
 class ApmVideo extends React.Component {
   constructor(props) {
@@ -14,12 +15,16 @@ class ApmVideo extends React.Component {
   }
 
   markup(rawMarkup) {
-    return { __html: rawMarkup };
+    let __html = rawMarkup;
+    return { __html };
   }
 
   render() {
     const { long_caption, credit, credit_url } = this.props.nodeData.attrs;
     const embed = this.findEmbedded();
+    if (embed && this.props.isAmp) {
+      return <AmpVideo {...embed} />;
+    }
     const cname = embed.provider_name.toLowerCase().replace(/\s/g, '');
     const classes = classNames({
       'apm-video': true,
@@ -52,7 +57,8 @@ class ApmVideo extends React.Component {
 ApmVideo.propTypes = {
   nodeData: PropTypes.object,
   embedded: PropTypes.object,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  isAmp: PropTypes.bool
 };
 
 export default ApmVideo;

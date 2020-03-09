@@ -18,7 +18,7 @@ class CustomHtml extends React.Component {
   }
 
   render() {
-    if (this.props.minimal) {
+    if (this.props.minimal || this.props.isAmp) {
       return null;
     }
 
@@ -30,7 +30,8 @@ class CustomHtml extends React.Component {
 
 CustomHtml.propTypes = {
   nodeData: PropTypes.object,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  isAmp: PropTypes.bool
 };
 
 export default CustomHtml;

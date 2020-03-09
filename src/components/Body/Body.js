@@ -3,7 +3,13 @@ import PropTypes from 'prop-types';
 import Default from '../../atoms/Default/Default';
 import DefaultComponents from '../../utils/DefaultComponents';
 
-const Body = ({ nodeData, embedded, overrides = {}, minimal = false }) => {
+const Body = ({
+  nodeData,
+  embedded,
+  overrides = {},
+  minimal = false,
+  isAmp = false
+}) => {
   const components = DefaultComponents();
   const mergedComponents =
     Object.keys(overrides).length > 0
@@ -16,15 +22,17 @@ const Body = ({ nodeData, embedded, overrides = {}, minimal = false }) => {
       embedded={embedded ? embedded : {}}
       components={mergedComponents}
       minimal={minimal}
+      isAmp={isAmp}
     />
   );
 };
 
 Body.propTypes = {
-  nodeData: PropTypes.object,
+  nodeData: PropTypes.object.isRequired,
   embedded: PropTypes.object,
   overrides: PropTypes.object,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  isAmp: PropTypes.bool
 };
 
 export default Body;

@@ -1,6 +1,6 @@
 import React from 'react';
 import WrapInMarks from './WrapInMarks';
-import uuid from 'uuid';
+import { v4 as uuid } from 'uuid';
 import ApmTableOfContents from '../atoms/ApmTableOfContents/ApmTableOfContents';
 
 // Not really happy with the structure of this but spent some time trying to refactor with no luck.
