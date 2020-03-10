@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import EmbedContainer from '@apmg/react-oembed-container';
 import AmpVideo from '../AmpVideo/AmpVideo';
@@ -8,16 +8,23 @@ const ApmOembed = (props) => {
     return null;
   }
 
-  const embed = findEmbedded();
-  if (props.isAmp && embed?.type === 'video') {
-    return <AmpVideo {...embed} />;
-  }
-
   function findEmbedded() {
     return props.embedded.oembeds.find(
       (embed) => embed.url === props.nodeData.attrs.src
     );
   }
+
+  const embed = findEmbedded();
+  if (props.isAmp && embed?.type === 'video') {
+    return <AmpVideo {...embed} />;
+  }
+
+  //useEffect(() => {
+    //if (embed != null && embed.provider_name === 'NPR') {
+        //import('@nprapps/sidechain');
+      //}
+    //}, []);
+  //}
 
   const markup = (rawMarkup, isAmp) => {
     let __html = rawMarkup.replace(/\n/g, '');
@@ -29,35 +36,29 @@ const ApmOembed = (props) => {
     return { __html };
   };
 
-  useEffect(() => {
-    if (embed != null && embed.provider_name === 'NPR') {
-      import('@nprapps/sidechain');
-    }
-  }, []);
-
   if (embed == null || embed == undefined) {
     return (
       <div className="amat-oembed missing" data-url={props.nodeData.attrs.src}>
         <a href={props.nodeData.attrs.src}>#{props.fallback_text}</a>
       </div>
     );
-  } else {
-    const cname =
-      embed && embed.provider_name
-        ? embed.provider_name.toLowerCase().replace(/\s/g, '')
-        : '';
-    const html = markup(embed.html, props.isAmp);
-    return (
-      <EmbedContainer markup={embed.html}>
-        <div
-          data-testid="embed-container"
-          className={`amat-oembed ${cname}`}
-          data-url={embed.url}
-          dangerouslySetInnerHTML={html}
-        />
-      </EmbedContainer>
-    );
   }
+
+  const cname =
+    embed && embed.provider_name
+      ? embed.provider_name.toLowerCase().replace(/\s/g, '')
+      : '';
+  const html = markup(embed.html, props.isAmp);
+  return (
+    <EmbedContainer markup={embed.html}>
+      <div
+        data-testid="embed-container"
+        className={`amat-oembed ${cname}`}
+        data-url={embed.url}
+        dangerouslySetInnerHTML={html}
+      />
+    </EmbedContainer>
+  );
 };
 
 ApmOembed.propTypes = {
