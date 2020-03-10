@@ -19,19 +19,14 @@ const ApmOembed = (props) => {
     return <AmpVideo {...embed} />;
   }
 
-  //useEffect(() => {
-    //if (embed != null && embed.provider_name === 'NPR') {
-        //import('@nprapps/sidechain');
-      //}
-    //}, []);
-  //}
-
   const markup = (rawMarkup, isAmp) => {
     let __html = rawMarkup.replace(/\n/g, '');
     if (isAmp) {
       __html = __html
         .replace(/<iframe/g, '<amp-iframe')
-        .replace(/<\/iframe/g, '</amp-iframe');
+        .replace(/<\/iframe/g, '</amp-iframe')
+        .replace(/<side-chain/g, '<amp-iframe width="0" height="0"')
+        .replace(/<\/side-chain/g, '</amp-iframe');
     }
     return { __html };
   };
