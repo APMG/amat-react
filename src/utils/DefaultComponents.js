@@ -25,6 +25,9 @@ import ApmAttachment from '../atoms/ApmAttachment/ApmAttachment';
 import ApmImage from '../atoms/ApmImage/ApmImage';
 import ApmVerse from '../atoms/ApmVerse/ApmVerse';
 import Aside from '../atoms/Aside/Aside';
+import ApmFootnoteList from '../atoms/ApmFootnoteList/ApmFootnoteList';
+import ApmFootnote from '../atoms/ApmFootnote/ApmFootnote';
+import ApmFootnoteListItem from '../atoms/ApmFootnoteListItem/ApmFootnoteListItem';
 
 const DefaultComponents = () => {
   return {
@@ -33,6 +36,9 @@ const DefaultComponents = () => {
     apm_custom_html: CustomHtml,
     apm_gallery: ApmGallery,
     apm_oembed: ApmOembed,
+    apm_footnote: ApmFootnote,
+    apm_footnote_list: ApmFootnoteList,
+    apm_footnote_list_item: ApmFootnoteListItem,
     apm_image: ApmImage,
     apm_related_link: ApmRelatedLink,
     apm_related_link_list_item: ApmRelatedLinkListItem,
