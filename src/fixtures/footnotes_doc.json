@@ -1,0 +1,142 @@
+{
+  "content": [
+    {
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "text": "A header",
+          "type": "text"
+        }
+      ],
+      "type": "heading"
+    },
+    {
+      "content": [
+        {
+          "text": "First paragraph",
+          "type": "text"
+        },
+        {
+          "attrs": {
+            "number": 1
+          },
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "First footnote",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "apm_footnote"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "content": [
+        {
+          "text": "Second paragraph",
+          "type": "text"
+        },
+        {
+          "attrs": {
+            "number": 2
+          },
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "Second footnote",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "apm_footnote"
+        },
+        {
+          "attrs": {
+            "number": 3
+          },
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "Third footnote",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "apm_footnote"
+        }
+      ],
+      "type": "paragraph"
+    },
+    {
+      "type": "apm_footnote_list",
+      "content": [
+        {
+          "attrs": {
+            "number": 1
+          },
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "First footnote",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "apm_footnote"
+        },
+        {
+          "attrs": {
+            "number": 2
+          },
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "Second footnote",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "apm_footnote"
+        },
+        {
+          "attrs": {
+            "number": 3
+          },
+          "content": [
+            {
+              "content": [
+                {
+                  "text": "Third footnote",
+                  "type": "text"
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "type": "apm_footnote"
+        }
+      ]
+    }
+  ],
+  "type": "doc"
+}
