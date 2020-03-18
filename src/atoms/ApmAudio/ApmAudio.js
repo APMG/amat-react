@@ -15,7 +15,7 @@ const ApmAudio = (props) => {
     return (
       <figure className={`figure ${width} align-${float}`}>
         <amp-audio
-          width="300"
+          width="400"
           height="42"
           src={audio.encodings[0].play_file_path.replace('%user_agent', 'web')}
         ></amp-audio>

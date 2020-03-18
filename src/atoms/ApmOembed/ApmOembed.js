@@ -25,7 +25,7 @@ const ApmOembed = (props) => {
       __html = __html
         .replace(/<iframe/g, '<amp-iframe')
         .replace(/<\/iframe/g, '</amp-iframe')
-        .replace(/<side-chain/g, '<amp-iframe width="0" height="0"')
+        .replace(/<side-chain/g, '<amp-iframe')
         .replace(/<\/side-chain/g, '</amp-iframe');
     }
     return { __html };
