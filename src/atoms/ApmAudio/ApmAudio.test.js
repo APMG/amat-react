@@ -70,7 +70,7 @@ test('It renders AMP audio', () => {
 
   const expected = `
       <figure class="figure full align-right">
-        <amp-audio width="300" height="42" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
+        <amp-audio width="400" height="42" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
         </amp-audio>
         <figcaption class="figure_caption">
           <div class="figure_caption_content">
