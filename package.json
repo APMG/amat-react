@@ -1,7 +1,7 @@
 {
   "name": "@apmg/amat",
   "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org, Jason Phan jphan@mpr.org]",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "private": false,
   "main": "dist/bundle.js",
   "license": "MIT",
@@ -28,8 +28,8 @@
     "react-dom": "^16.13.0"
   },
   "dependencies": {
+    "@apmg/mimas": "0.3.3",
     "@apmg/enceladus": "^0.5.4",
-    "@apmg/mimas": "^0.3.2",
     "@apmg/react-oembed-container": "git://github.com/APMG/react-oembed-container.git#twitter-load-fix",
     "@nprapps/sidechain": "^1.0.13",
     "classnames": "^2.2.6",
