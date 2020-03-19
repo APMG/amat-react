@@ -17,7 +17,7 @@ const ampStyles = {
     display: 'inline-block',
     color: '#4a4e4f'
   }
-}
+};
 
 const ApmImage = (props) => {
   if (props.minimal) {
@@ -31,14 +31,41 @@ const ApmImage = (props) => {
   }
 
   function captionCredit() {
-    if (props?.image?.credit && props.image.credit_url) {
-      return (
-        <a style={ampStyles.credit} href={props.image.credit_url} className="figure_credit">
-          {props.image.credit}
-        </a>
-      );
-    } else if (props?.image?.credit) {
-      return <div style={ampStyles.credit} className="figure_credit">{props.image.credit}</div>;
+    if (props.isAmp) {
+      if (props?.image?.credit && props.image.credit_url) {
+        return (
+          <a
+            style={ampStyles.credit}
+            href={props.image.credit_url}
+            className="figure_credit"
+          >
+            {props.image.credit}
+          </a>
+        );
+      } else if (props?.image?.credit) {
+        return (
+          <div style={ampStyles.credit} className="figure_credit">
+            {props.image.credit}
+          </div>
+        );
+      } else {
+        if (props?.image?.credit && props.image.credit_url) {
+          return (
+            <a
+              href={props.image.credit_url}
+              className="figure_credit"
+            >
+              {props.image.credit}
+            </a>
+          );
+        } else if (props?.image?.credit) {
+          return (
+            <div className="figure_credit">
+              {props.image.credit}
+            </div>
+          );
+        }
+      }
     }
   }
 
@@ -66,21 +93,43 @@ const ApmImage = (props) => {
     );
   }
 
-  return (
-    <figure className={classes()}>
-      {image(props.embedded, props.isAmp)}
-      {props?.image?.long_caption || props?.image?.credit ? (
-        <figcaption style={ampStyles.figure} className="figure_caption">
-          {props.image.long_caption && (
-            <div style={ampStyles.text} className="figure_text">{props.image.long_caption}</div>
-          )}
-          {captionCredit()}
-        </figcaption>
-      ) : (
-        ''
-      )}
-    </figure>
-  );
+  if (props.isAmp) {
+    return (
+      <figure className={classes()}>
+        {image(props.embedded, props.isAmp)}
+        {props?.image?.long_caption || props?.image?.credit ? (
+          <figcaption style={ampStyles.figure} className="figure_caption">
+            {props.image.long_caption && (
+              <div style={ampStyles.text} className="figure_text">
+                {props.image.long_caption}
+              </div>
+            )}
+            {captionCredit()}
+          </figcaption>
+        ) : (
+          ''
+        )}
+      </figure>
+    );
+  } else {
+    return (
+      <figure className={classes()}>
+        {image(props.embedded, props.isAmp)}
+        {props?.image?.long_caption || props?.image?.credit ? (
+          <figcaption className="figure_caption">
+            {props.image.long_caption && (
+              <div className="figure_text">
+                {props.image.long_caption}
+              </div>
+            )}
+            {captionCredit()}
+          </figcaption>
+        ) : (
+          ''
+        )}
+      </figure>
+    );
+  }
 };
 
 ApmImage.propTypes = {
