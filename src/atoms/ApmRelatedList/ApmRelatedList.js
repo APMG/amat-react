@@ -5,7 +5,7 @@ import Traverse from '../../utils/Traverse';
 const ampStyles = {
   relatedList: {
     margin: '2em 0',
-    fontFamily: 'Roboto, system-ui, -apple-system, sans-serif',
+    fontFamily: '"Roboto", system-ui, -apple-system, sans-serif',
     clear: 'both'
   },
   relatedListTitle: {
