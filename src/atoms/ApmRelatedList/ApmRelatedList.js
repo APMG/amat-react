@@ -32,7 +32,12 @@ const ApmRelatedList = (props) => {
   if (props.isAmp) {
     return (
       <div style={ampStyles.relatedList} className="apm-related-list">
-        <div style={ampStyles.relatedListTitle} className="apm-related-list-title">{title}</div>
+        <div
+          style={ampStyles.relatedListTitle}
+          className="apm-related-list-title"
+        >
+          {title}
+        </div>
         <ul className="apm-related-list-body">{Traverse(enlistify(props))}</ul>
       </div>
     );
