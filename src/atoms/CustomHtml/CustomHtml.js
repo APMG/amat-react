@@ -18,9 +18,15 @@ class CustomHtml extends React.Component {
   }
 
   render() {
+    const ampStyles = {
+      link: {
+        color: '#00334e',
+        textDecoration: 'none'
+      }
+    };
     if (this.props.minimal || this.props.isAmp) {
       return (
-        <a href={this.props.nodeData.attrs.fallback_url}>
+        <a style={ampStyles.link} href={this.props.nodeData.attrs.fallback_url}>
           {this.props.nodeData.attrs.fallback_text}
         </a>
       );
