@@ -19,10 +19,14 @@ class CustomHtml extends React.Component {
 
   render() {
     if (this.props.minimal || this.props.isAmp) {
-      return null;
+      return (
+        <a href={this.props.nodeData.attrs.fallback_url}>
+          {this.props.nodeData.attrs.fallback_text}
+        </a>
+      )
     }
 
-    const markup = { __html: this.state.html };
+    const markup = { __html: this.state.html};
 
     return <div className="customHtml" dangerouslySetInnerHTML={markup} />;
   }
