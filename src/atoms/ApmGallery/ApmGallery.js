@@ -15,7 +15,11 @@ const ApmGallery = (props) => {
     <div className="apm-gallery">
       <div className="apm-gallery_title">{props.nodeData.attrs.title}</div>
       <div className="apm-gallery_slides">
-        <Slideshow images={images} animation="slide" />
+        <Slideshow
+          images={images}
+          animation="slide"
+          isAmp={props.isAmp ? props.isAmp : false}
+        />
       </div>
     </div>
   );
@@ -23,7 +27,8 @@ const ApmGallery = (props) => {
 
 ApmGallery.propTypes = {
   nodeData: PropTypes.object,
-  minimal: PropTypes.bool
+  minimal: PropTypes.bool,
+  isAmp: PropTypes.bool
 };
 
 export default ApmGallery;
