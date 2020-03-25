@@ -44,10 +44,10 @@
   dependencies:
     cross-fetch "3.0.4"
 
-"@apmg/enceladus@^0.5.5-beta.0":
-  version "0.5.5-beta.0"
-  resolved "https://registry.yarnpkg.com/@apmg/enceladus/-/enceladus-0.5.5-beta.0.tgz#2ff8ff01b83eb22b8edae8226203431b233ed8ab"
-  integrity sha512-xmv+1574tjisOmnWyI3BJvM+shf2vA5mkF1x2eFhxHeO3llr177VoFkHmdrMTSbgPK7Cgydk27FfGnge2Vl+Tg==
+"@apmg/enceladus@^0.5.5":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@apmg/enceladus/-/enceladus-0.5.5.tgz#ae3ac15598578dcbe9600b7603316cc8c35a5b18"
+  integrity sha512-/Ztzeue0jr5Yzbq+kOEOa2A72Wp1O0TTcevFhSyiC+oBBfceP79d9OmiTZOchB8Oj4juv6t9fF3PMOgb88ByRQ==
   dependencies:
     "@emotion/babel-preset-css-prop" "^10.0.14"
     "@emotion/core" "^10.0.16"
