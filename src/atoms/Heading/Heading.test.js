@@ -37,7 +37,7 @@ test('It renders a body from a Prosemirror doc', () => {
 
   expect(container.firstChild.tagName).toEqual('H1');
   expect(container.firstChild.getAttribute('id')).toEqual(
-    'A_headers_header_is_no_better'
+    'a_headers_header_is_no_better'
   );
   expect(container.lastChild.tagName).toEqual('P');
   expect(container.firstChild.innerHTML).toEqual(

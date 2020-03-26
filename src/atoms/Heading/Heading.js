@@ -13,7 +13,7 @@ const Heading = (props) => {
 const findText = (props) => {
   let txtEle = props.nodeData.content.find((ele) => ele.type === 'text');
   let txt = txtEle.text.replace(/\s/g, '_').replace(/['"]/g, '');
-  return txt;
+  return txt.toLowerCase();
 };
 
 Heading.propTypes = {
