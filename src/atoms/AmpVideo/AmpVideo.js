@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { styleFactory } from '../../utils/stylist';
 
 const AmpVideo = (props) => {
+  const styleMap = props.styleOverrides?.apm_video;
+
   function extractSrc(html) {
     let match = /src="([^"]+)/.exec(html);
     if (match.length === 2) return match[1];
@@ -16,6 +19,7 @@ const AmpVideo = (props) => {
       layout="responsive"
       frameborder="0"
       sandbox="allow-scripts allow-same-origin allow-popups"
+      style={styleFactory(styleMap, 'apm-iframe')}
     >
       <amp-img
         placeholder
@@ -23,6 +27,7 @@ const AmpVideo = (props) => {
         width={props.thumbnail_width}
         height={props.thumbnail_height}
         layout="fill"
+        style={styleFactory(styleMap, 'apm-img')}
       ></amp-img>
     </amp-iframe>
   );
@@ -34,7 +39,8 @@ AmpVideo.propTypes = {
   width: PropTypes.number,
   thumbnail_url: PropTypes.string,
   thumbnail_width: PropTypes.number,
-  thumbnail_height: PropTypes.number
+  thumbnail_height: PropTypes.number,
+  styleOverrides: PropTypes.object
 };
 
 export default AmpVideo;

@@ -13,6 +13,7 @@ const Traverse = (props) => {
         nodeData={props.nodeData.content}
         key={uuid()}
         components={props.components}
+        styleOverrides={props.styleOverrides}
       />
     );
   }
