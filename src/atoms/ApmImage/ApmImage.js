@@ -2,22 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Image, AmpImage } from '@apmg/mimas';
 
-const ampStyles = {
-  figure: {
-    fontFamily: '"Roboto", system-ui, -apple-system, sans-serif',
-    fontSize: '0.85em',
-    lineHeight: '1.2',
-    padding: '1em 0'
-  },
-  text: {
-    display: 'inline',
-    paddingRight: '1em'
-  },
-  credit: {
-    display: 'inline-block',
-    color: '#4a4e4f'
-  }
-};
+//const ampStyles = {
+  //figure: {
+    //fontFamily: '"Roboto", system-ui, -apple-system, sans-serif',
+    //fontSize: '0.85em',
+    //lineHeight: '1.2',
+    //padding: '1em 0'
+  //},
+  //text: {
+    //display: 'inline',
+    //paddingRight: '1em'
+  //},
+  //credit: {
+    //display: 'inline-block',
+    //color: '#4a4e4f'
+  //}
+//};
 
 const ApmImage = (props) => {
   if (props.minimal) {
@@ -35,7 +35,6 @@ const ApmImage = (props) => {
       if (props?.image?.credit && props.image.credit_url) {
         return (
           <a
-            style={ampStyles.credit}
             href={props.image.credit_url}
             className="figure_credit"
           >
@@ -44,7 +43,7 @@ const ApmImage = (props) => {
         );
       } else if (props?.image?.credit) {
         return (
-          <div style={ampStyles.credit} className="figure_credit">
+          <div className="figure_credit">
             {props.image.credit}
           </div>
         );
@@ -91,9 +90,9 @@ const ApmImage = (props) => {
       <figure className={classes()}>
         {image(props.embedded, props.isAmp)}
         {props?.image?.long_caption || props?.image?.credit ? (
-          <figcaption style={ampStyles.figure} className="figure_caption">
+          <figcaption className="figure_caption">
             {props.image.long_caption && (
-              <div style={ampStyles.text} className="figure_text">
+              <div className="figure_text">
                 {props.image.long_caption}
               </div>
             )}

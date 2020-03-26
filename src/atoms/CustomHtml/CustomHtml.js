@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import AmpCustomHtml from '../AmpCustomHtml/AmpCustomHtml';
 import whitelist from '../../utils/whitelist.json';
 
 class CustomHtml extends React.Component {
@@ -18,19 +19,8 @@ class CustomHtml extends React.Component {
   }
 
   render() {
-    const ampStyles = {
-      link: {
-        color: '#00334e',
-        textDecoration: 'none'
-      }
-    };
-    if (this.props.minimal || this.props.isAmp) {
-      return (
-        <a style={ampStyles.link} href={this.props.nodeData.attrs.fallback_url}>
-          {this.props.nodeData.attrs.fallback_text}
-        </a>
-      );
-    }
+    if (this.props.minimal) return null;
+    if (this.props.isAmp) return <AmpCustomHtml nodeData={this.props.nodeData} />
 
     const markup = { __html: this.state.html };
 
