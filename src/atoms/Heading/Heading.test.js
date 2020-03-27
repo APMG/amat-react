@@ -14,7 +14,7 @@ const doc = {
       },
       content: [
         {
-          text: 'A header',
+          text: "A header's header is no better",
           type: 'text'
         }
       ],
@@ -36,7 +36,12 @@ test('It renders a body from a Prosemirror doc', () => {
   const { container } = render(<Body nodeData={doc} />);
 
   expect(container.firstChild.tagName).toEqual('H1');
+  expect(container.firstChild.getAttribute('id')).toEqual(
+    'a_headers_header_is_no_better'
+  );
   expect(container.lastChild.tagName).toEqual('P');
-  expect(container.firstChild.innerHTML).toEqual('A header');
+  expect(container.firstChild.innerHTML).toEqual(
+    "A header's header is no better"
+  );
   expect(container.lastChild.innerHTML).toEqual('A paragraph');
 });

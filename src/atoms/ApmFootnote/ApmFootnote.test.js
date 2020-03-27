@@ -40,7 +40,7 @@ test('Renders footnotes', async () => {
 test('Renders doc', async () => {
   const { container } = render(<Body nodeData={footnotesDoc} />);
   const expected = `
-  <h3>A header</h3>
+  <h3 id="a_header">A header</h3>
   <p>First paragraph<a id="footnote-link-1" class="footnote" href="#footnote-content-1">1</a></p>
   <p>Second paragraph<a id="footnote-link-2" class="footnote" href="#footnote-content-2">2</a><a id="footnote-link-3" class="footnote" href="#footnote-content-3">3</a></p>
   <div class="footnotes" data-testid="footnote-list">
