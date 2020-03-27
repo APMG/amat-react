@@ -2,19 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Traverse from '../../utils/Traverse';
 
-//const ampStyles = {
-  //relatedList: {
-    //margin: '2em 0',
-    //fontFamily: '"Roboto", system-ui, -apple-system, sans-serif',
-    //clear: 'both'
-  //},
-  //relatedListTitle: {
-    //fontSize: '1.5em',
-    //fontWeight: '700',
-    //margin: '0 0 0.5em'
-  //}
-//};
-
 const enlistify = (props) => {
   if (props?.nodeData?.content) {
     for (let i = 0; i < props.nodeData.content.length; ++i) {
