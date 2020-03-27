@@ -31,37 +31,36 @@ const ApmImage = (props) => {
   }
 
   function captionCredit() {
-    if (props.isAmp) {
-      if (props?.image?.credit && props.image.credit_url) {
-        return (
-          <a
-            style={ampStyles.credit}
-            href={props.image.credit_url}
-            className="figure_credit"
-          >
-            {props.image.credit}
-          </a>
-        );
-      } else if (props?.image?.credit) {
-        return (
-          <div style={ampStyles.credit} className="figure_credit">
-            {props.image.credit}
-          </div>
-        );
-      } else {
-        if (props?.image?.credit && props.image.credit_url) {
-          return (
-            <a href={props.image.credit_url} className="figure_credit">
-              {props.image.credit}
-            </a>
-          );
-        } else if (props?.image?.credit) {
-          return <div className="figure_credit">{props.image.credit}</div>;
-        }
-      }
+    if (props?.image?.credit && props.image.credit_url) {
+      return (
+        <a href={props.image.credit_url} className="figure_credit">
+          {props.image.credit}
+        </a>
+      );
+    } else if (props?.image?.credit) {
+      return <div className="figure_credit">{props.image.credit}</div>;
     }
   }
 
+  function ampCaptionCredit() {
+    if (props?.image?.credit && props.image.credit_url) {
+      return (
+        <a
+          style={ampStyles.credit}
+          href={props.image.credit_url}
+          className="figure_credit"
+        >
+          {props.image.credit}
+        </a>
+      );
+    } else if (props?.image?.credit) {
+      return (
+        <div style={ampStyles.credit} className="figure_credit">
+          {props.image.credit}
+        </div>
+      );
+    }
+  }
   function image(embedded, isAmp = false) {
     const embeddedImage = embedded?.images?.find(
       (image) => image?.id && image?.id === props?.image?.id
@@ -97,7 +96,7 @@ const ApmImage = (props) => {
                 {props.image.long_caption}
               </div>
             )}
-            {captionCredit()}
+            {ampCaptionCredit()}
           </figcaption>
         ) : (
           ''
