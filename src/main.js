@@ -1,1 +1,7 @@
-export { default as Body } from './components/Body/Body';
+import Traverse from './utils/Traverse';
+import Body from './components/Body/Body';
+
+export {
+  Traverse,
+  Body
+};
