@@ -7,12 +7,8 @@ const ApmRelatedLinkListItem = ({ nodeData, isAmp }) => {
   if (isAmp) {
     return (
       <li className="apm-related-link">
-        <span className="apm-related-link-prefix">
-          {prefix}
-        </span>
-        <a href={url}>
-          {title}
-        </a>
+        <span className="apm-related-link-prefix">{prefix}</span>
+        <a href={url}>{title}</a>
       </li>
     );
   } else {
