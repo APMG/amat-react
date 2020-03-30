@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Link = (props) => {
-  const { href, title, inner, className } = props;
+const Link = ({ href, title, inner, className }) => {
   let attrs = { href: href };
+
   if (title) {
     attrs.title = title;
   }
