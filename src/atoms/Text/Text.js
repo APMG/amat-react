@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import EscapeSpecialCharaters from '../../utils/EscapeSpecialCharaters';
 
 const Text = (props) => {
-  const txt = props.nodeData['text'];
+  const txt = EscapeSpecialCharaters(props.nodeData['text']);
   return <>{txt}</>;
 };
 
