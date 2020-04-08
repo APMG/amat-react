@@ -10,12 +10,25 @@ const doc = {
     {
       type: 'apm_table_of_contents',
       attrs: {
-        depth: 6
+        anchors: [
+          {
+            level: 1,
+            linkText: 'Heading 1',
+            anchor: 'h1_heading_1'
+          },
+          {
+            level: 2,
+            linkText: 'Custom linkText',
+            anchor: 'custom_anchor'
+          }
+        ]
       }
     },
     {
       attrs: {
-        level: 1
+        level: 1,
+        anchor: 'h1_heading_1',
+        linkText: 'Heading 1'
       },
       content: [
         {
@@ -36,7 +49,9 @@ const doc = {
     },
     {
       attrs: {
-        level: 2
+        level: 2,
+        linkText: 'Custom linkText',
+        anchor: 'custom_anchor'
       },
       content: [
         {
@@ -57,7 +72,9 @@ const doc = {
     },
     {
       attrs: {
-        level: 3
+        level: 3,
+        linkText: 'Going to be ignored',
+        anchor: 'not_used_in_this_test'
       },
       content: [
         {
@@ -76,16 +93,15 @@ test('It renders a table of contents', () => {
 
   let expected = `
         <ul class="table-of-contents">
-          <li class="table-of-contents-level-1"><a href="#heading1.heading_1">Heading 1</a></li>
-          <li class="table-of-contents-level-2"><a href="#heading2.heading_2">Heading 2</a></li>
-          <li class="table-of-contents-level-3"><a href="#heading3.heading_3">Heading 3</a></li>
-        </ul>
+            <li class="table-of-contents-level-1"><a href="#h1_heading_1">Heading 1</a>
+            <li class="table-of-contents-level-2"><a href="#custom_anchor">Custom linkText</a>
+          </ul>
 
-        <h1 id="heading1.heading_1">Heading 1</h1>
-        <p>A paragraph</p>
-        <h2 id="heading2.heading_2">Heading 2</h2>
-        <p>more filler</p>
-        <h3 id="heading3.heading_3">Heading 3</h3>
+          <h1 id="h1_heading_1">Heading 1</h1>
+          <p>A paragraph</p>
+          <h2 id="custom_anchor">Heading 2</h2>
+          <p>more filler</p>
+          <h3 id="not_used_in_this_test">Heading 3</h3>
         `;
   let expectedOneLine = singleLineString(expected);
 
