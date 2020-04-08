@@ -93,8 +93,8 @@ test('It renders a table of contents', () => {
 
   let expected = `
         <ul class="table-of-contents">
-            <li class="table-of-contents-level-1"><a href="#h1_heading_1">Heading 1</a>
-            <li class="table-of-contents-level-2"><a href="#custom_anchor">Custom linkText</a>
+            <li class="table-of-contents-level-1"><a href="#h1_heading_1">Heading 1</a></li>
+            <li class="table-of-contents-level-2"><a href="#custom_anchor">Custom linkText</a></li>
           </ul>
 
           <h1 id="h1_heading_1">Heading 1</h1>
