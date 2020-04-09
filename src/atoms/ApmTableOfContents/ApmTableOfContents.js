@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { v4 as uuid } from 'uuid';
-import HeadingWithId from '../Heading/HeadingWithId';
+import Traverse from '../../utils/Traverse';
 
 const ApmTableOfContents = (props) => {
   if (props.minimal) {
@@ -13,16 +12,6 @@ const ApmTableOfContents = (props) => {
   let nodes = props.nodeData.filter(
     (node) => node.type !== 'apm_table_of_contents'
   );
-  const theRest = nodes.map((node) => {
-    // Find the right component with the Dispatcher sending in the alternate Heading component
-    const Components = Object.assign(props.components, {
-      heading: HeadingWithId
-    });
-    const Dispatcher = Components[node.type];
-    return (
-      <Dispatcher key={uuid()} nodeData={node} components={props.components} />
-    );
-  });
 
   if (toc.attrs.anchors) {
     return (
@@ -39,7 +28,12 @@ const ApmTableOfContents = (props) => {
             );
           })}
         </ul>
-        {theRest}
+        {Traverse({
+          nodeData: {
+            content: nodes
+          },
+          components: props.components
+        })}
       </>
     );
   } else {
@@ -67,7 +61,13 @@ const ApmTableOfContents = (props) => {
             );
           })}
         </ul>
-        {theRest}
+
+        {Traverse({
+          nodeData: {
+            content: nodes
+          },
+          components: props.components
+        })}
       </>
     );
   }

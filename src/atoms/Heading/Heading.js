@@ -14,12 +14,15 @@ const Heading = (props) => {
 };
 
 const findText = (props) => {
+  if (props.nodeData.attrs.anchor) {
+    return props.nodeData.attrs.anchor;
+  }
   if (!props.nodeData.content) {
     return null;
   }
   let txtEle = props.nodeData.content.find((ele) => ele.type === 'text');
   let txt = txtEle.text.replace(/\s/g, '_').replace(/['"]/g, '');
-  return txt.toLowerCase();
+  return `h${props.nodeData.attrs.level}_${txt.toLowerCase()}`;
 };
 
 Heading.propTypes = {
