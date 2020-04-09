@@ -10,7 +10,7 @@ const ApmTableOfContents = (props) => {
   const toc = props.nodeData.find(
     (node) => node.type === 'apm_table_of_contents'
   );
-  const nodes = props.nodeData.filter(
+  let nodes = props.nodeData.filter(
     (node) => node.type !== 'apm_table_of_contents'
   );
   const theRest = nodes.map((node) => {
@@ -24,23 +24,53 @@ const ApmTableOfContents = (props) => {
     );
   });
 
-  return (
-    <>
-      <ul className="table-of-contents">
-        {toc.attrs.anchors.map((anchor) => {
-          return (
-            <li
-              key={anchor.anchor}
-              className={`table-of-contents-level-${anchor.level}`}
-            >
-              <a href={`#${anchor.anchor}`}>{anchor.linkText}</a>
-            </li>
-          );
-        })}
-      </ul>
-      {theRest}
-    </>
-  );
+  if (toc.attrs.anchors) {
+    return (
+      <>
+        <ul className="table-of-contents">
+          {toc.attrs.anchors.map((anchor) => {
+            return (
+              <li
+                key={anchor.anchor}
+                className={`table-of-contents-level-${anchor.level}`}
+              >
+                <a href={`#${anchor.anchor}`}>{anchor.linkText}</a>
+              </li>
+            );
+          })}
+        </ul>
+        {theRest}
+      </>
+    );
+  } else {
+    const headings = props.nodeData.filter((node) => node.type === 'heading');
+    return (
+      <>
+        <ul className="table-of-contents">
+          {headings.map((heading) => {
+            const txt = heading.content.find(
+              (content) => content.type === 'text'
+            ).text;
+            const anchor = txt.replace(/\s/g, '_').toLowerCase();
+            nodes = props.nodeData.filter(
+              (node) =>
+                node.type !== 'apm_table_of_contents' &&
+                node.type !== 'headings'
+            );
+            return (
+              <li
+                key={anchor}
+                className={`table-of-contents-level-${heading.attrs.level}`}
+              >
+                <a href={`#h${heading.attrs.level}_${anchor}`}>{txt}</a>
+              </li>
+            );
+          })}
+        </ul>
+        {theRest}
+      </>
+    );
+  }
 };
 
 ApmTableOfContents.propTypes = {
