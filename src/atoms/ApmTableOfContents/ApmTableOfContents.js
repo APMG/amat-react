@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
-import HeadingWithTag from '../Heading/HeadingWithTag';
+import HeadingWithId from '../Heading/HeadingWithId';
 
 const ApmTableOfContents = (props) => {
   if (props.minimal) {
@@ -16,7 +16,7 @@ const ApmTableOfContents = (props) => {
   const theRest = nodes.map((node) => {
     // Find the right component with the Dispatcher sending in the alternate Heading component
     const Components = Object.assign(props.components, {
-      heading: HeadingWithTag
+      heading: HeadingWithId
     });
     const Dispatcher = Components[node.type];
     return (
@@ -51,7 +51,7 @@ const ApmTableOfContents = (props) => {
             const txt = heading.content.find(
               (content) => content.type === 'text'
             ).text;
-            const anchor = txt.replace(/\s/g, '_').toLowerCase();
+            const anchor = txt.replace(/[\s'"]/g, '_').toLowerCase();
             nodes = props.nodeData.filter(
               (node) =>
                 node.type !== 'apm_table_of_contents' &&
