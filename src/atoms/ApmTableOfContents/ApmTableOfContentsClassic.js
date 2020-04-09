@@ -17,7 +17,10 @@ const ApmTableOfContentsClassic = (props) => {
         {headings.map((heading) => {
           const txt = heading.content.find((content) => content.type === 'text')
             .text;
-          const anchor = txt.replace(/[\s'"]/g, '_').toLowerCase();
+          const anchor = txt
+            .replace(/\s/g, '_')
+            .replace(/['"]/g, '')
+            .toLowerCase();
 
           return (
             <li
