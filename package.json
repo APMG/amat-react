@@ -36,7 +36,8 @@
     "prop-types": "^15.7.2",
     "react-html-parser": "^2.0.2",
     "rollup": "^1.17.0",
-    "rollup-plugin-babel": "^4.3.3"
+    "rollup-plugin-babel": "^4.3.3",
+    "uuid": "^7.0.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.5",
