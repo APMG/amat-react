@@ -19,17 +19,15 @@ const Traverse = (props) => {
     }
   }
 
-
   // Most nodes that wrap inner nodes do so using the content property.
   // Footnotes however, stash them in a separate document tucked away
   // in the attrs under the footnoteContent property.
-  let content = []
+  let content = [];
 
   if (props.nodeData?.content) {
-    content = props.nodeData.content
-  }
-  else if (props.nodeData?.attrs?.footnoteContent?.content ) {
-    content = props.nodeData.attrs.footnoteContent.content
+    content = props.nodeData.content;
+  } else if (props.nodeData?.attrs?.footnoteContent?.content) {
+    content = props.nodeData.attrs.footnoteContent.content;
   }
 
   return content.map((item) => {
