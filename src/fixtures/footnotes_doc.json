@@ -20,19 +20,22 @@
         },
         {
           "attrs": {
-            "number": 1
-          },
-          "content": [
-            {
+            "footnoteContent": {
               "content": [
                 {
-                  "text": "First footnote",
-                  "type": "text"
+                  "content": [
+                    {
+                      "text": "First footnote",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
                 }
               ],
-              "type": "paragraph"
-            }
-          ],
+              "type": "doc"
+            },
+            "number": 1
+          },
           "type": "apm_footnote"
         }
       ],
@@ -46,93 +49,108 @@
         },
         {
           "attrs": {
-            "number": 2
-          },
-          "content": [
-            {
+            "footnoteContent": {
               "content": [
                 {
-                  "text": "Second footnote",
-                  "type": "text"
+                  "content": [
+                    {
+                      "text": "Second footnote",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
                 }
               ],
-              "type": "paragraph"
-            }
-          ],
+              "type": "doc"
+            },
+            "number": 2
+          },
           "type": "apm_footnote"
         },
         {
           "attrs": {
-            "number": 3
-          },
-          "content": [
-            {
+            "footnoteContent": {
               "content": [
                 {
-                  "text": "Third footnote",
-                  "type": "text"
+                  "content": [
+                    {
+                      "text": "Third footnote",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
                 }
               ],
-              "type": "paragraph"
-            }
-          ],
+              "type": "doc"
+            },
+            "number": 3
+          },
           "type": "apm_footnote"
         }
       ],
       "type": "paragraph"
     },
     {
-      "type": "apm_footnote_list",
-      "content": [
+      "type":"apm_footnote_list",
+      "content":[
         {
           "attrs": {
+            "footnoteContent": {
+              "content": [
+                {
+                  "content": [
+                    {
+                      "text": "First footnote",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "type": "doc"
+            },
             "number": 1
           },
-          "content": [
-            {
-              "content": [
-                {
-                  "text": "First footnote",
-                  "type": "text"
-                }
-              ],
-              "type": "paragraph"
-            }
-          ],
           "type": "apm_footnote"
         },
         {
           "attrs": {
+            "footnoteContent": {
+              "content": [
+                {
+                  "content": [
+                    {
+                      "text": "Second footnote",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
+                }
+              ],
+              "type": "doc"
+            },
             "number": 2
           },
-          "content": [
-            {
-              "content": [
-                {
-                  "text": "Second footnote",
-                  "type": "text"
-                }
-              ],
-              "type": "paragraph"
-            }
-          ],
           "type": "apm_footnote"
         },
         {
           "attrs": {
-            "number": 3
-          },
-          "content": [
-            {
+            "footnoteContent": {
               "content": [
                 {
-                  "text": "Third footnote",
-                  "type": "text"
+                  "content": [
+                    {
+                      "text": "Third footnote",
+                      "type": "text"
+                    }
+                  ],
+                  "type": "paragraph"
                 }
               ],
-              "type": "paragraph"
-            }
-          ],
+              "type": "doc"
+            },
+            "number": 3
+          },
           "type": "apm_footnote"
         }
       ]

@@ -12,19 +12,22 @@ const doc = {
   content: [
     {
       attrs: {
-        number: 2
-      },
-      content: [
-        {
+        footnoteContent: {
           content: [
             {
-              text: 'Second footnote',
-              type: 'text'
+              content: [
+                {
+                  text: 'Second footnote',
+                  type: 'text'
+                }
+              ],
+              type: 'paragraph'
             }
           ],
-          type: 'paragraph'
-        }
-      ],
+          type: 'doc'
+        },
+        number: 2
+      },
       type: 'apm_footnote'
     }
   ]
