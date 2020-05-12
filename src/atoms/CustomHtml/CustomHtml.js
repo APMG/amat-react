@@ -1,93 +1,73 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import whitelist from '../../utils/whitelist.json';
+import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-class CustomHtml extends React.Component {
-  constructor(props) {
-    super(props);
+const CustomHtml = ({ nodeData, minimal }) => {
+  const [html, setHtml] = useState('');
 
-    this.state = {
-      html: ''
-    };
-  }
+  if (minimal) return null;
 
-  componentDidMount() {
-    this.setState({
-      html: cleanHtml(this.props.nodeData.attrs)
+  useEffect(() => {
+    const { html, safeScripts } = parseHtml({
+      ...nodeData.attrs,
+      whitelist: whitelist.approved
     });
-  }
+    setHtml(html);
 
-  render() {
-    if (this.props.minimal || this.props.isAmp) {
-      return (
-        <a href={this.props.nodeData.attrs.fallback_url}>
-          {this.props.nodeData.attrs.fallback_text}
-        </a>
-      );
-    }
+    safeScripts.forEach((script) => {
+      let newScript = document.createElement('script');
+      if (script.src) newScript.src = script.src;
+      if (script.innerHTML) newScript.innerHTML = script.innerHTML;
 
-    const markup = { __html: this.state.html };
+      newScript.type = script.type;
 
-    return <div className="customHtml" dangerouslySetInnerHTML={markup} />;
-  }
-}
+      document.body.appendChild(newScript);
+    });
+  }, []);
+
+  const markup = { __html: html };
+
+  return <div className="customHtml" dangerouslySetInnerHTML={markup} />;
+};
 
 CustomHtml.propTypes = {
   nodeData: PropTypes.object,
-  minimal: PropTypes.bool,
-  isAmp: PropTypes.bool
+  minimal: PropTypes.bool
 };
 
 export default CustomHtml;
 
-function cleanHtml(attrs) {
-  let doc = new DOMParser().parseFromString(attrs.html, 'text/html');
+/**
+ * Removes all scripts with an external source from the html and returns the whitelisted ones as an array of Nodes
+ * @param {html: string, fallback_url: string, whitelist: Array}
+ * @returns {html: string, safeScripts: Node[]}
+ */
+function parseHtml({ html, fallback_url, whitelist }) {
+  const whitelistRegex = new RegExp(whitelist.join('|'));
+  const element = htmlStringToElement(html);
+  let safeHtml, scripts, safeScripts, hasIframe;
 
-  // see if there are any scripts or iframes in the code
-  let iframes = doc.querySelectorAll('iframe');
-  let scripts = doc.querySelectorAll('script');
-  let fallbackUrl = attrs.fallback_url;
-  let whitelistRegex = new RegExp(whitelist.approved.join('|'));
+  if (!element) return { html: '', safeScripts: [] };
 
-  // set up some conditionals for the logic below
-  let cond = {
-    isIframe: iframes.length > 0,
-    hasScript: scripts.length > 0,
-    hasFallbackUrl: fallbackUrl !== '',
-    isApproved: whitelistRegex.test(fallbackUrl)
-  };
+  scripts = Array.from(element.querySelectorAll('script[src]'));
+  scripts.forEach((script) => {
+    element.removeChild(script);
+  });
+  safeScripts = scripts.filter((script) => whitelistRegex.test(script.src));
 
-  if (!cond.isIframe && cond.hasScript) {
-    if (cond.hasFallbackUrl && cond.isApproved) {
-      // if a valid script is provided but not in an iframe, wrap in an iframe
-      return `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${fallbackUrl}"></iframe>`;
-    } else if (!cond.hasFallbackUrl) {
-      // Scroll through the script(s), get their srcs (if applicable) and check against whitelist.
-      [].forEach.call(scripts, function(script) {
-        let isAllowed = whitelistRegex.test(script.src);
-
-        if (!isAllowed) {
-          script.parentNode.removeChild(script);
-        }
-      });
-
-      let docString = new XMLSerializer().serializeToString(doc);
-      return `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${`data:text/html;charset=utf-8,${encodeURI(
-        docString
-      )}`}"></iframe>`;
-
-      // this is kind of a last-ditch thing that *may* not work depending on the individual code being inserted, whether it is being run on localhost or on prod, and whether it uses cookies. Your best bet is really making your own <iframe />
-    } else {
-      // otherwise, strip out the scripts and return that HTML lump
-      [].forEach.call(scripts, function(script) {
-        script.parentNode.removeChild(script);
-      });
-
-      let docString = new XMLSerializer().serializeToString(doc);
-      return docString;
-    }
+  hasIframe = element.querySelector('iframe');
+  // If there is a script without a src, set it it in an iframe (or it might not work!)
+  if (element.querySelectorAll('script') && fallback_url && !hasIframe) {
+    safeHtml = `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${fallback_url}">${element.innerHTML}</iframe>`;
   } else {
-    // if there are no scripts, just return the html
-    return attrs.html;
+    safeHtml = element.innerHTML;
   }
+  return { html: safeHtml, safeScripts };
+}
+
+function htmlStringToElement(html) {
+  if (typeof document == 'undefined') return false;
+  let template = document.createElement('div');
+  template.innerHTML = html;
+  return template;
 }
