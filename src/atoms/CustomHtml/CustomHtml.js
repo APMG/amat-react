@@ -1,8 +1,8 @@
-import whitelist from '../../utils/whitelist.json';
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import whitelist from '../../utils/whitelist.json';
 
-const CustomHtml = ({ nodeData, minimal }) => {
+const CustomHtmlOverride = ({ nodeData, minimal }) => {
   const [html, setHtml] = useState('');
 
   if (minimal) return null;
@@ -30,12 +30,12 @@ const CustomHtml = ({ nodeData, minimal }) => {
   return <div className="customHtml" dangerouslySetInnerHTML={markup} />;
 };
 
-CustomHtml.propTypes = {
+CustomHtmlOverride.propTypes = {
   nodeData: PropTypes.object,
   minimal: PropTypes.bool
 };
 
-export default CustomHtml;
+export default CustomHtmlOverride;
 
 /**
  * Removes all scripts with an external source from the html and returns the whitelisted ones as an array of Nodes
@@ -54,13 +54,13 @@ function parseHtml({ html, fallback_url, whitelist }) {
     element.removeChild(script);
   });
   safeScripts = scripts.filter((script) => whitelistRegex.test(script.src));
-
+  safeHtml = element.innerHTML;
   hasIframe = element.querySelector('iframe');
-  // If there is a script without a src, set it it in an iframe (or it might not work!)
-  if (element.querySelectorAll('script') && fallback_url && !hasIframe) {
-    safeHtml = `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${fallback_url}">${element.innerHTML}</iframe>`;
-  } else {
-    safeHtml = element.innerHTML;
+
+  // If there is a script without a src, set the whole block in an iframe (or it might not work!)
+  if (element.querySelector('script') && !hasIframe) {
+    let src = whitelistRegex.test(fallback_url) ? fallback_url : ''; // if fallback_url does not pass test, this likely will show nothing
+    safeHtml = `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${src}">${element.innerHTML}</iframe>`;
   }
   return { html: safeHtml, safeScripts };
 }
