@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import whitelist from '../../utils/whitelist.json';
 
-const CustomHtmlOverride = ({ nodeData, minimal }) => {
+const CustomHtml = ({ nodeData, minimal }) => {
   const [html, setHtml] = useState('');
 
   if (minimal) return null;
@@ -30,12 +30,12 @@ const CustomHtmlOverride = ({ nodeData, minimal }) => {
   return <div className="customHtml" dangerouslySetInnerHTML={markup} />;
 };
 
-CustomHtmlOverride.propTypes = {
+CustomHtml.propTypes = {
   nodeData: PropTypes.object,
   minimal: PropTypes.bool
 };
 
-export default CustomHtmlOverride;
+export default CustomHtml;
 
 /**
  * Removes all scripts with an external source from the html and returns the whitelisted ones as an array of Nodes
