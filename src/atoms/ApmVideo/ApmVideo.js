@@ -20,7 +20,12 @@ class ApmVideo extends React.Component {
   }
 
   render() {
-    const { short_caption, long_caption, credit_name, credit_url } = this.props.nodeData.attrs;
+    const {
+      short_caption,
+      long_caption,
+      credit_name,
+      credit_url
+    } = this.props.nodeData.attrs;
     const embed = this.findEmbedded();
     if (embed && this.props.isAmp) {
       return <AmpVideo {...embed} />;
