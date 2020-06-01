@@ -20,7 +20,12 @@ class ApmVideo extends React.Component {
   }
 
   render() {
-    const { long_caption, credit, credit_url } = this.props.nodeData.attrs;
+    const {
+      short_caption,
+      long_caption,
+      credit_name,
+      credit_url
+    } = this.props.nodeData.attrs;
     const embed = this.findEmbedded();
     if (embed && this.props.isAmp) {
       return <AmpVideo {...embed} />;
@@ -41,11 +46,12 @@ class ApmVideo extends React.Component {
       >
         <div
           className={classes}
+          title={short_caption}
           dangerouslySetInnerHTML={this.markup(embed.html)}
         />
         <figcaption className="figure_caption">
           <span className="figure_credit">
-            <a href={credit_url}>{credit}</a>
+            <a href={credit_url}>{credit_name}</a>
           </span>
           <div className="figure_caption_content">{long_caption}</div>
         </figcaption>

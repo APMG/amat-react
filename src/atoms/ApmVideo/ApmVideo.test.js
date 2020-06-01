@@ -11,7 +11,7 @@ const doc = {
   content: [
     {
       attrs: {
-        credit: 'Credit where credit is due',
+        credit_name: 'Credit where credit is due',
         credit_url: 'http://example.com/credit_where_credit_is_due',
         short_caption: '"Short cap"',
         long_caption: '"Long caption"',
@@ -48,7 +48,7 @@ test('It renders a video', () => {
   const { container } = render(<Body nodeData={doc} embedded={embedded} />);
 
   let expected = `
-        <figure class="figure" data-node-type="apm-video" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"> <div class="apm-video youtube">
+        <figure class="figure" data-node-type="apm-video" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"> <div class="apm-video youtube" title="&quot;Short cap&quot;">
             <iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
           </div>
           <figcaption class="figure_caption">
