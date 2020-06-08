@@ -11,6 +11,10 @@ const ApmAudio = (props) => {
     (item) => item.id === props.nodeData.attrs.audio_id
   );
 
+  if (!audio.encodings?.length) {
+    return null;
+  }
+
   if (props.isAmp) {
     return (
       <figure className={`figure ${width} align-${float}`}>
