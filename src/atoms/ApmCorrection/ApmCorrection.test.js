@@ -31,6 +31,6 @@ const doc = {
 test('Renders footnote list', async () => {
   const { container } = render(<Body nodeData={doc} />);
 
-  const expected = `<div class="apm-correction"><div class="apm-correction-title">Correction</div><div class="apm-correction-timestamp\">2019-09-04</div><div class=\"apm-correction-body\"><p>An update would go here.</p></div></div>`;
+  const expected = `<div class="apm-correction"><div class="apm-correction-title">Correction</div><div class="apm-correction-timestamp">2019-09-04</div><div class="apm-correction-body"><p>An update would go here.</p></div></div>`;
   expect(container.innerHTML).toEqual(expected);
 });
