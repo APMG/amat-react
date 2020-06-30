@@ -28,11 +28,13 @@ import Aside from '../atoms/Aside/Aside';
 import ApmFootnoteList from '../atoms/ApmFootnoteList/ApmFootnoteList';
 import ApmFootnote from '../atoms/ApmFootnote/ApmFootnote';
 import ApmFootnoteListItem from '../atoms/ApmFootnoteListItem/ApmFootnoteListItem';
+import ApmCorrection from '../atoms/ApmCorrection/ApmCorrection';
 
 const DefaultComponents = () => {
   return {
     apm_attachment: ApmAttachment,
     apm_audio: ApmAudio,
+    apm_correction: ApmCorrection,
     apm_custom_html: CustomHtml,
     apm_gallery: ApmGallery,
     apm_oembed: ApmOembed,
