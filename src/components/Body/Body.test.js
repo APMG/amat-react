@@ -30,6 +30,32 @@ test('First it renders a link from a prosemirror doc ', () => {
     '<a href="https://www.apple.com">Jump</a>'
   );
 });
+test('First it renders a link from a prosemirror paragraph', () => {
+  const doc = {
+    type: 'paragraph',
+    content: [
+      {
+        text: 'Tell us about your special person!',
+        type: 'text',
+        marks: [
+          {
+            type: 'link',
+            attrs: {
+              href: 'https://mpr.tfaforms.net/89',
+              title: '',
+              className: 'default'
+            }
+          }
+        ]
+      }
+    ]
+  };
+  const { container } = render(<Body nodeData={doc} />);
+
+  expect(container.innerHTML).toEqual(
+    '<a href="https://mpr.tfaforms.net/89" class="default">Tell us about your special person!</a>'
+  );
+});
 
 test('It renders a link from a prosemirror doc using an alternate component', () => {
   const doc = {
