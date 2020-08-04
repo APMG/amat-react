@@ -41,7 +41,9 @@ const ApmAudio = (props) => {
       ></audio>
       <figcaption className="figure_caption">
         <div className="figure_caption_content">{title}</div>
-        <span className="figure_credit">by {audio_credit}</span>
+        {audio_credit && (
+          <span className="figure_credit">by {audio_credit}</span>
+        )}
       </figcaption>
     </figure>
   );
