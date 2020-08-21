@@ -16,7 +16,7 @@ const doc = {
         audio_credit: 'American Public Media - 2017',
         title: 'Some sound from the intervieWWWWWWWWW',
         description: '"this is the description"',
-        audio_id: '1PHWXXMZZY2VXMNW99XRF67BXM',
+        id: '1PHWXXMZZY2VXMNW99XRF67BXM',
         url:
           'http://download.publicradio.org/minnesota/archive_portal/NHPRC/95222.mp3',
         origin: 'cody'
@@ -43,6 +43,50 @@ const embeddedAssetJson = {
 test('It renders audio', () => {
   const { container } = render(
     <Body nodeData={doc} embedded={embeddedAssetJson} />
+  );
+
+  const expected = `
+      <figure class="figure full align-right">
+        <audio controls="" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
+        </audio>
+        <figcaption class="figure_caption">
+          <div class="figure_caption_content">
+            Some sound from the intervieWWWWWWWWW
+          </div>
+          <span class="figure_credit">
+            by American Public Media - 2017
+          </span>
+        </figcaption>
+      </figure>
+  `;
+
+  expect(container.innerHTML).toEqual(singleLineString(expected));
+});
+
+const doc2 = {
+  type: 'doc',
+  version: 1,
+  content: [
+    {
+      attrs: {
+        float: 'right',
+        width: 'full',
+        audio_credit: 'American Public Media - 2017',
+        title: 'Some sound from the intervieWWWWWWWWW',
+        description: '"this is the description"',
+        audio_id: '1PHWXXMZZY2VXMNW99XRF67BXM',
+        url:
+          'http://download.publicradio.org/minnesota/archive_portal/NHPRC/95222.mp3',
+        origin: 'cody'
+      },
+      type: 'apm_audio'
+    }
+  ]
+};
+
+test('It renders audio when we have id instead of audio_id', () => {
+  const { container } = render(
+    <Body nodeData={doc2} embedded={embeddedAssetJson} />
   );
 
   const expected = `
