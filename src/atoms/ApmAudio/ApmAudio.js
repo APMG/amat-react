@@ -8,7 +8,9 @@ const ApmAudio = (props) => {
 
   const { float, width, title, audio_credit } = props.nodeData.attrs;
   const audio = props.embedded.audio.find(
-    (item) => item.id === props.nodeData.attrs?.id || item.id === props.nodeData.attrs?.audio_id 
+    (item) =>
+      item.id === props.nodeData.attrs?.id ||
+      item.id === props.nodeData.attrs?.audio_id
   );
 
   if (!audio || !audio?.encodings?.length) {

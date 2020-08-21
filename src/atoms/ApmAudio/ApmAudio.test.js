@@ -107,7 +107,6 @@ test('It renders audio when we have id instead of audio_id', () => {
   expect(container.innerHTML).toEqual(singleLineString(expected));
 });
 
-
 test('It renders AMP audio', () => {
   const { container } = render(
     <Body nodeData={doc} embedded={embeddedAssetJson} isAmp={true} />
