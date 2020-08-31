@@ -4,8 +4,6 @@ import { v4 as uuid } from 'uuid';
 
 const Mark = (mark, InnerComponent, attrs = {}, props) => {
   const Dispatcher = props.components[mark.type];
-  console.log('Mark Dispatcher', Dispatcher);
-
   return <Dispatcher key={uuid()} inner={InnerComponent} {...attrs} />;
 };
 
