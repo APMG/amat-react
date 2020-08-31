@@ -6,12 +6,10 @@ import embedded from '../../fixtures/embedded.json';
 
 afterEach(cleanup);
 
-xtest('TODO: It renders a gallery (idk why it\'s crashing)', () => {
-  const { container } = render(
-    <Body nodeData={gallery} embedded={embedded} />
-  );
+xtest("TODO: It renders a gallery (idk why it's crashing)", () => {
+  const { container } = render(<Body nodeData={gallery} embedded={embedded} />);
 
   console.log(prettyDOM(container));
 
   expect(true).toBeTruthy();
-})
+});

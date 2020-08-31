@@ -5,7 +5,7 @@ import Mark from './Mark';
 import ApmTableOfContentsClassic from '../atoms/ApmTableOfContents/ApmTableOfContentsClassic';
 
 const Traverse = (props) => {
-  // Checks if the legacy Table of Contents is anywhere in this nodeData and delivers the old version if so. Not necessary for React Native sites, which shouldn't have any instances of the old TOCs left. 
+  // Checks if the legacy Table of Contents is anywhere in this nodeData and delivers the old version if so. Not necessary for React Native sites, which shouldn't have any instances of the old TOCs left.
   if (props.nodeData && props.nodeData.content) {
     const toc = props.nodeData.content.find(
       (node) => node.type === 'apm_table_of_contents'

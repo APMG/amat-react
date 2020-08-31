@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Break  = () => {
+const Break = () => {
   return (
     <>
       <br />
     </>
   );
-}
+};
 
 export default Break;
