@@ -1,14 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Traverse from '../../utils/Traverse';
 
-class Doc extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return <>{Traverse(this.props)}</>;
-  }
+const Doc = (props) => {
+  return <>{Traverse(props)}</>;
 }
 
 export default Doc;

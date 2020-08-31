@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
 
-const Mark = (mark, inner, attrs = {}, props) => {
+const Mark = (mark, InnerComponent, attrs = {}, props) => {
   const Dispatcher = props.components[mark.type];
-  return <Dispatcher key={uuid()} inner={inner} {...attrs} />;
+  console.log('Mark Dispatcher', Dispatcher);
+
+  return <Dispatcher key={uuid()} inner={InnerComponent} {...attrs} />;
 };
 
 Mark.propTypes = {

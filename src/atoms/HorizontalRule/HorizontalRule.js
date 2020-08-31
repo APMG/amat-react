@@ -1,17 +1,11 @@
 import React from 'react';
 
-class HorizontalRule extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <>
-        <hr />
-      </>
-    );
-  }
+const HorizontalRule = () => {
+  return (
+    <>
+      <hr />
+    </>
+  );
 }
 
 export default HorizontalRule;

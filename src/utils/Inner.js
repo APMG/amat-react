@@ -4,6 +4,8 @@ import { v4 as uuid } from 'uuid';
 
 const Inner = (child, props) => {
   const Dispatcher = props.components[child.type];
+  console.log('Inner Dispatcher', Dispatcher);
+
   switch (child.type) {
     case 'apm_image':
       return (

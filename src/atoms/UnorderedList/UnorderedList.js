@@ -1,14 +1,8 @@
 import React from 'react';
 import Traverse from '../../utils/Traverse';
 
-class UnorderedList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return <ul>{Traverse(this.props)}</ul>;
-  }
+const UnorderedList = (props) => {
+  return <ul>{Traverse(props)}</ul>;
 }
 
 export default UnorderedList;
