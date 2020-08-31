@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import EmbedContainer from '@apmg/react-oembed-container';
-import AmpVideo from '../AmpVideo/AmpVideo';
+import AmpVideo from '../ApmVideo/AmpVideo';
 
 const ApmOembed = (props) => {
   if (props.minimal) {

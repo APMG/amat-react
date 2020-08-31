@@ -1,17 +1,11 @@
 import React from 'react';
 
-class Break extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <>
-        <br />
-      </>
-    );
-  }
-}
+const Break = () => {
+  return (
+    <>
+      <br />
+    </>
+  );
+};
 
 export default Break;

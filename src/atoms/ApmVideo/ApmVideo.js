@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import AmpVideo from '../AmpVideo/AmpVideo';
+import AmpVideo from './AmpVideo';
 
 class ApmVideo extends React.Component {
   constructor(props) {

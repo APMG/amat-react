@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Default from '../../atoms/Default/Default';
+import Traverse from '../../utils/Traverse';
 import DefaultComponents from '../../utils/DefaultComponents';
 
 const Body = ({
@@ -17,7 +17,7 @@ const Body = ({
       : components;
 
   return (
-    <Default
+    <Traverse
       nodeData={nodeData}
       embedded={embedded ? embedded : {}}
       components={mergedComponents}
