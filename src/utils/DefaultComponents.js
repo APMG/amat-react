@@ -5,9 +5,6 @@ import Heading from '../atoms/Heading/Heading';
 import HorizontalRule from '../atoms/HorizontalRule/HorizontalRule';
 import Text from '../atoms/Text/Text';
 import CustomHtml from '../atoms/CustomHtml/CustomHtml';
-import Link from '../marks/Link/Link';
-import Strong from '../marks/Strong/Strong';
-import Em from '../marks/Em/Em';
 import Blockquote from '../atoms/Blockquote/Blockquote';
 import UnorderedList from '../atoms/UnorderedList/UnorderedList';
 import OrderedList from '../atoms/OrderedList/OrderedList';
@@ -29,6 +26,10 @@ import ApmFootnoteList from '../atoms/ApmFootnoteList/ApmFootnoteList';
 import ApmFootnote from '../atoms/ApmFootnote/ApmFootnote';
 import ApmFootnoteListItem from '../atoms/ApmFootnoteListItem/ApmFootnoteListItem';
 import ApmCorrection from '../atoms/ApmCorrection/ApmCorrection';
+import Link from '../marks/Link/Link';
+import Strong from '../marks/Strong/Strong';
+import Em from '../marks/Em/Em';
+import Code from '../marks/Code/Code';
 
 const DefaultComponents = () => {
   return {
@@ -52,6 +53,7 @@ const DefaultComponents = () => {
     aside: Aside,
     blockquote: Blockquote,
     bullet_list: UnorderedList,
+    code: Code,
     doc: Doc,
     em: Em,
     hard_break: Break,
