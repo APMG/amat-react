@@ -122,11 +122,8 @@ test('it renders a nil doc', () => {
   const doc = null;
   const { container } = render(<Body nodeData={doc} />);
 
-  expect(container.innerHTML).toEqual(
-    ''
-  );
+  expect(container.innerHTML).toEqual('');
 });
-
 
 const LinkNewWindow = (props) => {
   const { href, title, inner } = props;
