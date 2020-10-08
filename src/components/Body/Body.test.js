@@ -118,6 +118,13 @@ test('It renders a link from a prosemirror doc using an alternate component when
   );
 });
 
+test('it renders a nil doc', () => {
+  const doc = null;
+  const { container } = render(<Body nodeData={doc} />);
+
+  expect(container.innerHTML).toEqual('');
+});
+
 const LinkNewWindow = (props) => {
   const { href, title, inner } = props;
   const attrs = title ? { href: href, title: title } : { href: href };

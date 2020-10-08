@@ -28,7 +28,7 @@ const Body = ({
 };
 
 Body.propTypes = {
-  nodeData: PropTypes.object.isRequired,
+  nodeData: PropTypes.object,
   embedded: PropTypes.object,
   overrides: PropTypes.object,
   minimal: PropTypes.bool,
