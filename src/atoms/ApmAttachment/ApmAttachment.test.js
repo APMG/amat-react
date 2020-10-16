@@ -42,10 +42,8 @@ test('It renders a body from a Prosemirror doc', () => {
 });
 
 test('It can handle no match for attachment', () => {
-  embedded.attachments[0].id = 'zzzzzzzzzzzzzzzzZZZ'
+  embedded.attachments[0].id = 'zzzzzzzzzzzzzzzzZZZ';
   const { container } = render(<Body nodeData={doc} embedded={embedded} />);
 
-  expect(container.innerHTML).toEqual(
-   "" 
-  );
+  expect(container.innerHTML).toEqual('');
 });

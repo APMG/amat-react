@@ -10,7 +10,7 @@ function attachment_url(id, embedded) {
 const ApmAttachment = (props) => {
   const { attachment_id, title } = props.nodeData.attrs;
   const neo = attachment_url(attachment_id, props.embedded);
-  if(typeof(neo) === 'undefined') {
+  if (typeof neo === 'undefined') {
     return null;
   }
   return (
