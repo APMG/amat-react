@@ -10,7 +10,9 @@ function attachment_url(id, embedded) {
 const ApmAttachment = (props) => {
   const { attachment_id, title } = props.nodeData.attrs;
   const neo = attachment_url(attachment_id, props.embedded);
-
+  if (typeof neo === 'undefined') {
+    return null;
+  }
   return (
     <a
       className={`amat-apm-attachment ${neo.mime_type.replace(/\//, '-')}`}
