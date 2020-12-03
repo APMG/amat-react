@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import CustomHtml from './CustomHtml';
+import propublica from './testdata/propublica.json';
 
 afterEach(cleanup);
 
@@ -135,7 +136,7 @@ test('Renders defined iframe', () => {
   expect(container.querySelectorAll('iframe').length).toEqual(1);
 });
 
-test('Renders fallback script in an iframe', () => {
+test('Renders a fallback script', () => {
   const { container } = render(
     <CustomHtml
       embedded={script.embedded}
@@ -146,10 +147,10 @@ test('Renders fallback script in an iframe', () => {
   );
 
   expect(container.firstChild.innerHTML).toEqual(
-    '<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://mprnews.typeform.com/to/y5uiHF"><div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div></iframe>'
+    '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
   );
-  expect(container.querySelectorAll('script').length).toEqual(0);
-  expect(container.querySelectorAll('iframe').length).toEqual(1);
+  expect(container.querySelectorAll('script').length).toEqual(1);
+  expect(container.querySelectorAll('iframe').length).toEqual(0);
 });
 
 test('If no fallback src is provided, and there is an unsourced script, place it in an iframe', () => {
@@ -163,9 +164,10 @@ test('If no fallback src is provided, and there is an unsourced script, place it
   );
 
   expect(container.firstChild.innerHTML).toEqual(
-    '<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src=""><div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div></iframe>'
+    '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
   );
-  expect(container.querySelectorAll('iframe').length).toEqual(1);
+  expect(container.querySelectorAll('script').length).toEqual(1);
+  expect(container.querySelectorAll('iframe').length).toEqual(0);
 });
 
 test('If the fallback src is not on our whitelist, and the script has no source, all html is placed in iframe', () => {
@@ -179,6 +181,28 @@ test('If the fallback src is not on our whitelist, and the script has no source,
   );
 
   expect(container.firstChild.innerHTML).toEqual(
-    `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src=""><div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div></iframe>`
+    `<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>`
   );
+  expect(container.querySelectorAll('script').length).toEqual(1);
+  expect(container.querySelectorAll('iframe').length).toEqual(0);
+
+});
+
+test('Allow a google recaptcha', () => {
+  const doc = JSON.parse(propublica.body);
+  script.nodeData.attrs.html = doc.content[0].attrs.html;
+  script.nodeData.attrs.fallback_url = "https://www.google.com/recaptcha/api.js";
+  const { container } = render(
+    <CustomHtml
+      embedded={script.embedded}
+      nodeData={script.nodeData}
+      minimal={script.minimal}
+      type={script.type}
+    />
+  );
+
+  expect(container.firstChild.innerHTML).toContain('https://www.google.com/recaptcha/api.js');
+  expect(container.querySelectorAll('script').length).toEqual(1);
+  expect(container.querySelectorAll('iframe').length).toEqual(0);
+
 });
