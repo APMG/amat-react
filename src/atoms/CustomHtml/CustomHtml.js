@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import ReactDOM from 'react-dom';
 
 const ANY_SCRIPT = /<script[\s\S]*?>[\s\S]*?<\/script>/gi;
 const EXTERNAL_SCRIPT = /<script[^>]+src=(['"])(.*?)\1/i;
@@ -36,18 +35,21 @@ const extractInjectedScriptURL = (script) => {
  * @param {String} script The string HTML of a <script> tag
  * @returns {String|null} The URI of the script file this script tag loads, or null.
  */
-const extractScriptURL = script => (
-  extractExternalScriptURL(script) || extractInjectedScriptURL(script)
-);
+const extractScriptURL = (script) =>
+  extractExternalScriptURL(script) || extractInjectedScriptURL(script);
 
 /**
  * Remove duplicate or undefined values from an array of strings.
  *
  * @param {String[]} Array script file URIs.
  */
-const uniqueURIs = scripts => Object.keys(scripts.reduce((keys, script) => (
-  script ? { ...keys, [script]: true } : keys
-), {}));
+const uniqueURIs = (scripts) =>
+  Object.keys(
+    scripts.reduce(
+      (keys, script) => (script ? { ...keys, [script]: true } : keys),
+      {}
+    )
+  );
 
 /**
  * Parse a string of HTML and identify the JS files loaded by any contained script tags.
@@ -73,25 +75,21 @@ const injectScriptTag = (src) => {
   return scriptTag;
 };
 
-const CustomHtml = (props) =>  {
-  if (props.minimal) {
+const CustomHtml = (props) => {
+  if (props.minimal || props.isAmp) {
     return null;
   }
 
-
   const myRef = React.createRef();
   getScripts(props.nodeData.attrs.html)
-    .map(scrpt => injectScriptTag(scrpt))
+    .map((scrpt) => injectScriptTag(scrpt))
     .filter(Boolean);
-  const markup = { __html: props.nodeData.attrs.html };
+  const html = props.nodeData.attrs.html.replace(ANY_SCRIPT, '');
+  const markup = { __html: html };
   return (
-    <div
-      ref={myRef}
-      className="customHtml"
-      dangerouslySetInnerHTML={markup}
-    />
+    <div ref={myRef} className="customHtml" dangerouslySetInnerHTML={markup} />
   );
-}
+};
 
 CustomHtml.propTypes = {
   nodeData: PropTypes.object,
