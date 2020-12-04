@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import CustomHtml from './CustomHtml';
-import propublica from './testdata/propublica.json';
+import recaptcha from './testdata/propublica.json';
 
 afterEach(cleanup);
 
@@ -146,10 +146,8 @@ test('Renders a fallback script', () => {
     />
   );
 
-  expect(container.firstChild.innerHTML).toEqual(
-    '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div>  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
-  );
-  expect(container.querySelectorAll('script').length).toEqual(0);
+  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
+  expect(container.querySelectorAll('script').length).toEqual(1);
   expect(container.querySelectorAll('iframe').length).toEqual(0);
 });
 
@@ -163,11 +161,8 @@ test('If no fallback src is provided, and there is an unsourced script, place it
     />
   );
 
-  expect(container.firstChild.innerHTML).toEqual(
-    '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div>  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
-  );
-  expect(container.querySelectorAll('script').length).toEqual(0);
-  expect(container.querySelectorAll('iframe').length).toEqual(0);
+  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
+  expect(container.querySelectorAll('script').length).toEqual(1);
 });
 
 test('If the fallback src is not on our whitelist, and the script has no source, all html is placed in iframe', () => {
@@ -180,15 +175,12 @@ test('If the fallback src is not on our whitelist, and the script has no source,
     />
   );
 
-  expect(container.firstChild.innerHTML).toEqual(
-    `<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div>  <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>`
-  );
-  expect(container.querySelectorAll('script').length).toEqual(0);
-  expect(container.querySelectorAll('iframe').length).toEqual(0);
+  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
+  expect(container.querySelectorAll('script').length).toEqual(1);
 });
 
-test('Allow a google recaptcha', () => {
-  const doc = JSON.parse(propublica.body);
+test('Allows a google recaptcha', () => {
+  const doc = JSON.parse(recaptcha.body);
   script.nodeData.attrs.html = doc.content[0].attrs.html;
   script.nodeData.attrs.fallback_url =
     'https://www.google.com/recaptcha/api.js';
@@ -200,10 +192,6 @@ test('Allow a google recaptcha', () => {
       type={script.type}
     />
   );
-
-  expect(container.firstChild.innerHTML).not.toContain(
-    'https://www.google.com/recaptcha/api.js'
-  );
-  expect(container.querySelectorAll('script').length).toEqual(0);
-  expect(container.querySelectorAll('iframe').length).toEqual(0);
+  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
+  expect(container.querySelectorAll('script').length).toEqual(1);
 });
