@@ -37,10 +37,12 @@ const CustomHtml = (props) => {
     const cleanHtml = dirtyHtml.replace(ANY_SCRIPT, '');
     const ele = htmlStringToElement(dirtyHtml);
     const scripts = Array.from(ele.querySelectorAll('script'));
+    const node =
+      process.env.JEST_WORKER_ID !== undefined ? current : document.head;
     if (scripts) {
       scripts
         .map((scrpt) => {
-          return injectScriptTag(scrpt, current);
+          return injectScriptTag(scrpt, node);
         })
         .filter(Boolean);
     }
