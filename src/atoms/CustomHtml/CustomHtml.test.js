@@ -44,7 +44,7 @@ test('Renders defined iframe', () => {
   expect(container.querySelectorAll('iframe').length).toEqual(1);
 });
 
-test('Renders a fallback script', () => {
+test('Renders a typeform snippet and script', () => {
   const { container } = render(
     <CustomHtml
       embedded={script.embedded}
@@ -54,12 +54,15 @@ test('Renders a fallback script', () => {
     />
   );
 
+  expect(container.firstChild.innerHTML).toEqual(
+    expect.stringMatching(/mprnews\.typeform\.com/)
+  );
   expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
   expect(container.querySelectorAll('script').length).toEqual(1);
   expect(container.querySelectorAll('iframe').length).toEqual(0);
 });
 
-test('If no fallback src is provided, and there is an unsourced script, place it in an iframe', () => {
+test('Renders another typeform snippet and script', () => {
   const { container } = render(
     <CustomHtml
       embedded={scriptNoFallback.embedded}
@@ -73,7 +76,7 @@ test('If no fallback src is provided, and there is an unsourced script, place it
   expect(container.querySelectorAll('script').length).toEqual(1);
 });
 
-test('If the fallback src is not on our whitelist, and the script has no source, all html is placed in iframe', () => {
+test('Renders yet another typeform snippet and script', () => {
   const { container } = render(
     <CustomHtml
       embedded={scriptBadFallback.embedded}
