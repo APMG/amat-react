@@ -30,6 +30,7 @@ import Link from '../marks/Link/Link';
 import Strong from '../marks/Strong/Strong';
 import Em from '../marks/Em/Em';
 import Code from '../marks/Code/Code';
+import ApmInlineFrame from '../atoms/ApmInlineFrame/ApmInlineFrame';
 
 const DefaultComponents = () => {
   return {
@@ -37,6 +38,7 @@ const DefaultComponents = () => {
     apm_audio: ApmAudio,
     apm_correction: ApmCorrection,
     apm_custom_html: CustomHtml,
+    apm_inline_frame: ApmInlineFrame,
     apm_gallery: ApmGallery,
     apm_oembed: ApmOembed,
     apm_footnote: ApmFootnote,
