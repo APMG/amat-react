@@ -13,7 +13,8 @@ const doc = {
       attrs: {
         description: 'this is an example',
         height: '500',
-        src: 'https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html',
+        src:
+          'https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html',
         width: ''
       }
     }
@@ -21,19 +22,17 @@ const doc = {
 };
 
 test('It renders an iFrame', async () => {
-  const { container } = render(
-    <Body nodeData={doc} />
-  );
+  const { container } = render(<Body nodeData={doc} />);
 
-  const expected = "<iframe class=\"apm-inline-frame\" frameborder=\"0\" height=\"500\" src=\"https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html\" title=\"this is an example\" width=\"\"></iframe>";
+  const expected =
+    '<iframe class="apm-inline-frame" frameborder="0" height="500" src="https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html" title="this is an example" width=""></iframe>';
   expect(container.innerHTML).toEqual(expected);
 });
 
 test('It renders an AMP when needed iFrame', async () => {
-  const { container } = render(
-    <Body nodeData={doc} isAmp={true} />
-  );
+  const { container } = render(<Body nodeData={doc} isAmp={true} />);
 
-  const expected = "<amp-iframe frameborder=\"0\" height=\"500\" src=\"https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html\" title=\"this is an example\" width=\"\"></amp-iframe>";
+  const expected =
+    '<amp-iframe frameborder="0" height="500" src="https://mdn-samples.mozilla.org/snippets/html/iframe-simple-contents.html" title="this is an example" width=""></amp-iframe>';
   expect(container.innerHTML).toEqual(expected);
 });

@@ -30,7 +30,7 @@ import Link from '../marks/Link/Link';
 import Strong from '../marks/Strong/Strong';
 import Em from '../marks/Em/Em';
 import Code from '../marks/Code/Code';
-import ApmInlineFrame from '../atoms/ApmInlineFrame/ApmInlineFrame'
+import ApmInlineFrame from '../atoms/ApmInlineFrame/ApmInlineFrame';
 
 const DefaultComponents = () => {
   return {
