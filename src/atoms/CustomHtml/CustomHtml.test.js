@@ -1,16 +1,107 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import CustomHtml from './CustomHtml';
-import recaptcha from './testdata/propublica.json';
-import {
-  html,
-  iframe,
-  script,
-  scriptNoFallback,
-  scriptBadFallback
-} from './testdata/fixtures';
 
 afterEach(cleanup);
+
+const html = {
+  embedded: {
+    attachments: [],
+    audio: [],
+    oembeds: [],
+    images: []
+  },
+  minimal: false,
+  nodeData: {
+    attrs: {
+      fallback_text: 'basic',
+      fallback_url: '',
+      html: '<h1>Hello, world!</h1>'
+    },
+    type: 'apm_custom_html'
+  },
+  overrides: {}
+};
+
+const iframe = {
+  embedded: {
+    attachments: [],
+    audio: [],
+    oembeds: [],
+    images: []
+  },
+  minimal: false,
+  nodeData: {
+    attrs: {
+      fallback_text: 'iframe',
+      fallback_url: '',
+      html:
+        '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcameronofthemountains%2Fposts%2F483103422464792&width=500" width="500" height="701" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>'
+    },
+    type: 'apm_custom_html'
+  },
+  overrides: {}
+};
+
+const script = {
+  embedded: {
+    attachments: [],
+    audio: [],
+    oembeds: [],
+    images: []
+  },
+  minimal: false,
+  nodeData: {
+    attrs: {
+      fallback_text: 'script',
+      fallback_url: 'https://mprnews.typeform.com/to/y5uiHF',
+      html:
+        '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&utm_source=typeform.com-13901520-ProPlus3&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
+    },
+    type: 'apm_custom_html'
+  },
+  overrides: {}
+};
+
+const scriptNoFallback = {
+  embedded: {
+    attachments: [],
+    audio: [],
+    oembeds: [],
+    images: []
+  },
+  minimal: false,
+  nodeData: {
+    attrs: {
+      fallback_text: 'badScript',
+      fallback_url: '',
+      html:
+        '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&utm_source=typeform.com-13901520-ProPlus3&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
+    },
+    type: 'apm_custom_html'
+  },
+  overrides: {}
+};
+
+const scriptBadFallback = {
+  embedded: {
+    attachments: [],
+    audio: [],
+    oembeds: [],
+    images: []
+  },
+  minimal: false,
+  nodeData: {
+    attrs: {
+      fallback_text: 'badScript',
+      fallback_url: 'http://www.downloadmehehehe.virus',
+      html:
+        '<div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&utm_source=typeform.com-13901520-ProPlus3&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>'
+    },
+    type: 'apm_custom_html'
+  },
+  overrides: {}
+};
 
 test('Renders basic HTML body', () => {
   const { container } = render(
@@ -44,7 +135,7 @@ test('Renders defined iframe', () => {
   expect(container.querySelectorAll('iframe').length).toEqual(1);
 });
 
-test('Renders a typeform snippet and script', () => {
+test('Renders fallback script in an iframe', () => {
   const { container } = render(
     <CustomHtml
       embedded={script.embedded}
@@ -55,14 +146,13 @@ test('Renders a typeform snippet and script', () => {
   );
 
   expect(container.firstChild.innerHTML).toEqual(
-    expect.stringMatching(/mprnews\.typeform\.com/)
+    '<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://mprnews.typeform.com/to/y5uiHF"><div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div></iframe>'
   );
-  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
-  expect(container.querySelectorAll('script').length).toEqual(1);
-  expect(container.querySelectorAll('iframe').length).toEqual(0);
+  expect(container.querySelectorAll('script').length).toEqual(0);
+  expect(container.querySelectorAll('iframe').length).toEqual(1);
 });
 
-test('Renders another typeform snippet and script', () => {
+test('If no fallback src is provided, and there is an unsourced script, place it in an iframe', () => {
   const { container } = render(
     <CustomHtml
       embedded={scriptNoFallback.embedded}
@@ -72,11 +162,13 @@ test('Renders another typeform snippet and script', () => {
     />
   );
 
-  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
-  expect(container.querySelectorAll('script').length).toEqual(1);
+  expect(container.firstChild.innerHTML).toEqual(
+    '<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src=""><div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div></iframe>'
+  );
+  expect(container.querySelectorAll('iframe').length).toEqual(1);
 });
 
-test('Renders yet another typeform snippet and script', () => {
+test('If the fallback src is not on our whitelist, and the script has no source, all html is placed in iframe', () => {
   const { container } = render(
     <CustomHtml
       embedded={scriptBadFallback.embedded}
@@ -86,172 +178,7 @@ test('Renders yet another typeform snippet and script', () => {
     />
   );
 
-  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
-  expect(container.querySelectorAll('script').length).toEqual(1);
-});
-
-test('Allows a google recaptcha', () => {
-  const doc = JSON.parse(recaptcha.body);
-  script.nodeData.attrs.html = doc.content[0].attrs.html;
-  script.nodeData.attrs.fallback_url =
-    'https://www.google.com/recaptcha/api.js';
-  const { container } = render(
-    <CustomHtml
-      embedded={script.embedded}
-      nodeData={script.nodeData}
-      minimal={script.minimal}
-      type={script.type}
-    />
+  expect(container.firstChild.innerHTML).toEqual(
+    `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src=""><div class="typeform-widget" data-url="https://mprnews.typeform.com/to/y5uiHF" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=y5uiHF&amp;utm_source=typeform.com-13901520-ProPlus3&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div></iframe>`
   );
-  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
-  expect(container.querySelectorAll('script').length).toEqual(1);
-});
-
-test('Allows a propublica script', () => {
-  const html = `<p>This has stuff from propublica</p><script type="text/javascript" src="https://pixel.propublica.org/pixel.js" async="true"></script>`;
-  script.nodeData.attrs.html = html;
-  script.nodeData.attrs.fallback_url = 'https://pixel.propublica.org/pixel.js';
-  const { container } = render(
-    <CustomHtml
-      embedded={script.embedded}
-      nodeData={script.nodeData}
-      minimal={script.minimal}
-      type={script.type}
-    />
-  );
-  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
-  expect(container.querySelectorAll('script').length).toEqual(1);
-});
-
-test('Allows embarassing, nasty, nasty javascript', () => {
-  const html = `<p>This is really, really nasty.</p><script type="text/javascript">
-        function ready(fn) {
-            if (document.readyState != 'loading') {
-                fn();
-            } else {
-                document.addEventListener('DOMContentLoaded', fn);
-            }
-        }
-
-        function setPageLanguage() {
-            var lang = window.location.href.match(/&lang=([a-zA-Z]*?)&?/);
-
-            if (lang) {
-                document.getElementsByTagName('html')[0].setAttribute('lang', lang[1]);
-            }
-
-        }
-
-        function computeEmbedPath() {
-            var trim_point = window.location.href.indexOf('embed/index.html');
-            if (trim_point > 0) {
-                return window.location.href.substring(0, trim_point); // supports https access via https://s3.amazonaws.com/cdn.knightlab.com/libs/timeline/latest/embed/index.html
-            }
-            return "https://cdn.knightlab.com/libs/timeline3/latest/";
-        }
-
-        function addOembedTag() {
-            // it's not clear that any tools execute this JS to get the URL, but maybe?
-            var oembed_link = document.createElement('link');
-            oembed_link['rel'] = 'alternate';
-            oembed_link['type'] = 'application/json+oembed';
-            oembed_link['href'] = 'https://oembed.knightlab.com/timeline/?url=' + encodeURIComponent(window.location.href);
-            document.head.appendChild(oembed_link);
-        }
-
-        function createEmbedDiv(containerId, width, height) {
-
-            if (typeof(width) != 'string' && typeof(width) != 'number') {
-                width = '100%'
-            }
-
-            if (typeof(height) != 'string' && typeof(height) != 'number') {
-                height = '100%'
-            }
-
-            // default containerId would be 'timeline-embed'
-            t = document.createElement('div');
-            t.style.position = 'relative';
-
-            te = document.getElementById(containerId);
-            te.appendChild(t);
-            te.classList.add("tl-timeline-embed");
-
-            if (width.toString().match("%")) {
-                te.style.width = width.split("%")[0] + "%";
-            } else {
-                width = Number(width) - 2;
-                te.style.width = (width) + 'px';
-            }
-
-            if (height.toString().match("%")) {
-                te.style.height = height;
-                te.classList.add("tl-timeline-full-embed");
-            } else if (width.toString().match("%")) {
-                te.classList.add("tl-timeline-full-embed");
-                height = Number(height) - 16;
-                te.style.height = (height) + 'px';
-            } else {
-                height = height - 16;
-                te.style.height = (height) + 'px';
-            }
-        }
-
-        /**
-         * Parse all URL parameters as possible Timeline options.
-         * Timeline itself will use or ignore these based on actual
-         * supported options.
-         */
-        function optionsFromUrlParams() {
-            var param_str = window.location.href.slice(window.location.href.indexOf('?') + 1);
-
-            if (param_str.match('#')) {
-                param_str = param_str.split('#')[0];
-            }
-
-            param_str = param_str.split('&');
-
-            var url_vars = {}
-
-            for (var i = 0; i < param_str.length; i++) {
-                var uv = param_str[i].split('=');
-                url_vars[uv[0]] = uv[1];
-            }
-
-            return url_vars;
-        };
-
-        ready(function() {
-            setPageLanguage();
-            var embed_path = computeEmbedPath();
-            addOembedTag();
-
-            var options = optionsFromUrlParams();
-            createEmbedDiv('timeline-embed', options.width, options.height);
-            // ga_property_id is not something we let users override
-            options.ga_property_id = 'UA-27829802-4';
-            if (typeof(options.source) == 'undefined') {
-                options.source = '1xuY4upIooEeszZ_lCmeNx24eSFWe0rHe9ZdqH2xqVNk' // women in computing
-            }
-
-            options.soundcite = true;
-
-            window.options = options
-            window.timeline = new TL.Timeline('timeline-embed', options.source, options)
-
-        })
-    </script>`;
-  script.nodeData.attrs.html = html;
-  script.nodeData.attrs.fallback_url =
-    'https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1y3DK1oLxQmvMpRC6GIla5ifHrG50QRz4BTRAwV_-oeA&font=Fjalla-Average&lang=en&initial_zoom=3&height=650';
-  const { container } = render(
-    <CustomHtml
-      embedded={script.embedded}
-      nodeData={script.nodeData}
-      minimal={script.minimal}
-      type={script.type}
-    />
-  );
-  expect(container.firstChild.innerHTML).toMatch(/<\/script>$/);
-  expect(container.querySelectorAll('script').length).toEqual(1);
 });

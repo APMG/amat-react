@@ -1,56 +1,101 @@
-import React, { useEffect, useState, useRef } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import PropTypes from 'prop-types';
+import ReactDOM from 'react-dom';
+import whitelist from '../../utils/whitelist.json';
 
-const ANY_SCRIPT = /<script[\s\S]*?>[\s\S]*?<\/script>/gi;
-
-/**
- * Create & inject a new <script> tag into the page.
- *
- * @param {String} src A script URL.
- * @returns {HTMLElement} The injected script tag.
- */
-
-const injectScriptTag = (scrpt, node) => {
-  node.appendChild(scrpt);
-  return scrpt;
-};
-
-const htmlStringToElement = (html) => {
-  if (typeof document == 'undefined') return false;
-  let template = document.createElement('div');
-  template.innerHTML = html;
-  return template;
-};
-
-const CustomHtml = (props) => {
-  if (props.minimal || props.isAmp) {
-    return null;
+class CustomHtml extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+    this.state = {
+      html: '',
+      loaded: false
+    };
   }
-  const [html, setHtml] = useState('');
-  const myRef = useRef(null);
 
-  useEffect(() => {
+  componentDidMount() {
+    const { html, safeScripts } = this.parseHtml({
+      ...this.props.nodeData.attrs,
+      whitelist: whitelist.approved
+    });
+
     // eslint-disable-next-line
-    const current = ReactDOM.findDOMNode(myRef.current);
-    const dirtyHtml = props.nodeData.attrs.html;
-    const cleanHtml = dirtyHtml.replace(ANY_SCRIPT, '');
-    const ele = htmlStringToElement(dirtyHtml);
-    const scripts = Array.from(ele.querySelectorAll('script'));
-    if (scripts) {
-      scripts
-        .map((scrpt) => {
-          return injectScriptTag(scrpt, current);
-        })
-        .filter(Boolean);
+    const node = ReactDOM.findDOMNode(this.myRef.current);
+    if (!this.state.loaded) {
+      safeScripts.forEach((script) => {
+        this.loadScript(script.src, node);
+      });
     }
-    setHtml(cleanHtml);
-  });
-  const markup = { __html: html };
-  return (
-    <div ref={myRef} className="customHtml" dangerouslySetInnerHTML={markup} />
-  );
-};
+
+    this.setState({
+      html,
+      loaded: true
+    });
+  }
+
+  loadScript(src, node) {
+    let tag = document.createElement('script');
+
+    tag.type = 'text/javascript';
+    tag.async = false; // Load in order
+    tag.src = src;
+    node.appendChild(tag);
+    return tag;
+  }
+
+  /**
+   * Removes all scripts with an external source from the html and returns the whitelisted ones as an array of Nodes
+   * @param {html: string, fallback_url: string, whitelist: Array}
+   * @returns {html: string, safeScripts: Node[]}
+   */
+  parseHtml({ html, fallback_url, whitelist }) {
+    const whitelistRegex = new RegExp(whitelist.join('|'));
+    const element = this.htmlStringToElement(html);
+    let safeHtml, scripts, safeScripts, hasIframe;
+
+    if (!element) return { html: '', safeScripts: [] };
+
+    scripts = Array.from(element.querySelectorAll('script[src]'));
+    scripts.forEach((script) => {
+      element.removeChild(script);
+    });
+    safeScripts = scripts.filter((script) => whitelistRegex.test(script.src));
+    safeHtml = element.innerHTML;
+    hasIframe = element.querySelector('iframe');
+
+    // If there is a script without a src, set the whole block in an iframe (or it might not work!)
+    if (element.querySelector('script') && !hasIframe) {
+      let src = '';
+      if (whitelistRegex.test(fallback_url)) {
+        src = fallback_url;
+      }
+      safeHtml = `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${src}">${element.innerHTML}</iframe>`;
+    }
+    return { html: safeHtml, safeScripts };
+  }
+
+  htmlStringToElement(html) {
+    if (typeof document == 'undefined') return false;
+    let template = document.createElement('div');
+    template.innerHTML = html;
+    return template;
+  }
+
+  render() {
+    if (this.props.minimal || this.props.isAmp) {
+      return null;
+    }
+
+    const markup = { __html: this.state.html };
+    return (
+      <div
+        ref={this.myRef}
+        className="customHtml"
+        dangerouslySetInnerHTML={markup}
+      />
+    );
+  }
+}
 
 CustomHtml.propTypes = {
   nodeData: PropTypes.object,
