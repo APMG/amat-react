@@ -43,7 +43,7 @@ class CustomHtml extends React.Component {
     return tag;
   }
 
-   /**
+  /**
    * Removes all scripts with an external source from the html and returns the whitelisted ones as an array of Nodes
    * @param {html: string, fallback_url: string, whitelist: Array}
    * @returns {html: string, safeScripts: Node[]}

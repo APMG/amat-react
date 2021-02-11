@@ -227,7 +227,7 @@ test('Do not **** the bed if there is a script tag that does not have a parent e
   font-size: 20px;
   text-decoration: none;
                 border: none;" class="button" type="submit">Submit</button>
-</form>`
+</form>`;
   const { container } = render(
     <CustomHtml
       embedded={scriptBadFallback.embedded}
