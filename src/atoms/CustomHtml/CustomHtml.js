@@ -43,7 +43,7 @@ class CustomHtml extends React.Component {
     return tag;
   }
 
-  /**
+   /**
    * Removes all scripts with an external source from the html and returns the whitelisted ones as an array of Nodes
    * @param {html: string, fallback_url: string, whitelist: Array}
    * @returns {html: string, safeScripts: Node[]}
@@ -57,7 +57,7 @@ class CustomHtml extends React.Component {
 
     scripts = Array.from(element.querySelectorAll('script[src]'));
     scripts.forEach((script) => {
-      element.removeChild(script);
+      script.parentNode.removeChild(script);
     });
     safeScripts = scripts.filter((script) => whitelistRegex.test(script.src));
     safeHtml = element.innerHTML;
