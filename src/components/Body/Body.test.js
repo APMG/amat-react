@@ -128,7 +128,7 @@ test('it renders a nil doc', () => {
 
 test('it renders a doc that was throwing an error in Traverse', () => {
   const { container } = render(
-    <Body nodeData={jsonObj} embedded={embeddedObj} />
+    <Body nodeData={jsonObj} embedded={embeddedObj} isAmp={true} />
   );
 
   expect(container.innerHTML).toContain(
