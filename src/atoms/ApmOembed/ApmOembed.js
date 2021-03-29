@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import EmbedContainer from '@apmg/react-oembed-container';
 import AmpVideo from '../ApmVideo/AmpVideo';
+import AmpTwitter from '../Amp/AmpTwitter/AmpTwitter';
 
 const ApmOembed = (props) => {
   if (props.minimal) {
@@ -23,6 +24,10 @@ const ApmOembed = (props) => {
   }
 
   const embed = findEmbedded();
+  if (props.isAmp && embed.provider_name === 'Twitter') {
+    return <AmpTwitter {...props} embed={embed} />;
+  }
+
   if (props.isAmp && embed?.type === 'video') {
     return <AmpVideo {...embed} />;
   }
