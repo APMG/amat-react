@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { render, cleanup } from '@testing-library/react';
 import Body from './Body';
+import { jsonObj, embeddedObj } from './fixtures/TraverseError';
 
 afterEach(cleanup);
 
@@ -123,6 +124,16 @@ test('it renders a nil doc', () => {
   const { container } = render(<Body nodeData={doc} />);
 
   expect(container.innerHTML).toEqual('');
+});
+
+test('it renders a doc that was throwing an error in Traverse', () => {
+  const { container } = render(
+    <Body nodeData={jsonObj} embedded={embeddedObj} />
+  );
+
+  expect(container.innerHTML).toContain(
+    'achievement barriers around education; pulling up businesses that'
+  );
 });
 
 const LinkNewWindow = (props) => {

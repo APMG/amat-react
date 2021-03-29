@@ -30,6 +30,10 @@ const ApmImage = (props) => {
       (image) => image?.id && image?.id === props?.image?.id
     );
 
+    if (!embeddedImage) {
+      return null;
+    }
+
     if (isAmp) {
       return (
         <AmpImage

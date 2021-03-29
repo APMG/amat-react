@@ -9,9 +9,17 @@ const ApmOembed = (props) => {
   }
 
   function findEmbedded() {
-    return props.embedded.oembeds.find(
+    if (!props.embedded || !props.embedded.oembeds) {
+      return null;
+    }
+
+    const embed = props.embedded.oembeds.find(
       (embed) => embed.url === props.nodeData.attrs.src
     );
+    if (!embed) {
+      return null;
+    }
+    return embed;
   }
 
   const embed = findEmbedded();
