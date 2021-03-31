@@ -4,7 +4,31 @@ import Body from '../../components/Body/Body';
 
 afterEach(cleanup);
 
-const doc = {
+const citedDoc = {
+  type: 'doc',
+  version: 1,
+  content: [
+    {
+      type: 'blockquote',
+      attrs: {
+        citation: 'Paul McCartney'
+      },
+      content: [
+        {
+          type: 'paragraph',
+          content: [
+            {
+              type: 'text',
+              text: 'A quote.'
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+const uncitedDoc = {
   type: 'doc',
   version: 1,
   content: [
@@ -26,7 +50,15 @@ const doc = {
 };
 
 test('It renders a body from a Prosemirror doc', () => {
-  const { container } = render(<Body nodeData={doc} />);
+  const { container } = render(<Body nodeData={citedDoc} />);
+
+  expect(container.innerHTML).toEqual(
+    '<blockquote><p>A quote.</p><cite>- Paul McCartney</cite></blockquote>'
+  );
+});
+
+test('It renders a body from a Prosemirror doc without citation', () => {
+  const { container } = render(<Body nodeData={uncitedDoc} />);
 
   expect(container.innerHTML).toEqual(
     '<blockquote><p>A quote.</p></blockquote>'
