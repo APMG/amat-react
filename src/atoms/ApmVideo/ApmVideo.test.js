@@ -3,7 +3,16 @@ import { render, cleanup } from '@testing-library/react';
 import Body from '../../components/Body/Body';
 import { singleLineString } from '../../utils/utils';
 
-afterEach(cleanup);
+beforeAll(() => {
+  jest.spyOn(console, 'error').mockImplementation(() => {});
+});
+afterAll(() => {
+  console.error.mockRestore();
+});
+afterEach(() => {
+  console.error.mockClear();
+  cleanup();
+});
 
 const doc = {
   type: 'doc',
@@ -44,6 +53,15 @@ const embedded = {
   ]
 };
 
+const embedded2 = {
+  oembeds: [
+    {
+      this: 'is a bad',
+      embed: 'why did this happen?'
+    }
+  ]
+};
+
 test('It renders a video', () => {
   const { container } = render(<Body nodeData={doc} embedded={embedded} />);
 
@@ -60,6 +78,7 @@ test('It renders a video', () => {
         </figure>`;
   let expectedOneLine = singleLineString(expected);
 
+  expect(console.error).not.toHaveBeenCalled();
   expect(container.innerHTML).toEqual(expectedOneLine);
 });
 
@@ -71,5 +90,13 @@ test('It renders an AMP video', () => {
   let expected = `<amp-iframe data-testid="amp-video" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" width="480" height="270" layout="responsive" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups"><amp-img placeholder="true" src="https://i.ytimg.com/vi/OIf7d60lOR0/hqdefault.jpg" width="480" height="360" layout="fill"></amp-img></amp-iframe>`;
   let expectedOneLine = singleLineString(expected);
 
+  expect(console.error).not.toHaveBeenCalled();
   expect(container.innerHTML).toEqual(expectedOneLine);
+});
+
+test('It handles a bad or missing embed and logs the incident', () => {
+  const { container } = render(<Body nodeData={doc} embedded={embedded2} />);
+
+  expect(console.error).toHaveBeenCalled();
+  expect(container.innerHTML).toEqual('');
 });
