@@ -26,18 +26,24 @@ class ApmVideo extends React.Component {
       credit_name,
       credit_url
     } = this.props.nodeData.attrs;
+    if (this.props.minimal) {
+      return null;
+    }
     const embed = this.findEmbedded();
+    if (!embed) {
+      console.error(`No embed found for ${this.props.nodeData.attrs.url}`);
+      return null;
+    }
+
     if (embed && this.props.isAmp) {
       return <AmpVideo {...embed} />;
     }
-    const cname = embed.provider_name.toLowerCase().replace(/\s/g, '');
+    const cname = embed?.provider_name.toLowerCase().replace(/\s/g, '');
     const classes = classNames({
       'apm-video': true,
       [cname]: cname
     });
-    if (this.props.minimal) {
-      return null;
-    }
+
     return (
       <figure
         className="figure"
@@ -47,7 +53,7 @@ class ApmVideo extends React.Component {
         <div
           className={classes}
           title={short_caption}
-          dangerouslySetInnerHTML={this.markup(embed.html)}
+          dangerouslySetInnerHTML={this.markup(embed?.html)}
         />
         <figcaption className="figure_caption">
           <span className="figure_credit">
