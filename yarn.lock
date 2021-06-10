@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@apmg/enceladus@^0.5.6":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@apmg/enceladus/-/enceladus-0.5.6.tgz#8c5432ecb540a33725acd5a6626df2a48f81a24d"
-  integrity sha512-Av9ai11ylXoYZ2lCv5LPk7tGBA31dKmvkGqsj3CFLYVN+6fLNCxNazAjOVbLND/mHusUeFbxhkO0CX6d1vHPbQ==
+"@apmg/enceladus@^0.5.7":
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/@apmg/enceladus/-/enceladus-0.5.7.tgz#72f4c1e1596f4fe13f65b65401fc0fc9cc404a8f"
+  integrity sha512-BAllrwLjpT3/Ibmqb8I9pQJrCJrudzqN79hwcKpnulgBVQKbx6LJdSGXhx+Qzago1Y0JlZ7ZeJ08iLWU92uImA==
   dependencies:
     "@emotion/babel-preset-css-prop" "^10.0.14"
     "@emotion/core" "^10.0.16"
