@@ -28,6 +28,7 @@ const ApmAudio = (props) => {
           width="400"
           height="42"
           src={audio.encodings[0].play_file_path?.replace('%user_agent', 'web')}
+          controlsList={audio.downloadable ? undefined : 'nodownload'}
         ></amp-audio>
         <figcaption className="figure_caption">
           <div className="figure_caption_content">{title}</div>
@@ -43,6 +44,7 @@ const ApmAudio = (props) => {
     <figure className={`figure ${width} align-${float}`}>
       <audio
         controls="controls"
+        controlsList={audio.downloadable ? undefined : 'nodownload'}
         src={audio.encodings[0].play_file_path?.replace('%user_agent', 'web')}
       ></audio>
       <figcaption className="figure_caption">
