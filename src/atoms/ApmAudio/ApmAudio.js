@@ -21,13 +21,18 @@ const ApmAudio = (props) => {
     return null;
   }
 
+  const src =
+    audio.encodings[0]?.locations?.find(
+      (item) => item?.location === 'megaphone'
+    )?.path || audio.encodings[0]?.play_file_path;
+
   if (props.isAmp) {
     return (
       <figure className={`figure ${width} align-${float}`}>
         <amp-audio
           width="400"
           height="42"
-          src={audio.encodings[0].play_file_path?.replace('%user_agent', 'web')}
+          src={src?.replace(/(%user_agent|unreplaced_ua)/, 'web')}
           controlsList={audio.downloadable ? undefined : 'nodownload'}
         ></amp-audio>
         <figcaption className="figure_caption">
@@ -45,7 +50,7 @@ const ApmAudio = (props) => {
       <audio
         controls="controls"
         controlsList={audio.downloadable ? undefined : 'nodownload'}
-        src={audio.encodings[0].play_file_path?.replace('%user_agent', 'web')}
+        src={src?.replace(/(%user_agent|unreplaced_ua)/, 'web')}
       ></audio>
       <figcaption className="figure_caption">
         <div className="figure_caption_content">{title}</div>

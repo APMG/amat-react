@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
 import Inner from './Inner';
 import Mark from './Mark';
@@ -52,6 +53,11 @@ const getContent = (props) => {
   }
 
   return content;
+};
+
+Traverse.propTypes = {
+  nodeData: PropTypes.object,
+  components: PropTypes.object
 };
 
 export default Traverse;
