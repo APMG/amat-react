@@ -138,7 +138,19 @@ const embeddedAssetJson2 = {
       encodings: [
         {
           play_file_path:
-            'https://play-dev.publicradio.org/%user_agent/o/devel/foo/foo_20191204_2_128.mp3'
+            'https://play-dev.publicradio.org/%user_agent/o/devel/foo/foo_20191204_2_128.mp3',
+          locations: [
+            {
+              location: 'streamguys-play',
+              path:
+                'https://play-dev.publicradio.org/%user_agent/o/devel/foo/foo_20191204_2_128.mp3'
+            },
+            {
+              location: 'streamguys-http',
+              path:
+                'https://play-dev.publicradio.org/unreplaced_ua/o/devel/foo/foo_20191204_2_128.mp3'
+            }
+          ]
         }
       ]
     }
@@ -154,6 +166,86 @@ test('Audio is not marked as nodownload if the audio is flagged as downloadable'
       <figure class="figure full align-right">
         <audio controls="" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
         </audio>
+        <figcaption class="figure_caption">
+          <div class="figure_caption_content">
+            Some sound from the intervieWWWWWWWWW
+          </div>
+          <span class="figure_credit">
+            by American Public Media - 2017
+          </span>
+        </figcaption>
+      </figure>
+  `;
+
+  expect(container.innerHTML).toEqual(singleLineString(expected));
+});
+
+const embeddedAssetJsonWithMegaphone = {
+  audio: [
+    {
+      id: '1PHWXXMZZY2VXMNW99XRF67BXM',
+      encodings: [
+        {
+          play_file_path:
+            'https://play-dev.publicradio.org/%user_agent/o/devel/foo/this_is_not_megaphone.mp3',
+          locations: [
+            {
+              location: 'streamguys-play',
+              path:
+                'https://play-dev.publicradio.org/%user_agent/o/devel/foo/this_is_not_megaphone.mp3'
+            },
+            {
+              location: 'streamguys-http',
+              path:
+                'https://play-dev.publicradio.org/unreplaced_ua/o/devel/foo/this_is_not_megaphone.mp3'
+            },
+            {
+              location: 'megaphone',
+              path: 'https://traffic.megaphone.fm/CAD7304315305.mp3'
+            }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+test('Audio source will choose megaphone if present', () => {
+  const { container } = render(
+    <Body nodeData={doc} embedded={embeddedAssetJsonWithMegaphone} />
+  );
+
+  const expected = `
+  <figure class="figure full align-right">
+    <audio controls="" controlslist="nodownload" src="https://traffic.megaphone.fm/CAD7304315305.mp3">
+    </audio>
+      <figcaption class="figure_caption">
+        <div class="figure_caption_content">
+          Some sound from the intervieWWWWWWWWW
+        </div>
+      <span class="figure_credit">
+        by American Public Media - 2017
+      </span>
+    </figcaption>
+  </figure>
+  `;
+
+  expect(container.innerHTML).toEqual(singleLineString(expected));
+});
+
+test('AMP audio source will choose megaphone if present', () => {
+  const { container } = render(
+    <Body
+      nodeData={doc}
+      embedded={embeddedAssetJsonWithMegaphone}
+      isAmp={true}
+    />
+  );
+
+  const expected = `
+      <figure class="figure full align-right">
+        <amp-audio width="400" height="42" src="https://traffic.megaphone.fm/CAD7304315305.mp3" controlslist="nodownload">
+        </amp-audio>
         <figcaption class="figure_caption">
           <div class="figure_caption_content">
             Some sound from the intervieWWWWWWWWW
