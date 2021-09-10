@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ApmInlineFrame = (props) => {
   let attrs = props.nodeData.attrs;
@@ -24,6 +25,11 @@ const ApmInlineFrame = (props) => {
         width={`${attrs.width}`}
       ></iframe>
     );
+};
+
+ApmInlineFrame.propTypes = {
+  nodeData: PropTypes.object,
+  isAmp: PropTypes.bool
 };
 
 export default ApmInlineFrame;
