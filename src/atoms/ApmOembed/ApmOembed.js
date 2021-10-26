@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import EmbedContainer from 'react-oembed-container';
 import AmpVideo from '../ApmVideo/AmpVideo';
 import AmpTwitter from '../Amp/AmpTwitter/AmpTwitter';
+import AmpInstagram from '../Amp/AmpInstagram/AmpInstagram';
 
 const ApmOembed = (props) => {
   if (props.minimal) {
@@ -27,7 +28,9 @@ const ApmOembed = (props) => {
   if (props.isAmp && embed?.provider_name === 'Twitter') {
     return <AmpTwitter {...props} embed={embed} />;
   }
-
+  if (props.isAmp && embed?.provider_name === 'Instagram') {
+    return <AmpInstagram minimal={props.minimal} embed={embed} />;
+  }
   if (props.isAmp && embed?.type === 'video') {
     return <AmpVideo {...embed} />;
   }
