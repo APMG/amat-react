@@ -86,8 +86,12 @@ class CustomHtml extends React.Component {
       return null;
     }
 
-    if(this.props.isAmp) {
-      return this.props.nodeData.attrs.fallback_url ? <a href={this.props.nodeData.attrs.fallback_url}>{this.props.nodeData.attrs.fallback_text}</a> : null
+    if (this.props.isAmp) {
+      return this.props.nodeData.attrs.fallback_url ? (
+        <a href={this.props.nodeData.attrs.fallback_url}>
+          {this.props.nodeData.attrs.fallback_text}
+        </a>
+      ) : null;
     }
 
     const markup = { __html: this.state.html };
