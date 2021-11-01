@@ -42,7 +42,7 @@ const ApmOembed = (props) => {
     return <AmpVideo {...embed} />;
   }
 
-  const getMarkup = (rawMarkup = '', isAmp) => {
+  function getMarkup(rawMarkup = '', isAmp) {
     let __html;
     __html = rawMarkup.replace(/\n/g, '');
     if (isAmp) {
@@ -53,7 +53,7 @@ const ApmOembed = (props) => {
         .replace(/<\/side-chain/g, '</amp-iframe');
     }
     return { __html };
-  };
+  }
 
   if (embed == null || embed == undefined) {
     return (
