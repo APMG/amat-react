@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import EmbedContainer from 'react-oembed-container';
 import AmpVideo from '../ApmVideo/AmpVideo';
@@ -9,6 +9,14 @@ const ApmOembed = (props) => {
   if (props.minimal) {
     return null;
   }
+  const [markup, setMarkup] = useState({ __html: '' });
+  const embed = findEmbedded();
+
+  useEffect(() => {
+    if (embed) {
+      setMarkup(getMarkup(embed.html, props.isAmp));
+    }
+  }, [embed]);
 
   function findEmbedded() {
     if (!props.embedded || !props.embedded.oembeds) {
@@ -24,7 +32,6 @@ const ApmOembed = (props) => {
     return embed;
   }
 
-  const embed = findEmbedded();
   if (props.isAmp && embed?.provider_name === 'Twitter') {
     return <AmpTwitter {...props} embed={embed} />;
   }
@@ -35,7 +42,7 @@ const ApmOembed = (props) => {
     return <AmpVideo {...embed} />;
   }
 
-  const markup = (rawMarkup = '', isAmp) => {
+  function getMarkup(rawMarkup = '', isAmp) {
     let __html;
     __html = rawMarkup.replace(/\n/g, '');
     if (isAmp) {
@@ -46,7 +53,7 @@ const ApmOembed = (props) => {
         .replace(/<\/side-chain/g, '</amp-iframe');
     }
     return { __html };
-  };
+  }
 
   if (embed == null || embed == undefined) {
     return (
@@ -60,14 +67,14 @@ const ApmOembed = (props) => {
     embed && embed.provider_name
       ? embed.provider_name.toLowerCase().replace(/\s/g, '')
       : '';
-  const mup = markup(embed.html, props.isAmp);
+
   return (
-    <EmbedContainer markup={mup.__html}>
+    <EmbedContainer markup={markup.__html}>
       <div
         data-testid="embed-container"
         className={`amat-oembed ${cname}`}
         data-url={embed.url}
-        dangerouslySetInnerHTML={mup}
+        dangerouslySetInnerHTML={markup}
       />
     </EmbedContainer>
   );
