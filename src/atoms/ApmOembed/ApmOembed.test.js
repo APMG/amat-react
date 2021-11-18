@@ -109,7 +109,7 @@ test('It renders an NPR Fauxembed', async () => {
 });
 
 const TwitterDoc = {
-type: 'doc',
+  type: 'doc',
   version: 1,
   content: [
     {
@@ -120,7 +120,7 @@ type: 'doc',
       }
     }
   ]
-}
+};
 const TwitterEmbed = {
   oembeds: [
     {
@@ -129,16 +129,19 @@ const TwitterEmbed = {
       provider_name: 'Twitter',
       provider_url: 'https:www.twitter.com',
       url: 'https://twitter.com/reactjs/status/964689022747475968',
-      html: '<blockquote class="twitter-tweet" data-width="525" data-dnt="true"> <p lang="en" dir="ltr">We&#39;re relicensing React Native (including Fresco, Metro, and Yoga) under the MIT license to match React. <a href="https://t.co/Ypg7ozX958">https://t.co/Ypg7ozX958</a></p> <p>&mdash; React (@reactjs) <a href="https://twitter.com/reactjs/status/964689022747475968?ref_src=twsrc%5Etfw">February 17, 2018</a></p></blockquote> <p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>'}
+      html:
+        '<blockquote class="twitter-tweet" data-width="525" data-dnt="true"> <p lang="en" dir="ltr">We&#39;re relicensing React Native (including Fresco, Metro, and Yoga) under the MIT license to match React. <a href="https://t.co/Ypg7ozX958">https://t.co/Ypg7ozX958</a></p> <p>&mdash; React (@reactjs) <a href="https://twitter.com/reactjs/status/964689022747475968?ref_src=twsrc%5Etfw">February 17, 2018</a></p></blockquote> <p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>'
+    }
   ]
-}
-test('It renders a tweet with the expected js', async() => {
-  const {container, getByTestId } = render (
+};
+test('It renders a tweet with the expected js', async () => {
+  const { container, getByTestId } = render(
     <Body nodeData={TwitterDoc} embedded={TwitterEmbed} />
   );
   await waitForElement(() => getByTestId('embed-container'));
   // make sure the dom has the twitter script
   const scripts = Array.from(document.body.querySelectorAll('script'));
-  const twitterScript = scripts.find(scrpt => scrpt.src.includes('twitter'));
+  const twitterScript = scripts.find((scrpt) => scrpt.src.includes('twitter'));
   expect(twitterScript.src).toEqual('https://platform.twitter.com/widgets.js');
-  expect(container.innerHTML).toMatch(/widget/); });
+  expect(container.innerHTML).toMatch(/widget/);
+});

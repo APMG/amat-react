@@ -20,6 +20,4 @@ const htmlStringToElement = (html) => {
   return template;
 };
 
-
-
-export {ANY_SCRIPT, injectScript, htmlStringToElement}
+export { ANY_SCRIPT, injectScript, htmlStringToElement };

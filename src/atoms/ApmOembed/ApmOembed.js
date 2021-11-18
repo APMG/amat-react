@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import AmpVideo from '../ApmVideo/AmpVideo';
 import AmpTwitter from '../Amp/AmpTwitter/AmpTwitter';
 import AmpInstagram from '../Amp/AmpInstagram/AmpInstagram';
-import {injectScript, htmlStringToElement} from '../../utils/scripts';
+import { injectScript, htmlStringToElement } from '../../utils/scripts';
 
 const ApmOembed = (props) => {
   if (props.minimal) {
@@ -15,13 +15,11 @@ const ApmOembed = (props) => {
   useEffect(() => {
     if (embed) {
       setMarkup(getMarkup(embed.html, props.isAmp));
-      const ele =  htmlStringToElement(embed.html);
+      const ele = htmlStringToElement(embed.html);
       const scripts = Array.from(ele.querySelectorAll('script'));
-      scripts.forEach(scrpt => {
+      scripts.forEach((scrpt) => {
         injectScript(document.body, scrpt);
-      })
-
-      
+      });
     }
   }, [embed]);
 
@@ -76,12 +74,12 @@ const ApmOembed = (props) => {
       : '';
 
   return (
-      <div
-        data-testid="embed-container"
-        className={`amat-oembed ${cname}`}
-        data-url={embed.url}
-        dangerouslySetInnerHTML={markup}
-      />
+    <div
+      data-testid="embed-container"
+      className={`amat-oembed ${cname}`}
+      data-url={embed.url}
+      dangerouslySetInnerHTML={markup}
+    />
   );
 };
 
