@@ -45,7 +45,7 @@ test('It renders an Oembed', async () => {
     <Body nodeData={doc} embedded={embedded} />
   );
 
-  const expected = `<div><div data-testid="embed-container" class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div></div>`;
+  const expected = `<div data-testid="embed-container" class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>`;
   await waitForElement(() => getByTestId('embed-container'));
   expect(container.innerHTML).toEqual(expected);
 });
@@ -103,7 +103,42 @@ test('It renders an NPR Fauxembed', async () => {
   );
 
   const NprExpected =
-    '<div><div data-testid="embed-container" class="amat-oembed npr" data-url="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"><div class="sidechain-wrapper">  <side-chain src="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"></side-chain></div></div></div>';
+    '<div data-testid="embed-container" class="amat-oembed npr" data-url="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"><div class="sidechain-wrapper">  <side-chain src="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"></side-chain></div></div>';
   await waitForElement(() => getByTestId('embed-container'));
   expect(container.innerHTML).toEqual(NprExpected);
 });
+
+const TwitterDoc = {
+type: 'doc',
+  version: 1,
+  content: [
+    {
+      type: 'apm_oembed',
+      attrs: {
+        src: 'https://twitter.com/reactjs/status/964689022747475968',
+        fallback_text: 'fallback text'
+      }
+    }
+  ]
+}
+const TwitterEmbed = {
+  oembeds: [
+    {
+      type: 'tweet',
+      version: '1.0',
+      provider_name: 'Twitter',
+      provider_url: 'https:www.twitter.com',
+      url: 'https://twitter.com/reactjs/status/964689022747475968',
+      html: '<blockquote class="twitter-tweet" data-width="525" data-dnt="true"> <p lang="en" dir="ltr">We&#39;re relicensing React Native (including Fresco, Metro, and Yoga) under the MIT license to match React. <a href="https://t.co/Ypg7ozX958">https://t.co/Ypg7ozX958</a></p> <p>&mdash; React (@reactjs) <a href="https://twitter.com/reactjs/status/964689022747475968?ref_src=twsrc%5Etfw">February 17, 2018</a></p></blockquote> <p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>'}
+  ]
+}
+test('It renders a tweet with the expected js', async() => {
+  const {container, getByTestId } = render (
+    <Body nodeData={TwitterDoc} embedded={TwitterEmbed} />
+  );
+  await waitForElement(() => getByTestId('embed-container'));
+  // make sure the dom has the twitter script
+  const scripts = Array.from(document.body.querySelectorAll('script'));
+  const twitterScript = scripts.find(scrpt => scrpt.src.includes('twitter'));
+  expect(twitterScript.src).toEqual('https://platform.twitter.com/widgets.js');
+  expect(container.innerHTML).toMatch(/widget/); });
