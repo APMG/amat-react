@@ -38,6 +38,7 @@ const DefaultComponents = () => {
     apm_audio: ApmAudio,
     apm_correction: ApmCorrection,
     apm_custom_html: CustomHtml,
+    apm_custom_html_list_item: CustomHtml,
     apm_inline_frame: ApmInlineFrame,
     apm_gallery: ApmGallery,
     apm_oembed: ApmOembed,
