@@ -26,6 +26,10 @@ const ApmAudio = (props) => {
       (item) => item?.location === 'megaphone'
     )?.path || audio.encodings[0]?.play_file_path;
 
+  if (src?.match(/\.m3u/)) {
+    return null;
+  }
+
   if (props.isAmp) {
     return (
       <figure className={`figure ${width} align-${float}`}>

@@ -40,6 +40,20 @@ const embeddedAssetJson = {
   ]
 };
 
+const m3uEmbeddedAssetJson = {
+  audio: [
+    {
+      id: '1PHWXXMZZY2VXMNW99XRF67BXM',
+      encodings: [
+        {
+          play_file_path:
+            'https://play-dev.publicradio.org/%user_agent/o/devel/foo/foo_20191204_2_128.m3u'
+        }
+      ]
+    }
+  ]
+};
+
 test('It renders audio', () => {
   const { container } = render(
     <Body nodeData={doc} embedded={embeddedAssetJson} />
@@ -256,6 +270,26 @@ test('AMP audio source will choose megaphone if present', () => {
         </figcaption>
       </figure>
   `;
+
+  expect(container.innerHTML).toEqual(singleLineString(expected));
+});
+
+test('Will not display if file source is m3u', () => {
+  const { container } = render(
+    <Body nodeData={doc} embedded={m3uEmbeddedAssetJson} />
+  );
+
+  const expected = ``;
+
+  expect(container.innerHTML).toEqual(singleLineString(expected));
+});
+
+test('Will not display in AMP if file source is m3u', () => {
+  const { container } = render(
+    <Body nodeData={doc} embedded={m3uEmbeddedAssetJson} isAmp={true} />
+  );
+
+  const expected = ``;
 
   expect(container.innerHTML).toEqual(singleLineString(expected));
 });
