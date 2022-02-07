@@ -32,6 +32,6 @@ test('It renders a body from a Prosemirror doc', () => {
   const { container } = render(<Body nodeData={doc} />);
 
   expect(container.innerHTML).toEqual(
-    '<div class="apm-style-box poem-box" data-custom-class="poem"><p>Styled text.</p></div>'
+    '<div class="apm-style-box poem" data-custom-class="poem"><p>Styled text.</p></div>'
   );
 });
