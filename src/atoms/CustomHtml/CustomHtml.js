@@ -43,17 +43,6 @@ class CustomHtml extends React.Component {
     return tag;
   }
 
-  loadNewScript(src, node) {
-    let script = document.createElement('script');
-    alert('Script loaded');
-
-    script.setAttribute('type', 'text/javascript');
-    script.async = false;
-    node.appendChild(script);
-
-    return script;
-  }
-
   /**
    * Removes all scripts with an external source from the html and returns the whitelisted ones as an array of Nodes
    * @param {html: string, fallback_url: string, whitelist: Array}
