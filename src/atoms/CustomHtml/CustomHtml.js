@@ -43,6 +43,17 @@ class CustomHtml extends React.Component {
     return tag;
   }
 
+  loadNewScript(src, node) {
+    let script = document.createElement('script');
+    alert('Script loaded');
+
+    script.setAttribute('type', 'text/javascript');
+    script.async = false;
+    node.appendChild(script);
+
+    return script;
+  }
+
   /**
    * Removes all scripts with an external source from the html and returns the whitelisted ones as an array of Nodes
    * @param {html: string, fallback_url: string, whitelist: Array}
@@ -70,6 +81,15 @@ class CustomHtml extends React.Component {
         src = fallback_url;
       }
       safeHtml = `<iframe width="100%" height="500px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="${src}">${element.innerHTML}</iframe>`;
+    }
+
+    // Enable submit button when recaptcha is successful
+    if (element.querySelector('form')) {
+      const script = document.createElement('script');
+      script.innerHTML = function enableSubmit() {
+        document.getElementById('submitButton').disabled = false;
+      };
+      document.head.append(script);
     }
     return { html: safeHtml, safeScripts };
   }
