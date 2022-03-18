@@ -64,7 +64,7 @@ class CustomHtml extends React.Component {
     hasIframe = element.querySelector('iframe');
 
     // If there is a script without a src, set the whole block in an iframe (or it might not work!)
-    if (element.querySelector('script') && !hasIframe) {
+    if (element.querySelector('script') && !hasIframe && !element.querySelector('form')) {
       let src = '';
       if (whitelistRegex.test(fallback_url)) {
         src = fallback_url;
