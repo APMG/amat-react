@@ -7,7 +7,8 @@ const ApmFootnoteListItem = (props) => {
   const {
     attrs: { number }
   } = nodeData;
-  if (!nodeData.content) {
+  console.log(nodeData);
+  if (!nodeData.attrs.footnoteContent) {
     return null;
   }
   return (
