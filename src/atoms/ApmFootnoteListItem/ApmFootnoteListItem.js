@@ -7,7 +7,9 @@ const ApmFootnoteListItem = (props) => {
   const {
     attrs: { number }
   } = nodeData;
-
+  if (!nodeData.content) {
+    return null;
+  }
   return (
     <div className="footnote">
       <div className="footnote-number">{number}.</div>
