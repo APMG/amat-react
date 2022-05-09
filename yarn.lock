@@ -13,10 +13,10 @@
     focus-trap-react "^6.0.0"
     react-pose "^4.0.8"
 
-"@apmg/mimas@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@apmg/mimas/-/mimas-1.1.0.tgz#0b2589aa32590a4e41d7365915be2e4ff8725b2d"
-  integrity sha512-J2PJwrPxBBUFJ0ysrSXAv3Y/ydPuCLTLFW2wKHYL0RmGjgdSUji3b/d44aNrrOV9Cfs58e11YdxsHOTU3Fm2BA==
+"@apmg/mimas@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@apmg/mimas/-/mimas-1.1.1.tgz#101d870cd439f8d36e801f6d024ed79fff209195"
+  integrity sha512-dXtxcsaYpWUuKZJdySSBS9IqWSMwhX5h9hZmnGzpUlZDvSY4v4sFGvCzq6t8yVoXZDAhBIjYXhf5ZGucKySOpg==
   dependencies:
     loading-attribute-polyfill "^1.5.4"
 
