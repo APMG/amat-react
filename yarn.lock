@@ -13,10 +13,12 @@
     focus-trap-react "^6.0.0"
     react-pose "^4.0.8"
 
-"@apmg/mimas@0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@apmg/mimas/-/mimas-0.3.3.tgz#38cdb69e4c71b30b6cbda89d24a14dd5f6e4014b"
-  integrity sha512-CQxZFDTGj8eRyHLLngatLCgyyOgGALSn8hT1wTAlNBs2KS7yhn3KEq9dLMairooNvTk3sk2uxTB0qMQ1sqj7XA==
+"@apmg/mimas@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@apmg/mimas/-/mimas-1.1.0.tgz#0b2589aa32590a4e41d7365915be2e4ff8725b2d"
+  integrity sha512-J2PJwrPxBBUFJ0ysrSXAv3Y/ydPuCLTLFW2wKHYL0RmGjgdSUji3b/d44aNrrOV9Cfs58e11YdxsHOTU3Fm2BA==
+  dependencies:
+    loading-attribute-polyfill "^1.5.4"
 
 "@babel/code-frame@^7.0.0":
   version "7.8.3"
@@ -3958,6 +3960,11 @@ load-json-file@^4.0.0:
     parse-json "^4.0.0"
     pify "^3.0.0"
     strip-bom "^3.0.0"
+
+loading-attribute-polyfill@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/loading-attribute-polyfill/-/loading-attribute-polyfill-1.5.4.tgz#6c21f62265f1857eed6aa9fb548b1ab90c298e1c"
+  integrity sha512-snHz0lLNHZKIch9m82GbsEBOJGlsvl738Uk5iJwaoqNrxnTVT+bWCxp2SpNpXfKZXOPGB49TJ24GS5l4QwTkkw==
 
 locate-path@^2.0.0:
   version "2.0.0"
