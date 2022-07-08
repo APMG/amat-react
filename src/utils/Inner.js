@@ -15,6 +15,8 @@ const Inner = (child, props) => {
           minimal={props.minimal}
           components={props.components}
           isAmp={props.isAmp}
+          mobileAr={props.mobileAr}
+          media={props.media}
         />
       );
     default:
@@ -26,6 +28,8 @@ const Inner = (child, props) => {
           minimal={props.minimal}
           components={props.components}
           isAmp={props.isAmp}
+          mobileAr={props.mobileAr}
+          media={props.media}
         />
       );
   }
@@ -35,7 +39,16 @@ Inner.propTypes = {
   embedded: PropTypes.object,
   minimal: PropTypes.bool,
   components: PropTypes.object,
-  isAmp: PropTypes.bool
+  isAmp: PropTypes.bool,
+  mobileAr: PropTypes.oneOf([
+    'normal',
+    'uncropped',
+    'square',
+    'widescreen',
+    'portrait',
+    'thumbnail'
+  ]),
+  media: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default Inner;

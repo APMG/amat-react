@@ -19,6 +19,8 @@ const ApmGallery = (props) => {
           images={images}
           animation="slide"
           isAmp={props.isAmp ? props.isAmp : false}
+          mobileAr={props.mobileAr}
+          media={props.media}
         />
       </div>
     </div>
@@ -28,7 +30,16 @@ const ApmGallery = (props) => {
 ApmGallery.propTypes = {
   nodeData: PropTypes.object,
   minimal: PropTypes.bool,
-  isAmp: PropTypes.bool
+  isAmp: PropTypes.bool,
+  mobileAr: PropTypes.oneOf([
+    'normal',
+    'uncropped',
+    'square',
+    'widescreen',
+    'portrait',
+    'thumbnail'
+  ]),
+  media: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default ApmGallery;

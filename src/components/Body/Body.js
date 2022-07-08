@@ -8,7 +8,9 @@ const Body = ({
   embedded,
   overrides = {},
   minimal = false,
-  isAmp = false
+  isAmp = false,
+  mobileAr = 'square',
+  media = [['max-width: 428px', 'min-width: 429px']]
 }) => {
   const components = DefaultComponents();
   const mergedComponents =
@@ -23,6 +25,8 @@ const Body = ({
       components={mergedComponents}
       minimal={minimal}
       isAmp={isAmp}
+      mobileAr={mobileAr}
+      media={media}
     />
   );
 };
@@ -32,7 +36,16 @@ Body.propTypes = {
   embedded: PropTypes.object,
   overrides: PropTypes.object,
   minimal: PropTypes.bool,
-  isAmp: PropTypes.bool
+  isAmp: PropTypes.bool,
+  mobileAr: PropTypes.oneOf([
+    'normal',
+    'uncropped',
+    'square',
+    'widescreen',
+    'portrait',
+    'thumbnail'
+  ]),
+  media: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default Body;

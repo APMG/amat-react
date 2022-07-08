@@ -9,6 +9,7 @@ const Traverse = (props) => {
   if (!props.nodeData) {
     return null;
   }
+
   // Checks if the legacy Table of Contents is anywhere in this nodeData and delivers the old version if so. Not necessary for React Native sites, which shouldn't have any instances of the old TOCs left.
   if (props.nodeData.content) {
     const toc = props.nodeData.content.find(
