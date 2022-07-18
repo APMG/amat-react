@@ -1,7 +1,7 @@
 {
   "name": "@apmg/amat",
   "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org, Jason Phan jphan@mpr.org]",
-  "version": "0.8.30",
+  "version": "0.8.31",
   "private": false,
   "main": "dist/bundle.js",
   "license": "MIT",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@apmg/enceladus": "^0.6.0",
-    "@apmg/mimas": "1.1.8",
+    "@apmg/mimas": "^1.1.9",
     "@nprapps/sidechain": "^1.0.13",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
