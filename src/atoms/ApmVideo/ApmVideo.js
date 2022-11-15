@@ -55,12 +55,14 @@ class ApmVideo extends React.Component {
           title={short_caption}
           dangerouslySetInnerHTML={this.markup(embed?.html)}
         />
-        <figcaption className="figure_caption">
-          <span className="figure_credit">
-            <a href={credit_url}>{credit_name}</a>
-          </span>
-          <div className="figure_caption_content">{long_caption}</div>
-        </figcaption>
+        {credit_name && (
+          <figcaption className="figure_caption">
+            <span className="figure_credit">
+              <a href={credit_url}>{credit_name}</a>
+            </span>
+            <div className="figure_caption_content">{long_caption}</div>
+          </figcaption>
+        )}
       </figure>
     );
   }
