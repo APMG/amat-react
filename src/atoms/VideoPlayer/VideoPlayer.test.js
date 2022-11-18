@@ -39,7 +39,6 @@ describe('VideoPlayer', () => {
           }
           scrolling="no"
           frameBorder="0"
-          allowTransparency="true"
           allowFullScreen="true"
         ></iframe>
       </div>
@@ -58,7 +57,6 @@ describe('VideoPlayer', () => {
           }
           scrolling="no"
           frameBorder="0"
-          allowTransparency="true"
           allowFullScreen="true"
         ></iframe>
       </div>

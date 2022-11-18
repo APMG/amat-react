@@ -30,7 +30,7 @@ export const iframe = {
       fallback_text: 'iframe',
       fallback_url: '',
       html:
-        '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcameronofthemountains%2Fposts%2F483103422464792&width=500" width="500" height="701" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>'
+        '<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fcameronofthemountains%2Fposts%2F483103422464792&width=500" width="500" height="701" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allow="encrypted-media"></iframe>'
     },
     type: 'apm_custom_html'
   },
