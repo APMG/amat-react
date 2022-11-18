@@ -79,10 +79,11 @@ class CustomHtml extends React.Component {
     // Enable submit button when recaptcha is successful
     if (element.querySelector('form')) {
       const script = document.createElement('script');
-      script.innerHTML = function enableSubmit() {
-        document.getElementById('submitButton').disabled = false;
-      };
-      document.head.append(script);
+      const inlineScript = document.createTextNode(
+        "function enableSubmit() { const subButton = document.getElementById('submitButton'); if (subButton) subButton.disabled = false; };"
+      );
+      script.appendChild(inlineScript);
+      document.head.appendChild(script);
     }
     return { html: safeHtml, safeScripts };
   }
