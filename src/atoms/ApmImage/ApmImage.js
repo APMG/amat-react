@@ -25,9 +25,12 @@ const ApmImage = (props) => {
     }
   }
 
-  function image(embedded, isAmp = false) {
+  function imageFactory(embedded, isAmp = false) {
     const embeddedImage = embedded?.images?.find(
-      (image) => image?.id && image?.id === props?.image?.id
+      (image) =>
+        image?.status !== 'unpublished' &&
+        image?.id &&
+        image?.id === props?.image?.id
     );
 
     if (!embeddedImage) {
@@ -53,9 +56,14 @@ const ApmImage = (props) => {
     );
   }
 
+  const image = imageFactory(props.embedded, props.isAmp);
+  if (!image) {
+    return null;
+  }
+
   return (
     <figure className={classes()}>
-      {image(props.embedded, props.isAmp)}
+      {image}
       {props?.image?.long_caption || props?.image?.credit ? (
         <figcaption className="figure_caption">
           {props.image.long_caption && (
