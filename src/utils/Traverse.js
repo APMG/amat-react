@@ -33,7 +33,7 @@ const Traverse = (props) => {
     let InnerComponent = Inner(item, props);
 
     if (item.marks) {
-      item.marks.reverse().forEach((mark) => {
+      item.marks.forEach((mark) => {
         const attrs = mark.attrs || {};
         InnerComponent = Mark(mark, InnerComponent, attrs, props);
       });
