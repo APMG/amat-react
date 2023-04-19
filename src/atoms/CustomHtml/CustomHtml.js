@@ -51,17 +51,54 @@ class CustomHtml extends React.Component {
   parseHtml({ html, fallback_url, whitelist }) {
     const whitelistRegex = new RegExp(whitelist.join('|'));
     const element = this.htmlStringToElement(html);
-    let safeHtml, scripts, safeScripts, hasIframe;
+    let safeHtml, scripts, safeScripts, hasIframe, audioHtml;
 
     if (!element) return { html: '', safeScripts: [] };
 
     scripts = Array.from(element.querySelectorAll('script[src]'));
+
     scripts.forEach((script) => {
       script.parentNode.removeChild(script);
     });
     safeScripts = scripts.filter((script) => whitelistRegex.test(script.src));
     safeHtml = element.innerHTML;
+
     hasIframe = element.querySelector('iframe');
+
+    if (element.querySelector('audio')) {
+      let getAudioSrc = element.querySelector('audio').getAttribute('src');
+      let getAudioTitle = element.getElementsByClassName(
+        'inbody_audio_title'
+      )[0].innerHTML;
+      let getAudioDescription = element.getElementsByClassName(
+        'inbody_audio_description'
+      )[0].innerHTML;
+
+      safeHtml = `
+      <div class="audioPlayer">
+        <audio id="player" src=${getAudioSrc} ontimeupdate="getStreamTime()"></audio>
+          <div class="playPauseContainer">
+            <button onClick="playPauseStreamBtn()" id="play-pause"/>
+          </div>
+          <div class="currentTime" id="trackTime">00:00</div>
+          <div class="progressBarContainer">
+            <div class="progressBar" id="progressBar"></div>
+          </div>
+          <div class="textBoxStream">
+            <div class="textBoxTitle">
+              ${getAudioTitle}
+            </div>
+            <div class="textBoxDescription">
+              ${getAudioDescription}
+            </div>
+          </div>
+      </div>`;
+    }
+
+    audioHtml = Array.from(element.querySelectorAll('audio'));
+    audioHtml.forEach((audio) => {
+      audio.parentNode.removeChild(audio);
+    });
 
     // If there is a script without a src, set the whole block in an iframe (or it might not work!)
     if (
