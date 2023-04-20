@@ -52,7 +52,7 @@ class CustomHtml extends React.Component {
   parseHtml({ html, fallback_url, whitelist }) {
     const whitelistRegex = new RegExp(whitelist.join('|'));
     const element = this.htmlStringToElement(html);
-    let safeHtml, scripts, safeScripts, hasIframe, audioHtml;
+    let safeHtml, scripts, safeScripts, hasIframe;
 
     if (!element) return { html: '', safeScripts: [] };
 
@@ -66,8 +66,11 @@ class CustomHtml extends React.Component {
 
     hasIframe = element.querySelector('iframe');
 
-    // If there is a custom html with an audio tag, create a custom audio player and remove incoming audio tag
-    if (element.querySelector('audio')) {
+    // If there is a custom html with an audio tag & includes a classname of inbody_audio_title, create a custom audio player
+    if (
+      element.querySelector('audio') &&
+      element.getElementsByClassName('inbody_audio_title')[0]
+    ) {
       let getAudioSrc = element.querySelector('audio').getAttribute('src');
       let getAudioTitle = element.getElementsByClassName(
         'inbody_audio_title'
@@ -95,36 +98,31 @@ class CustomHtml extends React.Component {
             </div>
           </div>
       </div>`;
+
+      window.playPauseStreamBtn = () => {
+        const audio = document.getElementById('player');
+        const controlBtn = document.getElementById('play-pause');
+        if (audio.paused) {
+          audio.play();
+          controlBtn.className = 'pauseStream';
+        } else {
+          audio.pause();
+          controlBtn.className = 'playStream';
+        }
+      };
+
+      window.getStreamTime = () => {
+        const trackTime = document.getElementById('trackTime');
+        const audio = document.getElementById('player');
+        const minutes = Math.floor(audio.currentTime / 60);
+        const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
+        const seconds = Math.floor(audio.currentTime % 60);
+        const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+        if (trackTime) {
+          trackTime.innerHTML = `${returnedMinutes}:${returnedSeconds}`;
+        }
+      };
     }
-
-    window.playPauseStreamBtn = () => {
-      const audio = document.getElementById('player');
-      const controlBtn = document.getElementById('play-pause');
-      if (audio.paused) {
-        audio.play();
-        controlBtn.className = 'pauseStream';
-      } else {
-        audio.pause();
-        controlBtn.className = 'playStream';
-      }
-    };
-
-    window.getStreamTime = () => {
-      const trackTime = document.getElementById('trackTime');
-      const audio = document.getElementById('player');
-      const minutes = Math.floor(audio.currentTime / 60);
-      const returnedMinutes = minutes < 10 ? `0${minutes}` : `${minutes}`;
-      const seconds = Math.floor(audio.currentTime % 60);
-      const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
-      if (trackTime) {
-        trackTime.innerHTML = `${returnedMinutes}:${returnedSeconds}`;
-      }
-    };
-
-    audioHtml = Array.from(element.querySelectorAll('audio'));
-    audioHtml.forEach((audio) => {
-      audio.parentNode.removeChild(audio);
-    });
 
     // If there is a script without a src, set the whole block in an iframe (or it might not work!)
     if (
