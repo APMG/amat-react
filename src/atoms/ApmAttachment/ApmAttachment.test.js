@@ -37,7 +37,7 @@ test('It renders a body from a Prosemirror doc', () => {
   const { container } = render(<Body nodeData={doc} embedded={embedded} />);
 
   expect(container.innerHTML).toEqual(
-    `<a class="amat-apm-attachment application-pdf" href="https://files.apmcdn.org/production/bc3ff968c30836f15c7a6df150aaa5f6.pdf">Bingo Card 1</a>`
+    `<a class="amat-apm-attachment application-pdf" href="https://files.apmcdn.org/production/bc3ff968c30836f15c7a6df150aaa5f6.pdf" target="_blank" rel="noopener noreferrer">Bingo Card 1</a>`
   );
 });
 

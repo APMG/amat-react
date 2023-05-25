@@ -17,6 +17,8 @@ const ApmAttachment = (props) => {
     <a
       className={`amat-apm-attachment ${neo.mime_type.replace(/\//, '-')}`}
       href={neo.url}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {title}
     </a>
