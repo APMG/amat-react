@@ -1,7 +1,7 @@
 {
   "name": "@apmg/amat",
   "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org, Jason Phan jphan@mpr.org]",
-  "version": "0.8.38",
+  "version": "1.0.0",
   "private": false,
   "main": "dist/bundle.js",
   "license": "MIT",
@@ -25,18 +25,18 @@
     "clean": "rm -rf node_modules dist package-lock.json yarn.lock"
   },
   "peerDependencies": {
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@apmg/enceladus": "^0.6.0",
-    "@apmg/mimas": "^1.1.9",
+    "@apmg/enceladus": "^1.0",
+    "@apmg/mimas": "^2.0",
     "@nprapps/sidechain": "^1.0.13",
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",
     "react-html-parser": "^2.0.2",
-    "rollup": "^1.17.0",
-    "rollup-plugin-babel": "^4.3.3",
+    "rollup": "^3.28.0",
+    "rollup-plugin-babel": "^4.4.0",
     "uuid": "^7.0.2"
   },
   "devDependencies": {
@@ -57,10 +57,10 @@
     "jest": "^24.8.0",
     "jest-environment-jsdom-fourteen": "^0.1.0",
     "jest-prop-type-error": "^1.1.0",
-    "next": "^12.1.0",
+    "next": "^13.4.0",
     "prettier": "^1.18.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rollup-plugin-json": "^4.0.0",
     "serialize-javascript": ">=3.1.0"
   },
