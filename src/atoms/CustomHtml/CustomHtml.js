@@ -66,6 +66,45 @@ class CustomHtml extends React.Component {
 
     hasIframe = element.querySelector('iframe');
 
+    // For tikTok video, add embed script
+    if (
+      element.querySelector('blockquote') &&
+      element.getElementsByClassName('tiktok-embed')
+    ) {
+      let tikTok = element.getElementsByClassName('tiktok-embed')[0];
+      let getTikTokCite = tikTok.getAttribute('cite');
+      let getTitle = tikTok.getElementsByTagName('a')[0].innerHTML;
+      let getHref = tikTok.getElementsByTagName('a')[0].getAttribute('href');
+      let getVidID = element
+        .getElementsByClassName('tiktok-embed')[0]
+        .getAttribute('data-video-id');
+      let getLastChildTitle = tikTok.getElementsByTagName('a')[1].innerHTML;
+      let getLastChildHref = tikTok
+        .getElementsByTagName('a')[1]
+        .getAttribute('href');
+      let getParagraph = tikTok.getElementsByTagName('p')[0].innerHTML;
+
+      safeHtml = `
+                <blockquote class="tiktok-embed" cite=${getTikTokCite} data-video-id=${getVidID} style="max-width: 200px;min-width:400px;">
+                  <section>
+                    <a target="_blank" title=${getTitle} href=${getHref}>
+                      ${getTitle}
+                    </a>
+                    <p>${getParagraph}</p>
+                    <a target="_blank" title=${getLastChildTitle} href=${getLastChildHref}>
+                      ${getLastChildTitle}
+                    </a>
+                  </section>
+                </blockquote>
+              `;
+
+      let tag = document.createElement('script');
+      tag.type = 'text/javascript';
+      tag.async = true;
+      tag.src = 'https://www.tiktok.com/embed.js';
+      document.head.appendChild(tag);
+    }
+
     // If there is a custom html with an audio tag & includes a classname of inbody_audio_title, create a custom audio player
     if (
       element.querySelector('audio') &&
