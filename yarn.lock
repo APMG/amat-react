@@ -10,10 +10,10 @@
     "@jridgewell/gen-mapping" "^0.1.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@apmg/enceladus@^1.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@apmg/enceladus/-/enceladus-1.0.0.tgz#c387af078b641c18c26c1fbf9986036bf05c2584"
-  integrity sha512-I/A5Jj3E6O/C5uz//Rqkk/M2ThTFEUhFvPy4asKoZhHgQjgf/SU5AmNdEvthtN7ZuMAAk5R0OeQCYNUpjui8nQ==
+"@apmg/enceladus@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@apmg/enceladus/-/enceladus-1.0.1.tgz#2610ecdd988b1ad75e4a8b24ceb0033206ee9a88"
+  integrity sha512-HUc00F//D4UTRkHSp17m2rji2K8xMma2ITZfRWEOExCCD7DJaEvTl2vC4kuLg/z4rkbumecAfWAXahANGm15qA==
   dependencies:
     "@emotion/babel-preset-css-prop" "^10.0.14"
     "@emotion/core" "^10.0.16"
