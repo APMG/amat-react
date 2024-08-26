@@ -29,14 +29,14 @@ test('It renders amp-img when required', () => {
   expect(container.innerHTML).toEqual(singleLineString(expected));
 });
 
-// test('It renders the image credit', () => {
-//   const { body, embeddedAssetJson } = complexDocWithImageCredit.data.story;
-//   const { container } = render(
-//     <Body
-//       nodeData={JSON.parse(body)}
-//       embedded={JSON.parse(embeddedAssetJson)}
-//     />
-//   );
+test('It renders the image credit', () => {
+  const { body, embeddedAssetJson } = complexDocWithImageCredit.data.story;
+  const { container } = render(
+    <Body
+      nodeData={JSON.parse(body)}
+      embedded={JSON.parse(embeddedAssetJson)}
+    />
+  );
 
-//   expect(container.innerHTML).toContain('Christine T. Nguyen | MPR News');
-// });
+  expect(container.innerHTML).toContain('Christine T. Nguyen | MPR News');
+});
