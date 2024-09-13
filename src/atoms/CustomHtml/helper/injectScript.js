@@ -1,4 +1,27 @@
 export const injectScript = (node, scrpt, id) => {
+  async function delayForPym(scrpt, tag) {
+    if (scrpt.innerHTML.includes('pym')) {
+      waitMoreForPym(scrpt, tag);
+      return;
+    }
+    tag.innerHTML = scrpt.innerHTML;
+  }
+
+  async function waitMoreForPym(scrpt, tag, counter = 0) {
+    if (counter > 4) return;
+    await sleep(1000);
+    if (typeof pym == 'object') {
+      tag.innerHTML = scrpt.innerHTML;
+    } else {
+      counter = counter + 1;
+      waitMoreForPym(scrpt, tag, counter);
+    }
+  }
+
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
   let tag = document.createElement('script');
   // if (document.getElementById(id)) return;
   for (const key in scrpt.dataset) {
@@ -14,7 +37,7 @@ export const injectScript = (node, scrpt, id) => {
   if (scrpt.src) {
     tag.src = scrpt.src;
   } else {
-    tag.innerHTML = scrpt.innerHTML;
+    delayForPym(scrpt, tag);
   }
   tag.id = id;
   node.appendChild(tag);
