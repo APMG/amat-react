@@ -15,7 +15,8 @@ const CustomHtml = ({ nodeData, minimal }) => {
 
   // Remove script tags from the innerHTML and sanitize the rest
   const cleanHtml = htmlText.innerHTML.replace(ANY_SCRIPT, '');
-  console.log('🟩🟨 AMAT-React Online');
+
+  console.log('🟩 AMAT-React is Online 🟩');
 
   if (minimal) {
     return null;
@@ -31,7 +32,7 @@ const CustomHtml = ({ nodeData, minimal }) => {
       const id = `__id__${hashCode(scrpt.innerHTML)}`;
       injectScript(document.body, scrpt, id);
 
-      if (localScripts.indexOf(id) === 0) {
+      if (localScripts.indexOf(id) === -1) {
         localScripts.push(id);
         localStorage.setItem('localScripts', JSON.stringify(localScripts));
       }
