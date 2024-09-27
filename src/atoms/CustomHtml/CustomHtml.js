@@ -15,7 +15,7 @@ const CustomHtml = ({ nodeData, minimal }) => {
 
   // Remove script tags from the innerHTML and sanitize the rest
   const cleanHtml = htmlText.innerHTML.replace(ANY_SCRIPT, '');
-  console.log('🟩🟥🟨AMAT STILL WORKS');
+  console.log('🟩🟨 AMAT-React Online');
 
   if (minimal) {
     return null;
@@ -29,7 +29,7 @@ const CustomHtml = ({ nodeData, minimal }) => {
     // Inject the script tags into the DOM
     scriptsToInject.forEach((scrpt) => {
       const id = `__id__${hashCode(scrpt.innerHTML)}`;
-      const tag = injectScript(document.body, scrpt, id);
+      injectScript(document.body, scrpt, id);
 
       if (localScripts.indexOf(id) === 0) {
         localScripts.push(id);
