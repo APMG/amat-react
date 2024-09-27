@@ -13,23 +13,30 @@ const CustomHtml = ({ nodeData, minimal }) => {
   const dirtyHtml = nodeData.attrs.html;
   const htmlText = htmlStringToElement(dirtyHtml);
 
+  // Remove script tags from the innerHTML and sanitize the rest
+  const cleanHtml = htmlText.innerHTML.replace(ANY_SCRIPT, '');
+  console.log('🟩🟥🟨AMAT STILL WORKS');
+
   if (minimal) {
     return null;
   }
 
   useEffect(() => {
+    // Extract all scripts tag from the html
     const scriptsToInject = Array.from(htmlText.querySelectorAll('script'));
     const localScripts = JSON.parse(localStorage.getItem('localScripts')) || [];
+
+    // Inject the script tags into the DOM
     scriptsToInject.forEach((scrpt) => {
       const id = `__id__${hashCode(scrpt.innerHTML)}`;
-      injectScript(document.body, scrpt, id);
-      if (localScripts.indexOf(id) === -1) {
+      const tag = injectScript(document.body, scrpt, id);
+
+      if (localScripts.indexOf(id) === 0) {
         localScripts.push(id);
         localStorage.setItem('localScripts', JSON.stringify(localScripts));
       }
     });
-
-    setState(htmlText.innerHTML.replace(ANY_SCRIPT, ''));
+    setState(cleanHtml);
   }, [nodeData]);
 
   // Enable submit button when recaptcha is successful (forms)

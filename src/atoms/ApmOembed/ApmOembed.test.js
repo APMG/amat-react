@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, cleanup, waitForElement } from '@testing-library/react';
+import { render, cleanup, waitFor } from '@testing-library/react';
 import Body from '../../components/Body/Body';
 
 afterEach(cleanup);
@@ -46,7 +46,9 @@ test('It renders an Oembed', async () => {
   );
 
   const expected = `<div data-testid="embed-container" class="amat-oembed youtube" data-url="https://www.youtube.com/watch?v=OIf7d60lOR0"><iframe width="480" height="270" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></div>`;
-  await waitForElement(() => getByTestId('embed-container'));
+  await waitFor(() => {
+    expect(getByTestId('embed-container'));
+  });
   expect(container.innerHTML).toEqual(expected);
 });
 
@@ -56,7 +58,9 @@ test('It renders an AMP Video', async () => {
   );
 
   const expected = `<amp-iframe data-testid="amp-video" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" width="480" height="270" layout="responsive" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups"><amp-img placeholder="true" src="https://i.ytimg.com/vi/OIf7d60lOR0/hqdefault.jpg" width="480" height="360" layout="fill"></amp-img></amp-iframe>`;
-  await waitForElement(() => getByTestId('amp-video'));
+  await waitFor(() => {
+    expect(getByTestId('amp-video'));
+  });
   expect(container.innerHTML).toEqual(expected);
 });
 
@@ -67,7 +71,9 @@ test('It renders an AMP Video if provider name is missing', async () => {
   );
 
   const expected = `<amp-iframe data-testid="amp-video" src="https://www.youtube.com/embed/OIf7d60lOR0?feature=oembed" width="480" height="270" layout="responsive" frameborder="0" sandbox="allow-scripts allow-same-origin allow-popups"><amp-img placeholder="true" src="https://i.ytimg.com/vi/OIf7d60lOR0/hqdefault.jpg" width="480" height="360" layout="fill"></amp-img></amp-iframe>`;
-  await waitForElement(() => getByTestId('amp-video'));
+  await waitFor(() => {
+    expect(getByTestId('amp-video'));
+  });
   expect(container.innerHTML).toEqual(expected);
 });
 
@@ -104,7 +110,9 @@ test('It renders an NPR Fauxembed', async () => {
 
   const NprExpected =
     '<div data-testid="embed-container" class="amat-oembed npr" data-url="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"><div class="sidechain-wrapper">  <side-chain src="https://apps.npr.org/liveblogs/20200203-iowa/embed.html"></side-chain></div></div>';
-  await waitForElement(() => getByTestId('embed-container'));
+  await waitFor(() => {
+    expect(getByTestId('embed-container'));
+  });
   expect(container.innerHTML).toEqual(NprExpected);
 });
 
@@ -138,7 +146,9 @@ test('It renders a tweet with the expected js', async () => {
   const { container, getByTestId } = render(
     <Body nodeData={TwitterDoc} embedded={TwitterEmbed} />
   );
-  await waitForElement(() => getByTestId('embed-container'));
+  await waitFor(() => {
+    expect(getByTestId('embed-container'));
+  });
   // make sure the dom has the twitter script
   const scripts = Array.from(document.body.querySelectorAll('script'));
   const twitterScript = scripts.find((scrpt) => scrpt.src.includes('twitter'));
