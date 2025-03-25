@@ -4,6 +4,7 @@ import { htmlStringToElement } from './helper/htmlStringToElement';
 import { injectScript } from './helper/injectScript';
 import { recaptcha } from './helper/recaptcha';
 import { hashCode } from './helper/hashCode';
+import { flourish } from './helper/flourish';
 
 const CustomHtml = ({ nodeData, minimal }) => {
   const [state, setState] = useState('');
@@ -12,10 +13,10 @@ const CustomHtml = ({ nodeData, minimal }) => {
 
   const dirtyHtml = nodeData.attrs.html;
   const htmlText = htmlStringToElement(dirtyHtml);
+  if (!htmlText.innerHTML) return null;
 
   // Remove script tags from the innerHTML and sanitize the rest
   const cleanHtml = htmlText.innerHTML.replace(ANY_SCRIPT, '');
-  console.log('🟩🟨 AMAT-React Online');
 
   if (minimal) {
     return null;
@@ -26,8 +27,16 @@ const CustomHtml = ({ nodeData, minimal }) => {
     const scriptsToInject = Array.from(htmlText.querySelectorAll('script'));
     const localScripts = JSON.parse(localStorage.getItem('localScripts')) || [];
 
+    setState(cleanHtml);
+
     // Inject the script tags into the DOM
     scriptsToInject.forEach((scrpt) => {
+      if (
+        typeof nodeData.attrs.html == 'string' &&
+        nodeData.attrs.html.indexOf('flourish-embed') > 0
+      ) {
+        return flourish(scrpt, nodeData, myRef, state);
+      }
       const id = `__id__${hashCode(scrpt.innerHTML)}`;
       injectScript(document.body, scrpt, id);
 
@@ -36,7 +45,6 @@ const CustomHtml = ({ nodeData, minimal }) => {
         localStorage.setItem('localScripts', JSON.stringify(localScripts));
       }
     });
-    setState(cleanHtml);
   }, [nodeData]);
 
   // Enable submit button when recaptcha is successful (forms)
