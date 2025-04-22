@@ -1,4 +1,6 @@
 export const injectScript = (node, scrpt, id) => {
+  if (document.getElementById(id)) return;
+
   async function delayForPym(scrpt, tag) {
     if (scrpt.innerHTML.includes('pym')) {
       waitMoreForPym(scrpt, tag);
@@ -23,7 +25,6 @@ export const injectScript = (node, scrpt, id) => {
   }
 
   let tag = document.createElement('script');
-  // if (document.getElementById(id)) return;
   for (const key in scrpt.dataset) {
     const curKey = key.replace(
       /[A-Z]/g,

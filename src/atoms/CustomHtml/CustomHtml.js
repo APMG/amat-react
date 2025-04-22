@@ -45,7 +45,7 @@ const CustomHtml = ({ nodeData, minimal }) => {
         localStorage.setItem('localScripts', JSON.stringify(localScripts));
       }
     });
-  }, [nodeData]);
+  }, [nodeData.attrs.html]);
 
   // Enable submit button when recaptcha is successful (forms)
   recaptcha(htmlText);
