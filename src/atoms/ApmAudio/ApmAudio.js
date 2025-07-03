@@ -5,13 +5,13 @@ const ApmAudio = (props) => {
   if (props.minimal) {
     return null;
   }
+  if (!props?.embedded?.audio) {
+    return null;
+  }
 
   const { float, width, title, audio_credit } = props.nodeData.attrs;
-  const audio = props.embedded.audio.find(
-    (item) =>
-      item.id === props.nodeData.attrs?.id ||
-      item.id === props.nodeData.attrs?.audio_id
-  );
+  const audio_id = props.nodeData.attrs.id || props.nodeData.attrs.audio_id;
+  const audio = props?.embedded?.audio.find((item) => item.id === audio_id);
 
   if (
     !audio ||
