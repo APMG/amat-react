@@ -1,4 +1,4 @@
-export const injectScript = (node, scrpt, id) => {
+export const injectScript = (node, scrpt, id, callback = null) => {
   if (document.getElementById(id)) return;
 
   async function delayForPym(scrpt, tag) {
@@ -41,5 +41,10 @@ export const injectScript = (node, scrpt, id) => {
     delayForPym(scrpt, tag);
   }
   tag.id = id;
-  node.appendChild(tag);
+  tag.onload = () => {
+    if (callback) callback();
+  };
+  setTimeout(() => {
+    node.appendChild(tag);
+  }, 500);
 };
