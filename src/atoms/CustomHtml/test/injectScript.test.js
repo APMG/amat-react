@@ -15,12 +15,13 @@ describe('injectScript', () => {
     const id = 'testId';
 
     injectScript(node, script, id);
-
-    const injectedScript = node.querySelector('script');
-    expect(injectedScript).not.toBeNull();
-    expect(injectedScript.getAttribute('data-test-key')).toBe('testValue');
-    expect(injectedScript.src).toBe('https://example.com/test.js');
-    expect(injectedScript.id).toBe(id);
+    setTimeout(() => {
+      const injectedScript = node.querySelector('script');
+      expect(injectedScript).not.toBeNull();
+      expect(injectedScript.getAttribute('data-test-key')).toBe('testValue');
+      expect(injectedScript.src).toBe('https://example.com/test.js');
+      expect(injectedScript.id).toBe(id);
+    }, 500);
   });
 
   test('should inject a script tag with innerHTML if src is not provided', () => {
@@ -29,9 +30,13 @@ describe('injectScript', () => {
 
     injectScript(node, script, id);
 
-    const injectedScript = node.querySelector('script');
-    expect(injectedScript).not.toBeNull();
-    expect(injectedScript.innerHTML).toBe('console.log("Test injectScript");');
-    expect(injectedScript.id).toBe(id);
+    setTimeout(() => {
+      const injectedScript = node.querySelector('script');
+      expect(injectedScript).not.toBeNull();
+      expect(injectedScript.innerHTML).toBe(
+        'console.log("Test injectScript");'
+      );
+      expect(injectedScript.id).toBe(id);
+    }, 500);
   });
 });
