@@ -5,9 +5,11 @@ import { injectScript } from './helper/injectScript';
 import { recaptcha } from './helper/recaptcha';
 import { hashCode } from './helper/hashCode';
 import { flourish } from './helper/flourish';
+import usePopulistEmbed from '../../hooks/usePopulist';
 
 const CustomHtml = ({ nodeData, minimal }) => {
   const [state, setState] = useState('');
+  const [isPopulistScriptLoaded, setIsPopulistScriptLoaded] = useState(false);
   const myRef = useRef();
   const ANY_SCRIPT = /<script[\s\S]*?>[\s\S]*?<\/script>/gi;
 
@@ -21,31 +23,45 @@ const CustomHtml = ({ nodeData, minimal }) => {
   if (minimal) {
     return null;
   }
+  const populistEmbedId = dirtyHtml.match(/data-embed-id="([^"]*)"/)?.[1];
+
+  // Pass the script's loading status to the hook
+  usePopulistEmbed(myRef.current, populistEmbedId, isPopulistScriptLoaded);
 
   useEffect(() => {
     // Extract all scripts tag from the html
     const scriptsToInject = Array.from(htmlText.querySelectorAll('script'));
-    const localScripts = JSON.parse(localStorage.getItem('localScripts')) || [];
 
     setState(cleanHtml);
 
     // Inject the script tags into the DOM
     scriptsToInject.forEach((scrpt) => {
-      if (
-        typeof nodeData.attrs.html == 'string' &&
-        nodeData.attrs.html.indexOf('flourish-embed') > 0
-      ) {
-        return flourish(scrpt, nodeData, myRef, state);
-      }
-      const id = `__id__${hashCode(scrpt.innerHTML)}`;
-      injectScript(document.body, scrpt, id);
+      const isPopulist = scrpt.src?.includes('populist.us');
+      const isFlourish = dirtyHtml.indexOf('flourish-embed') > 0;
 
-      if (localScripts.indexOf(id) === 0) {
-        localScripts.push(id);
-        localStorage.setItem('localScripts', JSON.stringify(localScripts));
+      if (!isPopulist && !isFlourish) {
+        const id = `__id__${hashCode(scrpt.innerHTML)}`;
+        injectScript(document.body, scrpt, id);
+      }
+      if (dirtyHtml.indexOf('flourish-embed') > 0) {
+        const flourishScript = scriptsToInject.find((s) =>
+          s.src?.includes('flourish.studio')
+        );
+        if (flourishScript)
+          flourish(flourishScript, nodeData, myRef, cleanHtml);
+      }
+
+      const populistScript = scriptsToInject.find((s) =>
+        s.src?.includes('populist.us')
+      );
+      if (populistScript) {
+        const pid = `__pid__${populistScript.getAttribute('data-embed-id')}`;
+        injectScript(document.head, populistScript, pid, () => {
+          setIsPopulistScriptLoaded(true);
+        });
       }
     });
-  }, [nodeData.attrs.html]);
+  }, [dirtyHtml, htmlText, myRef]);
 
   // Enable submit button when recaptcha is successful (forms)
   recaptcha(htmlText);
