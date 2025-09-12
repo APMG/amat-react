@@ -43,6 +43,7 @@ test('It renders a body from a Prosemirror doc', () => {
 
           .apm-aside-custom p {
             font-size: 13px;
+            margin: 10px 0px;
           }
           
           @media (max-width: 957px) {
