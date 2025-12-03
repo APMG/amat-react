@@ -5,9 +5,11 @@ import Traverse from '../../utils/Traverse';
 const enlistify = (props) => {
   if (props?.nodeData?.content) {
     for (let i = 0; i < props.nodeData.content.length; ++i) {
-      props.nodeData.content[
-        i
-      ].type = `${props.nodeData.content[i].type}_list_item`;
+      const currentType = props.nodeData.content[i].type;
+      // Only append _list_item if it doesn't already end with it
+      if (!currentType.endsWith('_list_item')) {
+        props.nodeData.content[i].type = `${currentType}_list_item`;
+      }
     }
   }
   return props;

@@ -4,6 +4,15 @@ import { v4 as uuid } from 'uuid';
 
 const Inner = (child, props) => {
   const Dispatcher = props.components[child.type];
+
+  if (!Dispatcher) {
+    console.error(
+      `[AMAT] Component not found for type: "${child.type}". Available components:`,
+      Object.keys(props.components)
+    );
+    return null;
+  }
+
   switch (child.type) {
     case 'apm_image':
       return (
