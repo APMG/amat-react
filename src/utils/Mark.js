@@ -4,7 +4,13 @@ import generateKey from './generateKey';
 
 const Mark = (mark, InnerComponent, attrs = {}, props, index) => {
   const Dispatcher = props.components[mark.type];
-  return <Dispatcher key={generateKey(mark, index)} inner={InnerComponent} {...attrs} />;
+  return (
+    <Dispatcher
+      key={generateKey(mark, index)}
+      inner={InnerComponent}
+      {...attrs}
+    />
+  );
 };
 
 Mark.propTypes = {
