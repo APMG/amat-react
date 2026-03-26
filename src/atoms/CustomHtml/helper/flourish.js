@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
 
 export const flourish = (scrpt, nodeData, myRef) => {
   // 1. Mandatory Reset: Flourish sets this to true once finished;
@@ -111,4 +112,8 @@ export const FlourishEmbed = ({ htmlContent }) => {
       dangerouslySetInnerHTML={{ __html: htmlContent }}
     />
   );
+};
+
+FlourishEmbed.propTypes = {
+  htmlContent: PropTypes.string.isRequired
 };
