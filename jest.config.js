@@ -10,5 +10,7 @@ module.exports = {
       functions: 95,
       lines: 90
     }
-  }
+  },
+  // Limit workers for CI environments to prevent memory issues
+  maxWorkers: process.env.CI ? 1 : '50%'
 };
