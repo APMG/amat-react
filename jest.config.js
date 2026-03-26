@@ -1,7 +1,7 @@
 module.exports = {
   verbose: false,
-  setupFiles: ['jest-prop-type-error', 'babel-polyfill'],
-  testEnvironment: 'jest-environment-jsdom-fourteen',
+  setupFiles: ['jest-prop-type-error'],
+  testEnvironment: 'jsdom',
   watchPathIgnorePatterns: ['node_modules', 'coverage', 'dist'],
   coverageThreshold: {
     global: {
