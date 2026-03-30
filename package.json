@@ -1,6 +1,10 @@
 {
   "name": "@apmg/amat",
-  "authors": "[Geoff Hankerson ghankerson@mpr.org, Kim Thompson kthompson@mpr.org, Jason Phan jphan@mpr.org]",
+  "contributors": [
+    "Geoff Hankerson <ghankerson@mpr.org>",
+    "Kim Thompson <kthompson@mpr.org>",
+    "Jason Phan <jphan@mpr.org>"
+  ],
   "version": "1.1.15",
   "private": false,
   "main": "dist/bundle.js",
@@ -11,7 +15,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com/APMG/amat-react.git"
+    "url": "git+ssh://git@github.com/APMG/amat-react.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "scripts": {
     "build": "rollup -c",
