@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { v4 as uuid } from 'uuid';
+import generateKey from './generateKey';
 import Inner from './Inner';
 import Mark from './Mark';
 import ApmTableOfContentsClassic from '../atoms/ApmTableOfContents/ApmTableOfContentsClassic';
@@ -20,7 +20,7 @@ const Traverse = (props) => {
       return (
         <ApmTableOfContentsClassic
           nodeData={props.nodeData.content}
-          key={uuid()}
+          key={generateKey(toc, 0)}
           components={props.components}
         />
       );
@@ -29,13 +29,13 @@ const Traverse = (props) => {
 
   let content = getContent(props);
 
-  return content?.map((item) => {
-    let InnerComponent = Inner(item, props);
+  return content?.map((item, index) => {
+    let InnerComponent = Inner(item, props, index);
 
     if (item.marks) {
-      item.marks.forEach((mark) => {
+      item.marks.forEach((mark, markIndex) => {
         const attrs = mark.attrs || {};
-        InnerComponent = Mark(mark, InnerComponent, attrs, props);
+        InnerComponent = Mark(mark, InnerComponent, attrs, props, markIndex);
       });
     }
 

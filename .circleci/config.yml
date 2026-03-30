@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: cimg/node:14.21.1
+      - image: cimg/node:20.10
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -26,13 +26,13 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: npm i
+      - run: yarn install --frozen-lockfile
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm run test:ci
-      - run: npm run eslint
-      - run: npm run prettier
+      - run: yarn test:ci
+      - run: yarn eslint
+      - run: yarn prettier

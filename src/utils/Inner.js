@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { v4 as uuid } from 'uuid';
+import generateKey from './generateKey';
 
-const Inner = (child, props) => {
+const Inner = (child, props, index) => {
   const Dispatcher = props.components[child.type];
 
   if (!Dispatcher) {
@@ -17,7 +17,7 @@ const Inner = (child, props) => {
     case 'apm_image':
       return (
         <Dispatcher
-          key={uuid()}
+          key={generateKey(child, index)}
           embedded={props.embedded}
           image={child.attrs}
           aspectRatio={child.attrs.preferred_aspect_ratio_slug}
@@ -31,7 +31,7 @@ const Inner = (child, props) => {
     default:
       return (
         <Dispatcher
-          key={uuid()}
+          key={generateKey(child, index)}
           nodeData={child}
           embedded={props.embedded}
           minimal={props.minimal}
