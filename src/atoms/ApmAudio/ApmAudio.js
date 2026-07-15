@@ -55,6 +55,7 @@ const ApmAudio = (props) => {
         controls="controls"
         controlsList={audio.downloadable ? undefined : 'nodownload'}
         src={src?.replace(/(%user_agent|unreplaced_ua)/, 'web')}
+        preload="none"
       ></audio>
       <figcaption className="figure_caption">
         <div className="figure_caption_content">{title}</div>
