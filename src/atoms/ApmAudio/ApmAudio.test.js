@@ -61,7 +61,7 @@ test('It renders audio', () => {
 
   const expected = `
       <figure class="figure full align-right">
-        <audio controls="" controlslist="nodownload" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
+        <audio controls="" controlslist="nodownload" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3" preload="none">
         </audio>
         <figcaption class="figure_caption">
           <div class="figure_caption_content">
@@ -105,7 +105,7 @@ test('It renders audio when we have id instead of audio_id', () => {
 
   const expected = `
       <figure class="figure full align-right">
-        <audio controls="" controlslist="nodownload" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
+        <audio controls="" controlslist="nodownload" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3" preload="none">
         </audio>
         <figcaption class="figure_caption">
           <div class="figure_caption_content">
@@ -178,7 +178,7 @@ test('Audio is not marked as nodownload if the audio is flagged as downloadable'
 
   const expected = `
       <figure class="figure full align-right">
-        <audio controls="" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3">
+        <audio controls="" src="https://play-dev.publicradio.org/web/o/devel/foo/foo_20191204_2_128.mp3" preload="none">
         </audio>
         <figcaption class="figure_caption">
           <div class="figure_caption_content">
@@ -231,7 +231,7 @@ test('Audio source will choose megaphone if present', () => {
 
   const expected = `
   <figure class="figure full align-right">
-    <audio controls="" controlslist="nodownload" src="https://traffic.megaphone.fm/CAD7304315305.mp3">
+    <audio controls="" controlslist="nodownload" src="https://traffic.megaphone.fm/CAD7304315305.mp3" preload="none">
     </audio>
       <figcaption class="figure_caption">
         <div class="figure_caption_content">
