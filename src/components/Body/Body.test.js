@@ -119,6 +119,48 @@ test('It renders a link from a prosemirror doc using an alternate component when
   );
 });
 
+test('it does not warn about duplicate keys when a paragraph has multiple marked nodes', () => {
+  const consoleError = jest
+    .spyOn(console, 'error')
+    .mockImplementation(() => {});
+  const doc = {
+    type: 'doc',
+    content: [
+      {
+        type: 'paragraph',
+        content: [
+          {
+            type: 'text',
+            text: 'bold',
+            marks: [{ type: 'strong' }]
+          },
+          {
+            type: 'text',
+            text: ' and ',
+            marks: []
+          },
+          {
+            type: 'text',
+            text: 'italic',
+            marks: [{ type: 'em' }]
+          }
+        ]
+      }
+    ]
+  };
+  const { container } = render(<Body nodeData={doc} />);
+
+  expect(container.innerHTML).toEqual(
+    '<p><strong>bold</strong> and <em>italic</em></p>'
+  );
+  const duplicateKeyWarning = consoleError.mock.calls.some((call) =>
+    call.some((arg) => typeof arg === 'string' && arg.includes('same key'))
+  );
+  expect(duplicateKeyWarning).toBe(false);
+
+  consoleError.mockRestore();
+});
+
 test('it renders a nil doc', () => {
   const doc = null;
   const { container } = render(<Body nodeData={doc} />);
